@@ -24,7 +24,8 @@ Etudier de manière approfondie un projet de cette taille est donc, pour nous qu
 
 
 <h3><i>> Décomposition du sujet</i></h3>
-> ok pour ces questions ... 
+
+> ok pour ces questions ... mais pas du tout convaincue apr votre approche.
 
 Le sujet nous fait émettre les questions suivantes:
 <ul>
@@ -38,7 +39,9 @@ Afin de répondre à ces questions nous planifions d'utiliser les outils suivant
         <li>SonarQube et CodeCity afin d'établir un profiling du code et donc de définir la couverture de test existante, les zones chaudes et froides.<br>
         L'utilisation des deux outils se complète bien puisqu'ils proposent des métriques différentes.<br>
         De plus, CodeCity apporte une visualisation graphique ce qui va nous permettre de rapidement identifier d'éventuels problèmes et / ou manques.
-    > pas si clair... la couverture de tests ce n'est pas SonarQube et surtout vous n'aurez la couverture que des technologies comprises par SonarQube ou bien je ne vous ai pas compris. 
+ 
+ > pas si clair... la couverture de tests ce n'est pas SonarQube et surtout vous n'aurez la couverture que des technologies comprises par SonarQube ou bien je ne vous ai pas compris.
+ 
     </li>
         <li>Jira propose différentes métriques comme les tickets / incidents levés, résolus ou encore à réaliser. Il nous permettra aussi d'observer (en plus de Github) l'historique du code et extraire certaines informations.</li>
     </ul>
