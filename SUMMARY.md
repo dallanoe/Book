@@ -1,43 +1,51 @@
+# Table of contents
+
+* [Introduction](README.md)
+
 ## Summary
 
-* [Preface](README.md)   
-* [Introduction](Introduction.md)
+* [Preface](summary/readme.md)
+* [Introduction](summary/introduction.md)
 
 ## 2019 : Work in progress
-* [Format 2019](2019/format-2019.md)
 
-### Architecture analysis (ROCKFlows)
-* [Projet 1](./2019//Architecture/projet1/contents.md)
+* [Format 2019](2019-work-in-progress/format-2019.md)
 
-###  GIT - Make merging great again
-* [Projet 1](./2019/GITMERGE/projet1/contents.md)
-* [Projet 2](./2019/GITMERGE/projet2/contents.md)
-* [Projet 3](./2019/GITMERGE/projet3/contents.md)
+## Architecture analysis \(ROCKFlows\)
 
-###  Code Analysis 
-* [Projet 1](./2019/CodeAnalysis/projet1/contents.md)
-* [Projet 2](./2019/CodeAnalysis/projet2/contents.md)
+* [Projet 1](architecture-analysis-rockflows/contents.md)
 
-###  Code Quality (XWiki)
-* [Projet 1](./2019/XWiki/projet1/contents.md)
-* [Projet 2](./2019/XWiki/projet2/contents.md)
+## GIT - Make merging great again
 
-## 2018 : Some Articles
+* [Projet 1](git-make-merging-great-again/contents.md)
+* [Projet 2](git-make-merging-great-again/contents-1.md)
+* [Projet 3](git-make-merging-great-again/contents-2.md)
 
-### Machine Learning Explorations
-* [Comment est organisé le développement d'un projet Open Source de Machine Learning ?](./2018/ML-Organisation/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning.md)
+## Code Analysis
 
-### Docker Ecosystem Analysis
-* [Comment les utilisateurs de Docker Compose s'adaptent-ils aux changements de version selon les spécifications de leurs projets](./2018/DOCKER/comment-les-utilisateurs-de-docker-compose-sadaptent-ils-aux-changements-de-version-selon-les-specifications-de-leurs-projets.md)
-* [Comment les projets s’adaptent à l’évolution de Docker ?](./2018/DOCKER/comment-les-projets-sadaptent-a-levolution-de-docker.md)
+* [Projet 1](code-analysis/contents.md)
+* [Projet 2](code-analysis/contents-1.md)
 
-### Analyzing PIX ecosystem
-* [Caractériser et mesurer l'évolutivité d'une base de code](./2018/PIX/caracteriser-et-mesurer-levolutivite-dune-base-de-code.md)
-* [Etude sur l'agilité d'un projet de start-up d'état](./2018/PIX/etude-sur-lagilite-dun-projet-de-start-up-detat.md) 
+## Code Quality in Open Source Projects \(XWiki\)
 
-## 2017 : Best Article 
-* [What are the impacts of Test-Driven Development on code quality, code maintainability and test coverage ?](2017/what-are-the-impacts-of-test-driven-development-on-code-quality-code-maintainability-and-test-coverage-.md)
+* [Projet 1 : onboarding](code-quality-xwiki/contents.md)
+* [Projet 2](code-quality-xwiki/contents-1.md)
 
+## Machine Learning Explorations
 
+* [Comment est organisé le développement d'un projet Open Source de Machine Learning ?](machine-learning-explorations/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning.md)
 
+## Docker Ecosystem Analysis
+
+* [Comment les utilisateurs de Docker Compose s'adaptent-ils aux changements de version selon les spéci](docker-ecosystem-analysis/comment-les-utilisateurs-de-docker-compose-sadaptent-ils-aux-changements-de-version-selon-les-specif.md)
+* [Comment les projets s’adaptent à l’évolution de Docker ?](docker-ecosystem-analysis/comment-les-projets-sadaptent-a-levolution-de-docker.md)
+
+## Analyzing PIX ecosystem
+
+* [Caractériser et mesurer l'évolutivité d'une base de code](analyzing-pix-ecosystem/caracteriser-et-mesurer-levolutivite-dune-base-de-code.md)
+* [Etude sur l'agilité d'un projet de start-up d'état](analyzing-pix-ecosystem/etude-sur-lagilite-dun-projet-de-start-up-detat.md)
+
+## 2017 : Best Article
+
+* [What are the impacts of Test-Driven Development on code quality, code maintainability and test cover](2017-best-article/what-are-the-impacts-of-test-driven-development-on-code-quality-code-maintainability-and-test-covera.md)
 

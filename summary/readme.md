@@ -1,4 +1,4 @@
-# Introduction
+# Preface
 
 UCA : University Côte d'Azur \(french Riviera University\)
 
@@ -8,5 +8,5 @@ Details of the approach is [there](https://mireilleblayfornarino.i3s.unice.fr/do
 
 This work draws heavily on : [2016](https://www.gitbook.com/book/delftswa/desosa2016/details) \(et new ones [2018](https://legacy.gitbook.com/book/delftswa/desosa2018/details)\)
 
-[Summary](https://github.com/RIMEL-UCA/Book/tree/bb02ad7c257a12ef511e6a2a2ce96a95f67d1db0/SUMMARY.md)
+[Summary](https://github.com/RIMEL-UCA/Book/tree/beafddcd2c772c4644a92338babc0d80da265e28/SUMMARY.md)
 
