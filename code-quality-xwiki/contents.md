@@ -1,4 +1,4 @@
-# Projet 1 : onboarding
+# Projet 1 : How to improve contributors onboarding
 
 **Date de rendu finale : March 2018 au plus tard**
 
