@@ -23,7 +23,7 @@
 
 ## Code Analysis
 
-* [Projet 1](code-analysis/contents.md)
+* [Projet Java Properties](code-analysis/contents.md)
 * [Projet 2](code-analysis/contents-1.md)
 
 ## Code Quality in Open Source Projects \(XWiki\)

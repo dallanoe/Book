@@ -1,4 +1,4 @@
-# Projet 1
+# Projet Java Properties
 
 **Date de rendu finale : March 2018 au plus tard**
 
