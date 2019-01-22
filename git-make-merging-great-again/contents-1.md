@@ -1,4 +1,4 @@
-# Projet 2
+# Pourquoi les merges peuvent-ils mal se passer point de vue code ?
 
 **Date de rendu finale : March 2018 au plus tard**
 
