@@ -13,7 +13,7 @@
 
 ## Architecture analysis \(ROCKFlows\)
 
-* [Projet 1](architecture-analysis-rockflows/contents.md)
+* [En quoi la qualité des dépendances influe sur la qualité globale du projet ROCKFlows ?](architecture-analysis-rockflows/contents.md)
 
 ## GIT - Make merging great again
 

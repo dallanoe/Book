@@ -1,4 +1,4 @@
-# Projet 1
+# En quoi la qualité des dépendances influe sur la qualité globale du projet ROCKFlows ?
 
 **Date de rendu finale : March 2018 au plus tard**
 
