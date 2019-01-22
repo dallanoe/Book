@@ -14,7 +14,10 @@ Utilisez des références pour justifier votre argumentaire, vos choix etc.
 
 We are four students in last year of Polytech' Nice-Sophia specialized in Software Architecture :
 
-* .... &lt;xxx@gmail.com&gt;
+* Mohamed Chennouf &lt;mohamed.chennouf@etu.unice.fr&gt;
+* Shiyang Huang &lt;shiyang.huang@etu.unice.fr
+* Joanna Swiderska &lt;joanna.swiderska@etu.unice.fr&gt;
+* Andreina Wilhelm &lt;andreina-simonett.wilhelm-garcia@etu.unice.fr&gt;
 
 ## I. Research context /Project
 
