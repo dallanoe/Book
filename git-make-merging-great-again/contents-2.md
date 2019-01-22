@@ -1,4 +1,4 @@
-# Projet 3
+# Impact des contributeurs minoritaires sur la qualité du code des projets open-source
 
 **Date de rendu finale : March 2018 au plus tard**
 

@@ -19,7 +19,7 @@
 
 * [Projet 1](git-make-merging-great-again/contents.md)
 * [Projet 2](git-make-merging-great-again/contents-1.md)
-* [Projet 3](git-make-merging-great-again/contents-2.md)
+* [Impact des contributeurs minoritaires sur la qualité du code des projets open-source](git-make-merging-great-again/contents-2.md)
 
 ## Code Analysis
 
