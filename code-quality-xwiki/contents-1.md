@@ -4,7 +4,7 @@
 
 Remarques :
 
-Les titres peuvent changer pour etre en adéquation avec votre étude.
+Les titres peuvent changer pour être en adéquation avec votre étude.
 
 De même il est possible de modifier la structure, celle qui est proposée ici est là pour vous aider.
 
