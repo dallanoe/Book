@@ -12,15 +12,18 @@ Utilisez des références pour justifier votre argumentaire, vos choix etc.
 
 ## Authors
 
-We are four students in last year of Polytech' Nice-Sophia specialized in Software Architecture :
+Nous sommes quatre étudiants en Master 2 d'Architecture logicielle : 
 
-* .... &lt;xxx@gmail.com&gt;
+* Rudy Meersman &lt;rudy.meersman@etu.unice.fr&gt;
+* Gaétan Duminy &lt;gaetan.duminy@etu.unice.fr&gt;
+* Damien Fornali &lt;damien.fornali@etu.unice.fr&gt;
+* Amandine Benza &lt;amandine.benza@etu.unice.fr&gt;
 
-## I. Research context /Project
+## I. Contexte de recherche / projet
 
-Préciser ici votre contexte.
-
-Pourquoi c'est intéressant.
+* Présenter XWiki
+* But/Contexte/Contributeur
+* Pourquoi intéressant étudier XWiki et projets Open Source en général
 
 ## II. Observations/General question
 
