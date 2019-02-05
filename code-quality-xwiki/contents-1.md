@@ -21,20 +21,48 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 ## I. Contexte de recherche / projet
 
-Ceci est un test
-
-Préciser ici votre contexte.
+### 1.1. Présentation de XWiki <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
 * Présenter XWiki
 * But/Contexte/Contributeur
-* Pourquoi intéressant étudier XWiki et projets Open Source en général
+* Pourquoi intéressant étudier XWiki et projets Open Source en général ? 
+* Projet OpenSource lancé en 2003 \(+15 ans\)
+* Wiki d’entreprise
+* Plus de 100 000 lignes de code
+* 750 extensions
+* 4500 installations actives
+* Projet de grande envergure
 
-## II. Observations/General question
+### 1.2 Objectifs et intérêt
 
-1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses.
-2. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
+* **Intérêts :**
+* Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source.
+* Opportunité de découvrir à quel point le test est pris au sérieux dans une application professionnelle commercialisée.
+* Opportunité de tenter d’identifier des problèmes qui ne sont pas forcément connus des développeurs du projet 
+*  **Objectifs :** 
+* L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
+* Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
-Cette première étape nécessite beaucoup de réflexion pour se définir la bonne question afin de poser les bonnes bases pour la suit.
+## II. Observations / Question générale
+
+### 2.1  Question Générale <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+* Plusieurs questions se posent : Où trouver les tests existants ? Est-il nécessaire de tout tester ? Comment trouver les zones chaudes d'un code ?
+* Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki. \(On associe ici la métrique de la chaleur à la fréquence d'accès à un composant lors d'une utilisation classique de XWiki\)
+* On arrive donc à l'hypothèse suivante : les points chauds d'un projet sont-ils ceux qui causent le plus de problèmes?
+
+### 2.2 Raisonnement/Méthodologie
+
+* **Méthodologie de départ :**
+* Trouver quelles parties de XWiki sont les plus utilisées par des utilisateurs lambda.
+* Installer XWiki et suivre des cas d’utilisations prédéfinis.
+* Comparer nos différentes utilisations pour trouver les composants les plus utilisés.
+* Essayer de lier les points “chauds” du code avec les parties posant les plus de problèmes \(avec le plus d’issues\).
+*  **Soucis d’une telle méthodologie :**
+* Impossibilité d’identifier les points chauds des utilisateurs lambda : le coeur de XWiki étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Il est en revanche possible de savoir quelles extensions additionnelles sont les plus utilisées, en se basant sur leur nombre de téléchargements. 
+* =&gt; Cette partie n’est pas forcément utile pour nous puisque nous voulons nous baser sur le cœur de XWiki.
+* Faire une heatmap à la main perd alors de son intérêt : car nous ne serions capable de ne collecter qu’une faible quantité de données. Ces données ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
+* De plus difficultés à lier le code avec les pages XWiki associées.
 
 ## III. information gathering
 
