@@ -21,6 +21,12 @@ Nous sommes quatre étudiants en dernière année à Polytech Nice Sophia Antipo
 
 
 
+## Introduction
+
+Ce chapitre présente le travail d'étude produit par notre groupe sur le projet de _machine learning_ ROCKFlows, dans le cadre de la matière Rétro-Ingénierie, Maintenance et Évolution des Logiciels \(RIMEL\). 
+
+Pour commencer, nous allons présenter notre contexte de recherche. Nous continuerons par une présentation de notre question, accompagnée de nos hypothèses. Ensuite, nous expliquerons notre démarche et nous terminerons par une analyse des résultats obtenus.
+
 ## I. Research context /Project
 
 Préciser ici votre contexte.
