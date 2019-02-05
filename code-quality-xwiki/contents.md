@@ -74,7 +74,24 @@ JUnit est un framework de test unitaire, un des plus utilisés pour le langage J
 
 #### Analyses des contributions
 
+Le projet a démarré en octobre 2015, comporte plus de 5400 commits et 95 contributeurs.
 
+Parmis ces contributeurs :
+
+* 44 contributeurs avec 1 commit \(46,3%\)
+* 43 contributeurs avec 2 à 16 commits \(45,3%\)
+  * dont seulement 6 contributeurs avec au moins 2 commits espacés d’une semaine.
+  * et un membre de Neo4j \(un autre projet Java de gestion de base de données basé sur les graphes\).
+* 8 principaux contributeurs: \(8.4%\)
+  * Top 8: un compte nommé “junit-buildmaster” qui sert pour des opérations de gestion du code \(indentation de code, renommage de variables, mise à jour de headers dans la documentation\).
+  * Top 7: un contributeur lambda qui ne contribute plus depuis 2 ans \(dernier commit octobre 2017\)
+  * Top 6 : un autre contributeur lambda qui ne contribue plus depuis janvier 2017
+  * Top 5 : un contributeur lambda encore très actif \(dernier commit 24 janvier 2019 au moment de la vérification\)
+  * Top 4 : un membre de JUnit, son premier commit a été plus tardif que les autres membres, aussi très actif \(dernier commit 14 janvier 2019\)
+  * Top 3: un contributeur lambda, grosse contribution entre fin 2015 et 2016, depuis plus rien.
+  * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
+
+Une recherche sur les sites portfolio de chacun des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.
 
 #### Conclusion
 
