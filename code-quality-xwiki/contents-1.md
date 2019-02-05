@@ -39,7 +39,7 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 * Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source.
 * Opportunité de découvrir à quel point le test est pris au sérieux dans une application professionnelle commercialisée.
 * Opportunité de tenter d’identifier des problèmes qui ne sont pas forcément connus des développeurs du projet 
-*  **Objectifs :** 
+* **Objectifs :** 
 * L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
 * Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
@@ -64,31 +64,31 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 * Faire une heatmap à la main perd alors de son intérêt : car nous ne serions capable de ne collecter qu’une faible quantité de données. Ces données ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
 * De plus difficultés à lier le code avec les pages XWiki associées.
 
-## III. information gathering
+## III. Collecte d''informations
 
 Préciser vos zones de recherches en fonction de votre projet,
 
 1. les articles ou documents utiles à votre projet
 2. les outils
 
-## IV. Hypothesis & Experiences
+## IV. Expériences et hypothèses
 
 1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
 2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
 
-## V. Result Analysis and Conclusion
+## V. Résultats, analyse et conclusion
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
 ![](../.gitbook/assets/logo_uns%20%281%29.png) UCA : University Côte d'Azur \(french Riviera University\)
 
-## VI. Tools \(facultatif\)
+## VI. Outils \(facultatif\)
 
 Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
 
-## VI. References
+## VI. Références
 
 1.
 
