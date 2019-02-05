@@ -27,11 +27,13 @@ Ce chapitre présente le travail d'étude produit par notre groupe sur le projet
 
 Pour commencer, nous allons présenter notre contexte de recherche. Nous continuerons par une présentation de notre question, accompagnée de nos hypothèses. Ensuite, nous expliquerons notre démarche et nous terminerons par une analyse des résultats obtenus.
 
-## I. Research context /Project
+## I. Contexte de recherche : ROCKFlows
 
-Préciser ici votre contexte.
+**ROCKFlows** \(pour _Request your Own and Convenient Knowledge Flows_\) est un projet de _machine learning_ développé par le laboratoire I3S de Sophia Antipolis. Son objectif principal est de fournir une interface simple d’utilisation à des utilisateurs non-experts en machine learning dans le but de trouver le meilleur workflow leur permettant de classifier au mieux leur ensemble de données. En effet, ROCKFlows ne peut que classifier des données, il n’a pas la possibilité de faire de la régression.
 
-Pourquoi c'est intéressant.
+Pour l’utilisateur non-expert, ce produit se base sur le principe de boîte noire : toutes les spécifications liées au domaine du _machine learning_ lui sont cachées, lui permettant de simplement fournir un jeu de données en entrée et de récupérer des résultats compréhensibles en sortie.
+
+Ayant, pour la majorité du groupe, travaillé sur ROCKFlows lors de projets précédents, il nous semblait intéressant d'analyser ce projet plus en détails. Nous avons fait face à cet imposant projet \(39 dépôts différents\) et il a été difficile de visualiser le projet dans son ensemble. Nous avions donc à cœur d'aider les nouveaux arrivants ainsi que les contributeurs déjà présents sur le projet à avoir une vision plus globale de ROCKFlows. 
 
 ## II. Observations/General question
 
