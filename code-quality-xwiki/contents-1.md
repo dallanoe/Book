@@ -4,7 +4,7 @@
 
 Remarques :
 
-Les titres peuvent changer pour etre en adéquation avec votre étude.
+Les titres peuvent changer pour être en adéquation avec votre étude.
 
 De même il est possible de modifier la structure, celle qui est proposée ici est là pour vous aider.
 
@@ -16,14 +16,18 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 * Rudy Meersman &lt;rudy.meersman@etu.unice.fr&gt;
 * Gaétan Duminy &lt;gaetan.duminy@etu.unice.fr&gt;
-* Damien Fornali &lt;damien.fornali@etu.unice.fr&gt;
+* Damoy Fornali &lt;damien.fornali@etu.unice.fr&gt;
 * Amandine Benza &lt;amandine.benza@etu.unice.fr&gt;
 
-## I. Research context /Project
+## I. Contexte de recherche / projet
+
+Ceci est un test
 
 Préciser ici votre contexte.
 
-Pourquoi c'est intéressant.
+* Présenter XWiki
+* But/Contexte/Contributeur
+* Pourquoi intéressant étudier XWiki et projets Open Source en général
 
 ## II. Observations/General question
 
