@@ -29,7 +29,7 @@
 ## Code Quality in Open Source Projects \(XWiki\)
 
 * [Projet 1 : How to improve contributors onboarding](code-quality-xwiki/contents.md)
-* [Projet 2](code-quality-xwiki/contents-1.md)
+* [Projet 2 : Comment identifier les zones sensibles d'un code Open Source ?](code-quality-xwiki/contents-1.md)
 
 ## Machine Learning Explorations
 

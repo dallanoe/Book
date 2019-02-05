@@ -1,4 +1,4 @@
-# Projet 2
+# Projet 2 : Comment identifier les zones sensibles d'un code Open Source ?
 
 **Date de rendu finale : March 2018 au plus tard**
 
