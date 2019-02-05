@@ -78,11 +78,17 @@ Préciser vos zones de recherches en fonction de votre projet,
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
 
+
+
 ## V. Résultats, analyse et conclusion
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
-![](../.gitbook/assets/logo_uns%20%281%29.png) UCA : University Côte d'Azur \(french Riviera University\)
+![](https://lh4.googleusercontent.com/wDkJcwofr25OJ468L0WWyRfI5Vbhn4M5YFN8SWRF989OMnRW_pFhsWC9f4oCm0hviZqjU7-2BOMwg4EVKd4m4BBLsSgL9-JpK6_BHWQqHcvcuyB30isNqORVeBJeX4G8a4hso7Up)
+
+![XWiki components issues](https://lh6.googleusercontent.com/aQAXC5tdJANK-tJ-5yhXHY5sqmIBpZ8-UhLoybQ6agKSH9NNIpk4YOkNGC2FgyHgbac90q1KkwY2RMipSfBTiZW3ux1_YkNa1Mnh0969gEj5w0Gx3D04lZQF5qm9qyQ3Ctn1nQsq)
+
+![](https://lh6.googleusercontent.com/3VCprCHxCBPLG9PrU0x2sRIdlp5UDA7FhcjUQgyf-w0MxtB9rwpbFU9S0aINDIoQwVzCtkyz2viSuTknpjYI_TOEwdxBrfbMgB-8R1qnUPGDmkCpyYoUrFF538KBMbISVfdo3hGG)
 
 ## VI. Outils \(facultatif\)
 
@@ -90,6 +96,7 @@ Précisez votre utilisation des outils ou les développements \(e.g. scripts\) r
 
 ## VI. Références
 
-1.
 
-1. 
+
+![](../.gitbook/assets/logo_uns%20%281%29.png) UCA : University Côte d'Azur \(french Riviera University\)
+
