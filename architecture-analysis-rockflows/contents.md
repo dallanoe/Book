@@ -35,16 +35,29 @@ Pour l’utilisateur non-expert, ce produit se base sur le principe de boîte no
 
 Ayant, pour la majorité du groupe, travaillé sur ROCKFlows lors de projets précédents, il nous semblait intéressant d'analyser ce projet plus en détails. Nous avons fait face à cet imposant projet \(39 dépôts différents\) et il a été difficile de visualiser le projet dans son ensemble. Nous avions donc à cœur d'aider les nouveaux arrivants ainsi que les contributeurs déjà présents sur le projet à avoir une vision plus globale de ROCKFlows. 
 
-## II. Observations/General question
+## II. Questionnement
 
-1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses. --&gt;  Plusieurs membre de notre équipe ont réalisé leur projet de fin d'étude en relation avec ROCKFlows. Avant de commencer le développement, nous avons été confrontées dans un premier temps à une dette technique très importante et cela nous a donc pris beaucoup de temps avant de se familiariser avec l'ensemble du projet. Ceci est un problème commun à beaucoup de projets, dès lors qu'ils sont conséquent. Cette dette technique était notamment augmenter à cause des dépendances autant internes qu'externes. C'est donc sur cet aspect que nous avons voulu dirigé notre étude sur l'impact des dépendances sur la qualité de ROCKFlows et nous en sommes donc venu à la question suivante : _Les dépendances impactent-elles la qualité du projet ROCKFlows ?_ La qualité pouvant être exposé par plus métriques comme le "code-smell", le nombre de bug, les vulnérabilités du code. Néanmoins, nous nous sommes pas attardé sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(Un seul dépôt contenait des tests\).
+### II.1 Observations et problématique générale
+
+Plusieurs membre de notre équipe ont réalisé leur projet de fin d'étude en relation avec ROCKFlows. Avant de commencer le développement, nous avons été confrontés à un projet imposant et dans lequel il est difficile d'entrer. Cela nous a donc pris beaucoup de temps avant de nous familiariser avec l'ensemble du projet. Ceci est un problème commun à beaucoup de projets, dès lors qu'ils sont conséquents. Cette dette technique était notamment empirée par des dépendances autant internes qu'externes. C'est donc sur cet aspect que nous avons voulu diriger notre étude. L'objectif est d'analyser l'impact des dépendances sur la qualité de ROCKFlows et nous en sommes donc arrivés  à la question suivante : 
+
+_**Les dépendances impactent-elles la qualité du projet ROCKFlows ?**_
 
   
+__La qualité pouvant être exposé par plus métriques comme le "code-smell", le nombre de bug, les vulnérabilités du code. Néanmoins, nous nous sommes pas attardé sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(Un seul dépôt contenait des tests\).
 
+###  II.2. Sous-parties
 
-1. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
+L'état de fait dans lequel nous trouvions nous a mené à deux sous-parties qu'il nous semblait intéressantes à développer :
 
-Cette première étape nécessite beaucoup de réflexion pour se définir la bonne question afin de poser les bonnes bases pour la suit.
+1. **Mise en place d'un guide permettant à un débutant de visualiser un projet imposant dans son ensemble**.
+2. **Analyse des fuites de qualité logicielle provenant des dépendances au sein d'un projet**.
+
+### II.3. Intérêt de ces questionnements
+
+L'intérêt principal de notre point de vue est de fournir une aide tant aux développeurs qu'aux nouveaux arrivants. De plus, nous avons eu des retours de développeurs de ROCKFlows rapportant que ce problème est récurrent. Les développeurs déjà présents sur le projet ont seulement connaissance de leur partie du projet et ont rarement une vision globale. De ceci découle notre premier problème : les développeurs arrivant sur le projet ne trouvent pas de documentation générale sur le projet étant donné qu'aucun développeur expérimenté sur le projet a la connaissance sur la totalité du projet.
+
+Fournir cet outil permettra donc d'élargir la vision des développeurs de ROCKFlows, ainsi que fournir un point d'entrée dans le projet pour les nouveaux arrivants.
 
 ## III. information gathering
 
