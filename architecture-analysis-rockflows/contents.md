@@ -37,8 +37,12 @@ Ayant, pour la majorité du groupe, travaillé sur ROCKFlows lors de projets pr�
 
 ## II. Observations/General question
 
-1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses.
-2. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
+1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses. --&gt;  Plusieurs membre de notre équipe ont réalisé leur projet de fin d'étude en relation avec ROCKFlows. Avant de commencer le développement, nous avons été confrontées dans un premier temps à une dette technique très importante et cela nous a donc pris beaucoup de temps avant de se familiarisé avec l'ensemble du projet. Ceci est un problème commun à beaucoup de projets, dès lors qu'ils sont conséquent. Cette dette technique était notamment augmenter à cause des dépendances autant internes qu'externes. C'est donc sur cet aspect que nous avons voulu dirigé notre étude sur l'impact des dépendances sur la qualité de ROCKFlows et nous en sommes donc venu à la question suivante : _Les dépendances impactent-elles la qualité du projet ROCKFlows ?_ La qualité pouvant être exposé par plus métriques comme le "code-smell", le nombre de bu
+
+  
+
+
+1. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
 
 Cette première étape nécessite beaucoup de réflexion pour se définir la bonne question afin de poser les bonnes bases pour la suit.
 
