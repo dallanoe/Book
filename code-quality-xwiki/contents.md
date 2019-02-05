@@ -27,9 +27,18 @@ We are four students in last year of Polytech' Nice-Sophia specialized in Softwa
 
 ## I. Contexte de recherche
 
-Préciser ici votre contexte.
+Le sujet ayant retenu notre attention concernait le projet XWiki. Le sujet initial, était subdivisé en deux questions :
 
-Pourquoi c'est intéressant.
+* Comment améliorer la qualité de code chez XWiki ?
+* Comment améliorer l'onboarding des contributeurs chez XWiki ?
+
+En partant de ces sujets nous avons redéfini une nouvelle problématique : Comment introduire une dynamique de contribution dans un projet open source et pérenniser sa communauté ?
+
+L'intérêt principal de cette recherche réside dans l'importance de la communauté dans le monde open-source. De nombreux projets open-source constitue le socle de l'informatique actuel que ce soit des éditeurs, aux outils de build jusqu'aux librairies "habituelles" : Visual Code Studio, Maven, Gradle, Junit, Mockito, Apache Kafka, Jenkins, Docker...
+
+L'ensemble de ces projets constituent le paysage technologique de notre époque et sont devenu incontournables pour la plupart des développeurs. Derrière ces projets et organisations se cachent souvent des centaines de contributeurs, rémunérés ou non par des sociétés pour participer à l'avancée desdits projets. Le noyau linux peut être considéré comme le projet open source ayant le plus impacté le monde de l'informatique ces 30 dernières années. Compte tenu de son usage, le noyau linux regroupe de nombreux contributeurs professionnels \(ie. rémunérés par une entreprise pour contribuer\).
+
+Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur communauté ? Comment peuvent-ils inciter les contributeurs à participer activement et sur le long terme au développement du projet ?
 
 ## II. Question générale
 
