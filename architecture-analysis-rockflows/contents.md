@@ -1,15 +1,5 @@
 # En quoi la qualité des dépendances influe sur la qualité globale du projet ROCKFlows ?
 
-**Date de rendu finale : March 2018 au plus tard**
-
-Remarques :
-
-Les titres peuvent changer pour etre en adéquation avec votre étude.
-
-De même il est possible de modifier la structure, celle qui est proposée ici est là pour vous aider.
-
-Utilisez des références pour justifier votre argumentaire, vos choix etc.
-
 ## Auteurs
 
 Nous sommes quatre étudiants en dernière année à Polytech Nice Sophia Antipolis, dans la spécialité Architecture Logicielle :
