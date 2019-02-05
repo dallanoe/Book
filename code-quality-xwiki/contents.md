@@ -34,7 +34,7 @@ Le sujet ayant retenu notre attention concernait le projet XWiki. Le sujet initi
 
 En partant de ces sujets nous avons redéfini une nouvelle problématique : Comment introduire une dynamique de contribution dans un projet open source et pérenniser sa communauté ?
 
-L'intérêt principal de cette recherche réside dans l'importance de la communauté dans le monde open-source. De nombreux projets open-source constitue le socle de l'informatique actuel que ce soit des éditeurs, aux outils de build jusqu'aux librairies "habituelles" : Visual Code Studio, Maven, Gradle, Junit, Mockito, Apache Kafka, Jenkins, Docker...
+L'intérêt principal de cette recherche réside dans l'importance de la communauté dans le monde open-source. De nombreux projets open-source constitue le socle de l'informatique moderne que ce soit des éditeurs, aux outils de build jusqu'aux librairies "habituelles" : Visual Code Studio, Maven, Gradle, Junit, Mockito, Apache Kafka, Jenkins, Docker...
 
 L'ensemble de ces projets constituent le paysage technologique de notre époque et sont devenu incontournables pour la plupart des développeurs. Derrière ces projets et organisations se cachent souvent des centaines de contributeurs, rémunérés ou non par des sociétés pour participer à l'avancée desdits projets. Le noyau linux peut être considéré comme le projet open source ayant le plus impacté le monde de l'informatique ces 30 dernières années. Compte tenu de son usage, le noyau linux regroupe de nombreux contributeurs professionnels \(ie. rémunérés par une entreprise pour contribuer\).
 
