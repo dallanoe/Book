@@ -14,7 +14,10 @@ Utilisez des références pour justifier votre argumentaire, vos choix etc.
 
 We are four students in last year of Polytech' Nice-Sophia specialized in Software Architecture :
 
-* .... &lt;xxx@gmail.com&gt;
+* BOUNOUAS Nassim &lt;nassim.bounouas@etu.unice.fr&gt;
+* CANCELA VAZ Joël &lt;joel.cancela-vaz@etu.unice.fr&gt;
+* MORTARA Johann &lt;johann.mortara@etu.unice.fr&gt;
+* ROUSSEAU Nikita &lt;nikita.rousseau@etu.unice.fr&gt;
 
 ## I. Research context /Project
 
