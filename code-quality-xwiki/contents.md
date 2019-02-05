@@ -68,7 +68,15 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 
 ### JUnit5
 
-JUnit5 est un framework de test unitaire pour le langage Java, il succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures.
+JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte et par conséquent se trouve sur un “repository” à part.
+
+#### Analyses des KPI
+
+#### Analyses des contributions
+
+
+
+#### Conclusion
 
 
 
