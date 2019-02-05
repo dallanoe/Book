@@ -39,6 +39,9 @@ Cette première étape nécessite beaucoup de réflexion pour se définir la bon
 
 ## III. Collecte d'informations
 
+1. les articles ou documents utiles à votre projet
+2. les outils
+
 Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
 
 * Junit 5
@@ -54,9 +57,6 @@ Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre a
 
 Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
-1. les articles ou documents utiles à votre projet
-2. les outils
-
 ## IV. Hypothèses et expériences
 
 1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
@@ -65,6 +65,12 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 4. Justifiez vos choix
 
 ## V. Analyse des résultats et Conclusion
+
+### JUnit5
+
+JUnit5 est un framework de test unitaire pour le langage Java, il succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures.
+
+
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
