@@ -39,7 +39,20 @@ Cette première étape nécessite beaucoup de réflexion pour se définir la bon
 
 ## III. Collecte d'informations
 
-Préciser vos zones de recherches en fonction de votre projet,
+Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
+
+* Junit 5
+* Mockito
+* Hibernate ORM
+* Log4j2
+
+Afin de cadrer notre recherche nous avons du définir la notion de contributeur. Nous avons donc restreint la définition de contributeur à toute personne ayant proposé un commit accepté sur la branche principale du projet.
+
+Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre analyse puisque l'ensemble des projets retenus reposent tous sur une communauté alors qu'XWiki est soutenu avec la société XWiki SAS. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets \(condition préalable à notre sélection\).
+
+
+
+Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
 1. les articles ou documents utiles à votre projet
 2. les outils
