@@ -72,6 +72,8 @@ JUnit est un framework de test unitaire, un des plus utilisés pour le langage J
 
 #### Analyses des KPI
 
+TODO:
+
 #### Analyses des contributions
 
 Le projet a démarré en octobre 2015, comporte plus de 5400 commits et 95 contributeurs.
