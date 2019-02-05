@@ -6,19 +6,9 @@ description: >-
 
 # Projet 1 : How to improve contributors onboarding
 
-**Date de rendu finale : March 2018 au plus tard**
-
-Remarques :
-
-Les titres peuvent changer pour etre en adéquation avec votre étude.
-
-De même il est possible de modifier la structure, celle qui est proposée ici est là pour vous aider.
-
-Utilisez des références pour justifier votre argumentaire, vos choix etc.
-
 ## Auteurs
 
-We are four students in last year of Polytech' Nice-Sophia specialized in Software Architecture :
+Nous sommes quatre étudiants en dernière année de Sciences Informatiques à Polytech Nice-Sophia en spécialité Architectures Logicielles :
 
 * BOUNOUAS Nassim &lt;nassim.bounouas@etu.unice.fr&gt;
 * CANCELA VAZ Joël &lt;joel.cancela-vaz@etu.unice.fr&gt;
