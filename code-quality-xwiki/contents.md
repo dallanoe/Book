@@ -108,7 +108,7 @@ Parmis ces contributeurs :
   * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
 
 Une recherche sur le [site portfolio](https://blog.johanneslink.net/2016/04/16/goodbye-junit-5/) d'un des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.  
-Le projet est porté grâce par les membres de l'équipe JUnit.
+Le projet est porté par les membres de l'équipe JUnit.
 
 Il est possible de discuter avec la team de développement sur Gitter ou indirectement via StackOverflow.
 
