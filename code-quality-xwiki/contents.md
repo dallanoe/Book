@@ -108,11 +108,11 @@ Parmis ces contributeurs :
   * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
 
 Une recherche sur le [site portfolio](https://blog.johanneslink.net/2016/04/16/goodbye-junit-5/) d'un des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.  
-Le projet avance en très grande majorité grâce aux membres de l'équipe JUnit.
+Le projet est porté grâce par les membres de l'équipe JUnit.
 
 Il est possible de discuter avec la team de développement sur Gitter ou indirectement via StackOverflow.
 
-Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coup d'entrée dans le projet semble être assez conséquent, même les issues "up-for-grabs" sont parfois incompréhensibles pour un néophyte.
+Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coup d'entrée dans le projet semble être assez conséquent, même les issues "_up-for-grabs_" sont parfois incompréhensibles pour un néophyte.
 
 De plus, en regardant certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageants. Ce qui a pour effet de créer une sorte de syndrome de la tour d'ivoire.
 
