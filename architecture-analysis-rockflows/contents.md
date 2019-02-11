@@ -34,7 +34,7 @@ Plusieurs membre de notre équipe ont réalisé leur projet de fin d'étude en r
 _**Les dépendances impactent-elles la qualité du projet ROCKFlows ?**_
 
   
-__La qualité pouvant être exposé par plus métriques comme le "code-smell", le nombre de bug, les vulnérabilités du code. Néanmoins, nous nous sommes pas attardé sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(Un seul dépôt contenait des tests\).
+__La qualité pouvant être exposée par plus métriques comme le "code-smell", le nombre de bug, les vulnérabilités du code. Néanmoins, nous nous sommes pas attardé sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(Un seul dépôt contenait des tests\).
 
 ###  II.2. Sous-parties
 
