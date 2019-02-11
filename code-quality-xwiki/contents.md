@@ -122,7 +122,7 @@ De plus, en regardant certains commentaires de certains membres de JUnit à l'é
 
 ![Pas tr&#xE8;s encourageant de dire: &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
 
-
+On en déduit que les contributions externes ne semble pas être une priorité pour l'équipe.
 
 #### Conclusion
 
