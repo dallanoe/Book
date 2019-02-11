@@ -68,11 +68,25 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 
 ### JUnit5
 
-JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte et par conséquent se trouve sur un “repository” à part.
+JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
 
-#### Analyses des KPI
+#### Analyses des KPI \(analyse faite le 27 Janvier 2018\)
 
-TODO:
+* Présence d'un README.md :
+  * Présent et est assez complet, contient les parties \(_Contributing, Getting Help, Continuous Integration Builds, Code Coverage_ et _Building from Source_\).
+* Méthode de contribution :
+  * Chercher les issues taguées avec "_up-for-grabs_" \(qui sont très peu nombreuses, 10 seulement au moment la vérification\)
+* Badges \(ou _shields_\) :
+  * Travis.CI et Appveyor, tous les deux au vert au moment de la vérification avec le label "_Build passing_"
+* Présence d'une intégration continue sur Travis.CI et Appveyor.
+* Présence d'un CONTRIBUTING.md
+  * Présent et détaille très bien les conventions de nommage et formatage du code.
+* Exemples de code :
+  * Présent sur un autre repository, lien référencé dans le README.md
+* Présence de Javadoc, à jour et mise à jour automatiquement à chaque commit
+* Temps moyen de réponse aux issues: environ 1h
+* Nombre de commits sur master : 5417 au moment de la vérification
+* Nombre de contributeurs : 95
 
 #### Analyses des contributions
 
@@ -93,7 +107,22 @@ Parmis ces contributeurs :
   * Top 3: un contributeur lambda, grosse contribution entre fin 2015 et 2016, depuis plus rien.
   * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
 
-Une recherche sur les sites portfolio de chacun des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.
+Une recherche sur le [site portfolio](https://blog.johanneslink.net/2016/04/16/goodbye-junit-5/) d'un des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.  
+Le projet avance en très grande majorité grâce aux membres de l'équipe JUnit.
+
+Il est possible de discuter avec la team de développement sur Gitter ou indirectement via StackOverflow.
+
+Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coup d'entrée dans le projet semble être assez conséquent, même les issues "up-for-grabs" sont parfois incompréhensibles pour un néophyte.
+
+De plus, en regardant certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageants. Ce qui a pour effet de créer une sorte de syndrome de la tour d'ivoire.
+
+![Pas de r&#xE9;ponse pour les questions de ce pauvre contributeur](../.gitbook/assets/no-answer-to-question-issue.png)
+
+![Pull request ferm&#xE9;e, mainteneur &quot;qui n&apos;a pas le temps&quot; de review le code](../.gitbook/assets/denied-pull-request.png)
+
+![Pas tr&#xE8;s encourageant de dire: &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
+
+
 
 #### Conclusion
 
