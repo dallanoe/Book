@@ -65,12 +65,125 @@ De cette manière, en inspectant les outils intégrations, il nous sera possible
 * a un accès public à son outils d'intégration continue.
 * a suffisamment de merge qui se passe mal.
 
-**4. Comment extraire automatique les merges en erreur ?**  
+**3. Comment savoir si les erreurs de merges viennent du code ajouté ou du code déjà présent ?**
+
+Intuitivement nous nous somme dit que les erreurs de merge peuvent venir :
+
+* du code ajouté mal écrit
+* du code ajouté qui marche mais qui s’intègre mal avec le reste du projet
+* des tests qui ne sont pas mis à jour
+* des tests mal écrit
+
+A partir de ces idées nous avons décidé de prouver nos intuitions en créant des règles. Ces règles sont spécifique à chacune de nos intuitions que l’on testera sur plusieurs projet afin de conclure sur la provenance des erreurs \(codé ajouté ou code présent ? \) .
+
+**Règles :**
+
+_**Tests pas mis à jour :**_ 
+
+_`Commit_Error : files [ x.java, v.java] ---> Commit_Good : files [x.test ]`_
+
+_**Tests mal écrit :**_ 
+
+_`Commit_Error : files [ x.test, v.test] ---> Commit_Good : files [ x.test ]`_
+
+_**Code ajouté défectueux :**_ 
+
+_`Commit_Error : files [x.java, v.java] ---> Commit_Good : files [ x.java]`_
+
+_`Commit_Good : files [ x.java, o.java] ---> Commit_Error : files [x.test, v.test, o.test] ---> Commit_Good : files [x.java]`_
+
+_**Code ajouté marche mais produit des erreurs avec le reste du système :**_
+
+_`Commit_Error : files [x.java , v.java] ---> Commit_Good : files [ o.java ]`_  **``**  
 
 
-**5. Comment identifier d’ou vient l’erreur \( code ajouté ou pas , tests ...\)  ?**  
+Dans un premier temps nous nous basé sur les nom des fichiers qui interviennent lors d’un Merge qui se passe mal. En raisonnant sur les commites avant et après celui qui a causé l’erreur, il est possible d’en déduire que :
+
+* les tests n’ont pas été mis à jour ,
+* les tests ont été mal écrit
+* le code ajouté est défectueux
+* le code ajouté marche mais produit des erreurs au sein du système.
+
+**4. A t’on accès aux informations qui nous intéresse ?**
+
+Durant la question “Comment savoir si les erreurs de merges viennent du code ajouté ou du code déjà présent ?”, nous avons supposé avoir :
+
+* les commites en erreurs d’un Merge
+* les commites qui précède et succède celui en erreur
+* le nom des fichiers qui interviennent durant un commite
+
+Mais comment avoir accès au informations qui nous intéresse ?
+
+Deux idées sont possible : Commande **Git shell** ou **API gitHub**. Nous avons préféré prendre API de github car grâce à l’API il est possible de  récupérer directement les objets que l’’on cherche sans avoir à faire du traitement sur les données reçus \(parsing, différence …\).
+
+**5. Sur quelle projet tester nos règles?**
+
+Nous avons décidé de prendre SonarQube comme premier projet test car il a :
+
+* Un serveur d’intégration accessible : travis
+* Un nombre de merge conséquent qu’il soit bon ou en erreur
+  * 3185 pull request fermés
+  * 2181 pull request mergés
+
+**6. Comment pousser l’analyse plus loin \( comparer les sections de code \)  ?**
+
+## III. Expériences
+
+Nous avons décidé de nous intéresser au merge qui sont des pulls resquest afin de restreindre la taille des données manipulé. Dans un premier temps nous avons extrait automatiquement 61 pulls requests contenant un total de 665 commis dont 36 commis sont en erreurs.
+
+Nous avons ensuite développé un logiciel qui exécute nos règles sur ces pull requests. Voici le résultat de l’expérience 1:  
 
 
-**6. Comment pousser l’analyse plus loin \( comparer les sections de code \)  ?**  
+![r&#xE9;sultat de l&apos;exp&#xE9;rience](https://lh5.googleusercontent.com/n4hr-T78q49VnqskW-aOdefKocb-Mste4XO-iCe7U5O5AMoJTuEae7zK4i5pCgA_muFc3tTu-51yoavkQX1jzDp1UwXYmsVSmgW5K766OjhnBdgdkt-TLezUjhYnpuEBSS_FHpw)
 
+* les tests n’ont pas été mis à jour : 2
+* les tests ont été mal écrit : 4
+* le code ajouté est défectueux  : 12
+* le code ajouté marche mais produit des erreurs au sein du système : 24
+
+![Graphe mod&#xE9;lisant le r&#xE9;sultat de l&apos;exp&#xE9;rience](https://lh4.googleusercontent.com/KNJlrsbmL2GiHfV52jzCWTAn5Boj3v1oOy7KtOzWpV3BtKSgxdLpXUFBoz4WQyc10hvA6DFLy2XZQXDklvmlkLa0kmjTeTZL4SUR2nvaSf-8qgAVlVmLgKOqbm_oxge_SbdhG50)
+
+Après cette première expérience, on peut se rendre compte que ⅔ des merges qui se passe mal sont dus à l’impact du nouveau code dans le reste du système. Afin de pouvoir confirmer cette première expérience nous avons décidé de lancer nos clauses sur d'autres projets :  
+****
+
+**ReactiveX/RxJava :**
+
+* [https://github.com/ReactiveX/RxJava](https://github.com/ReactiveX/RxJava)
+* 3000+ pull request
+* 0 failed merged pull request ****
+
+**mockito/mockito:**
+
+* [https://github.com/mockito/mockito](https://github.com/mockito/mockito)
+* 700+ pull request
+* build avec different verison de jdk \(8-11\), le build avec jdk11 fail très souvent
+* eg. [https://github.com/mockito/mockito/pull/1592](https://github.com/mockito/mockito/pull/1592) ****
+
+**apache/incubator-dubbo:**
+
+* [https://github.com/apache/incubator-dubbo](https://github.com/apache/incubator-dubbo)
+* 1300+ pull request
+* build avec jdk 8 et 11
+* eg. [https://github.com/apache/incubator-dubbo/pull/3240](https://github.com/apache/incubator-dubbo/pull/3240) ****
+
+**apache/incubator-shardingsphere:**
+
+* [https://github.com/apache/incubator-shardingsphere](https://github.com/apache/incubator-shardingsphere)
+* ~700 pull request
+* only jdk8
+* need check ****
+
+**apache/incubator-skywalking:**
+
+* [https://github.com/apache/incubator-skywalking](https://github.com/apache/incubator-skywalking)
+* 1200+ pull request
+* single jdk
+* need check ****
+
+**apache/incubator-heron:**
+
+* [https://github.com/apache/incubator-heron](https://github.com/apache/incubator-heron)
+* 2200+ pull request
+* jdk8
+* need check ****
 
