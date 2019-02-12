@@ -56,10 +56,15 @@ Nous avons conscience que cette méthode de validation reste limitée puisqu'il 
 
 ## III. information gathering
 
-Préciser vos zones de recherches en fonction de votre projet,
+### A. Dataset
 
-1. les articles ou documents utiles à votre projet
-2. les outils
+
+
+### B. Protocole
+
+
+
+### C. **Limites de notre dataset**
 
 ## IV. Hypothesis & Experiences
 
