@@ -1,9 +1,3 @@
----
-description: >-
-  Problématique finale : Comment introduire une dynamique de contribution dans
-  un projet open source et pérenniser sa communauté ?
----
-
 # Projet 1 : How to improve contributors onboarding
 
 ## Auteurs

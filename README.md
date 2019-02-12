@@ -8,5 +8,3 @@ Details of the approach is [there](https://mireilleblayfornarino.i3s.unice.fr/do
 
 This work draws heavily on : [2016](https://www.gitbook.com/book/delftswa/desosa2016/details) \(et new ones [2018](https://legacy.gitbook.com/book/delftswa/desosa2018/details)\)
 
-
-

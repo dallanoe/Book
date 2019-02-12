@@ -4,7 +4,7 @@
 
 ## Summary
 
-* [Preface](summary/readme.md)
+* [Preface](summary/summary.md)
 * [Introduction](summary/introduction.md)
 
 ## 2019 : Work in progress
@@ -28,8 +28,8 @@
 
 ## Code Quality in Open Source Projects \(XWiki\)
 
-* [Projet 1 : How to improve contributors onboarding](code-quality-xwiki/contents.md)
-* [Projet 2 : Comment identifier les zones sensibles d'un projet Open Source ?](code-quality-xwiki/contents-1.md)
+* [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
+* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
 
 ## Machine Learning Explorations
 
