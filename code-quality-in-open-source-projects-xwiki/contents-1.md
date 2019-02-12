@@ -36,9 +36,7 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 ### 1.2 Objectifs et intérêt
 
 * **Intérêts :**
-* Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source.
-* Opportunité de découvrir à quel point le test est pris au sérieux dans une application professionnelle commercialisée.
-* Opportunité de tenter d’identifier des problèmes qui ne sont pas forcément connus des développeurs du projet 
+* Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source. 
 * **Objectifs :** 
 * L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
 * Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
