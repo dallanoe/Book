@@ -18,7 +18,7 @@
 ## GIT - Make merging great again
 
 * [Est-il possible de déterminer à l’avance qu’un merge risque de poser problème ?](git-make-merging-great-again/contents.md)
-* [Pourquoi les merges peuvent-ils mal se passer point de vue code ?](git-make-merging-great-again/contents-1.md)
+* [Est-ce que les erreurs de merges viennent du code ajouté ou du code déjà présent ?](git-make-merging-great-again/contents-1.md)
 * [Impact des contributeurs minoritaires sur la qualité du code des projets open-source](git-make-merging-great-again/contents-2.md)
 
 ## Code Analysis
