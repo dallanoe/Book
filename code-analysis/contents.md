@@ -18,11 +18,15 @@ We are four students in last year of Polytech' Nice-Sophia specialized in Softwa
 
 ## I. Research context /Project
 
-La création de la classe Properties remonte à Java 1.0 bien avant que des concepts objet plus ou moins équivalent soient introduits comme les maps. Les properties jouent un rôle important dans un grand nombre de projets Java. Elles sont généralement utilisées pour sauvegarder les données de configuration des projets Java ou les paramètres. Le moyen le plus répandu pour les stocker est de les inscrire dans des fichiers .properties qui seront par la suite lus par le programme, cependant elles peuvent aussi être créé dans le code à l'aide de la méthode setProperty\(\).
+La création de la classe Properties remonte à Java 1.0 bien avant que des concepts objet plus ou moins équivalent soient introduits comme les maps. Les properties jouent un rôle important dans un grand nombre de projets Java. Elles sont généralement utilisées pour sauvegarder les données de configuration des projets Java ou les paramètres. Par exemple, elles peuvent indiquer l'URL de la base de donnée et les informations pour s'y connecter, ou encore quel logger utiliser et quel niveau de log on souhaite avoir lors de l'execution. 
+
+Le moyen le plus répandu pour les stocker est de les inscrire dans des fichiers .properties qui seront par la suite lus par le programme, cependant elles peuvent aussi être créé dans le code à l'aide de la méthode setProperty\(\).
 
 Un autre avantage des properties est que lors d'un changement dans un des fichiers il n'est pas nécessaire de recompiler le code java pour prendre en compte cette modification. Un des objectifs des properties est de permettre une modification fréquente si besoin.
 
 Même si cette "technologie" date de 1996 elle reste indispensable et il serait très difficile de la remplacer non seulement par sa longévité et l'habitude des développeurs à l'utiliser, mais surtout, car sa disparition entraînerait des importants problèmes de compatibilité.
+
+
 
 Cependant même si les properties sont omniprésentes dans les projets Java on peut se demander où et comment les développeurs les utilisent. Ce sont ces aspects-là que nous souhaitons approfondir.
 
@@ -36,9 +40,9 @@ En effet, nous trouvons intéressant de comprendre et de pouvoir quantifier l’
 
 Nous avons découpé ce thème en trois questions : 
 
-* Où les développeurs utilisent les properties ? Uniquement dans le code ou bien dans l’ensemble du projet ?  
+* Où les développeurs utilisent les properties ? Uniquement dans le code ou bien dans l’ensemble du projet ? Par exemple, un projet peut utiliser les properties uniquement dans son code mais pas dans ses tests, ou a l'inverse les utiliser dans ses deux parties. 
 * Comment les properties sont utilisés ? Directement grâce aux méthodes natives de java ou sont-elles manipulées par le biais de librairie ou de wrappers ?  
-* Est ce que la majorité des projets utilisent les properties Java dans un même but ?
+* Est ce que la majorité des projets utilisent les properties Java dans un même but ? Par exemple, pour indiquer l'URL de la base de donnée ou le type de logger a utiliser. Ou a l'inverse pour des besoin propre au métier de leur projet 
 
 ### B KPI
 
