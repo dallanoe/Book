@@ -35,9 +35,13 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 ### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-* Plusieurs questions se posent : Où trouver les tests existants ? Est-il nécessaire de tout tester ? Comment trouver les zones chaudes d'un code ?
-* Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki. \(On associe ici la métrique de la chaleur à la fréquence d'accès à un composant lors d'une utilisation classique de XWiki\)
-* On arrive donc à l'hypothèse suivante : les points chauds d'un projet sont-ils ceux qui causent le plus de problèmes?
+Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
+
+Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécéssaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
+
+De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
+
+En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
 
 ### 2.2 Raisonnement/Méthodologie
 
