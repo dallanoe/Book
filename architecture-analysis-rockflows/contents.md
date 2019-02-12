@@ -13,17 +13,17 @@ Nous sommes quatre étudiants en dernière année à Polytech Nice Sophia Antipo
 
 ## Introduction : Dépendre avec modération
 
-Les dépendances sont un merveilleux moyen de réutiliser des codes existants et obtenir un gain de temps conséquent. Cependant, il est souvent impossible de connaitre la globalité de ces dernières et d'en appréhender leurs qualités à première vue. Nous devenons dépendant de toutes les erreurs persistantes transmisses par les dépendances.
+Les dépendances sont un merveilleux moyen de réutiliser des codes existants et obtenir un gain de temps conséquent. Cependant, il est souvent impossible de connaitre la globalité de ces dernières et d'en appréhender leurs qualités à première vue. Nous devenons dépendants de toutes les erreurs persistantes transmisses par les dépendances.
 
 De plus, un projet de taille importante contenant de nombreuses dépendances peut rapidement gagner en complexité. En effet, à cause de ces dernières, un projet devient difficilement contrôlable en terme de complexité.
 
 Est-ce vraiment si facile de réutiliser ces dépendances ? Qu’en est-il de la qualité et qu’est-ce alors que cette qualité ? 
 
-Nous vous proposons dans ce chapitre de vous présenter une démarche à suivre lors de l'arrivée dans un projet de taille conséquente en tant que développeur pour mieux l'appréhender. Nous prenons appui sur notre retour d'expérience sur le projet ROCKFlows et ce à quoi nous avons été confrontés à notre arrivé sur ce dernier. 
+Nous vous proposons dans ce chapitre de vous présenter une démarche à suivre lors de l'arrivée dans un projet de taille conséquente en tant que développeur, pour mieux l'appréhender. Nous prenons appui sur notre retour d'expérience sur le projet ROCKFlows et ce à quoi nous avons été confrontés à notre arrivée sur ce dernier. 
 
 Notre développement se divise en deux parties principales :
 
-La première présente les différentes complexités résultants des dépendances et la seconde introduit notre solution à l'échelle globale du projet et à plus petit grain, pour chaque type de complexité.
+La première présente les différentes complexités résultant des dépendances et la seconde introduit notre solution à l'échelle globale du projet et à plus petit grain, pour chaque type de complexité.
 
 ## I. Contexte de recherche : ROCKFlows
 
@@ -33,45 +33,52 @@ Pour l’utilisateur non-expert, ce produit se base sur le principe de boîte no
 
 Ayant, pour la majorité du groupe, travaillé sur ROCKFlows lors de projets précédents, il nous semblait intéressant d'analyser ce projet plus en détails. Nous avons fait face à cet imposant projet \(39 dépôts différents\) et il a été difficile de visualiser le projet dans son ensemble. Nous avions donc à cœur d'aider les nouveaux arrivants ainsi que les contributeurs déjà présents sur le projet à avoir une vision plus globale de ROCKFlows. 
 
-## II. Questionnement
+## II. Questionnement : Les dépendances et leur impact
 
 ### II.1 Observations et problématique générale
 
-Plusieurs membre de notre équipe ont réalisé leur projet de fin d'étude en relation avec ROCKFlows. Avant de commencer le développement, nous avons été confrontés à un projet imposant et dans lequel il est difficile d'entrer. Cela nous a donc pris beaucoup de temps avant de nous familiariser avec l'ensemble du projet. Ceci est un problème commun à beaucoup de projets, dès lors qu'ils sont conséquents. Cette dette technique était notamment empirée par des dépendances autant internes qu'externes. C'est donc sur cet aspect que nous avons voulu diriger notre étude. L'objectif est d'analyser l'impact des dépendances sur la qualité de ROCKFlows et nous en sommes donc arrivés  à la question suivante : 
+Plusieurs membres de notre équipe ont réalisé leur projet de fin d'étude en relation avec ROCKFlows. Avant de commencer le développement, nous avons été confrontés à un projet imposant et dans lequel il est difficile d'entrer. Cela nous a donc pris beaucoup de temps avant de nous familiariser avec l'ensemble du projet. Ceci est un problème commun à beaucoup de projets, dès lors qu'ils sont conséquents. Cette complexité était notamment empirée par des dépendances autant internes qu'externes. C'est donc sur cet aspect que nous avons voulu diriger notre étude. L'objectif est d'analyser l'impact des dépendances sur la qualité d'un projet en s'appuyant sur ROCKFlows et nous en sommes donc arrivés  à la question suivante : 
 
 _**Les dépendances impactent-elles la qualité du projet ROCKFlows ?**_
 
   
-__La qualité pouvant être exposée par plus métriques comme le "code-smell", le nombre de bug, les vulnérabilités du code. Néanmoins, nous nous sommes pas attardé sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(Un seul dépôt contenait des tests\).
+__La qualité peut être exposée par plusieurs métriques comme le "code-smell", le nombre de bugs, les vulnérabilités du code. Néanmoins, nous ne nous sommes pas attardés sur le pourcentage de couverture des tests puisque ce dernier était trop faible \(un seul dépôt contenait des tests\).
 
 ###  II.2. Sous-parties
 
-L'état de fait dans lequel nous trouvions nous a mené à deux sous-parties qu'il nous semblait intéressantes à développer :
+L'état de fait dans lequel nous trouvions nous a mené à deux parties qu'il nous semblait intéressantes à développer :
 
-1. **Mise en place d'un guide permettant à un débutant de visualiser un projet imposant dans son ensemble**.
-2. **Analyse des fuites de qualité logicielle provenant des dépendances au sein d'un projet**.
+1. **Analyse des fuites de qualité logicielle provenant des dépendances au sein d'un projet**.
+2. **Mise en place d'un guide permettant à un débutant de visualiser un projet imposant dans son ensemble**.
 
 ### II.3. Intérêt de ces questionnements
 
-L'intérêt principal de notre point de vue est de fournir une aide tant aux développeurs qu'aux nouveaux arrivants. De plus, nous avons eu des retours de développeurs de ROCKFlows rapportant que ce problème est récurrent. Les développeurs déjà présents sur le projet ont seulement connaissance de leur partie du projet et ont rarement une vision globale. De ceci découle notre premier problème : les développeurs arrivant sur le projet ne trouvent pas de documentation générale sur le projet étant donné qu'aucun développeur expérimenté sur le projet a la connaissance sur la totalité du projet.
+L'intérêt principal de notre point de vue est de fournir une aide tant aux développeurs qu'aux nouveaux arrivants. De plus, nous avons eu des retours de développeurs de ROCKFlows rapportant que ce problème est récurrent. Les développeurs déjà présents sur le projet ont seulement connaissance de leur partie du projet et ont rarement une vision globale. De ceci découle notre second problème : les développeurs arrivant sur le projet ne trouvent pas de documentation générale sur le projet étant donné qu'aucun développeur expérimenté sur le projet a la connaissance sur la totalité du projet.
 
-Fournir cet outil permettra donc d'élargir la vision des développeurs de ROCKFlows, ainsi que fournir un point d'entrée dans le projet pour les nouveaux arrivants.
+Fournir cet outil permettra donc d'élargir la vision des développeurs sur un projet de taille conséquente, ainsi que fournir un point d'entrée dans le projet pour les nouveaux arrivants.
 
-## III. information gathering
+## III. Les différents types de complexité
 
 Préciser vos zones de recherches en fonction de votre projet,
 
 1. les articles ou documents utiles à votre projet
 2. les outils
+3. dette technique grandis avec les dépendances ?
 
-## IV. Hypothesis & Experiences
+## IV. Quelle solution pour appréhender cette complexité ?
+
+### IV.1. Notre outil de visualisation globale du projet
+
+### IV.2. Mise en avant de chaque type de complexité
+
+## V. Hypothesis & Experiences
 
 1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
 2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
 
-## V. Result Analysis and Conclusion
+## VI. Result Analysis and Conclusion
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
