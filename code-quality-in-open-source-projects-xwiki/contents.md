@@ -64,7 +64,7 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 
 JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
 
-#### Analyses des KPI \(analyse faite le 27 Janvier 2018\)
+#### Analyses des KPI \(analyse faite le 27 Janvier 2019\)
 
 * Présence d'un README.md :
   * Présent et est assez complet, contient les parties \(_Contributing, Getting Help, Continuous Integration Builds, Code Coverage_ et _Building from Source_\).
@@ -117,6 +117,32 @@ De plus, en regardant certains commentaires de certains membres de JUnit à l'é
 ![Pas tr&#xE8;s encourageant de dire: &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
 
 On en déduit que les contributions externes ne semble pas être une priorité pour l'équipe.
+
+### Mockito
+
+#### Analyses des KPI \(analyse faite le 10 Février 2019\)
+
+* Présence d'un README.md :
+  * Présent et à jour. Le document  contient les grandes lignes permettant l'accueil dans le projet \( Version courante, liens vers les documentations fonctionnelles et techiques et les différents moyens de contacter l'équipe\)
+  * Il est clairement écrit que le projet désire des contributions externes et tout est fait pour qu'un nouvel entrant puisse construire le projet et proposer des modifications / envoyer du code.
+* Méthode de contribution :
+  * Sur les 239 tickets ouverts, 14 portent un label "please contribute" et sont adaptés à un nouveau contributeur
+  * Un fichier CONTRIBUTING.md est préset et commence par les différents endroits où un externe au projet peut entrer en contact avec la communauté pour obtenir du support. Ce fichier décrit clairement les deux branches principales du projet \(version courante et version à venir\). Les attentes en terme de pull request \(commits, coding style et procédures\) sont décrites.
+* Badges \(ou _shields_\) :
+  * Travis.CI \(build : passing\)
+  * Codecov : Couverture en test unitaire de 88%
+  * Versions : Licence, Release notes, Dernière version téléchargeable \(binaire et maven\), dernière version documentée
+* Présence d'une intégration continue sur Travis.CI et Codecov.
+* Présence d'un CONTRIBUTING.md
+  * Présent et détaillé, voir méthodes de contributions.
+* Exemples de code :
+  * Présent sur le site officiel du projet
+* Présence de Javadoc, à jour et mise à jour automatiquement à chaque commit
+* Temps moyen de réponse aux issues: environ ??
+* Nombre de commits sur master : ??? au moment de la vérification
+* Nombre de contributeurs : ???
+
+#### Analyses des contributions
 
 #### Conclusion
 
