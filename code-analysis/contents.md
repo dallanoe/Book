@@ -18,9 +18,13 @@ We are four students in last year of Polytech' Nice-Sophia specialized in Softwa
 
 ## I. Research context /Project
 
-Préciser ici votre contexte.
+La création de la classe Properties remonte à Java 1.0 bien avant que des concepts objet plus ou moins équivalent soient introduits comme les maps. Les properties jouent un rôle important dans un grand nombre de projets Java. Elles sont généralement utilisées pour sauvegarder les données de configuration des projets Java ou les paramètres. Le moyen le plus répandu pour les stocker est de les inscrire dans des fichiers .properties qui seront par la suite lus par le programme, cependant elles peuvent aussi être créé dans le code à l'aide de la méthode setProperty\(\).
 
-Pourquoi c'est intéressant.
+Un autre avantage des properties est que lors d'un changement dans un des fichiers il n'est pas nécessaire de recompiler le code java pour prendre en compte cette modification. Un des objectifs des properties est de permettre une modification fréquente si besoin.
+
+Même si cette "technologie" date de 1996 elle reste indispensable et il serait très difficile de la remplacer non seulement par sa longévité et l'habitude des développeurs à l'utiliser, mais surtout, car sa disparition entraînerait des importants problèmes de compatibilité.
+
+Cependant même si les properties sont omniprésentes dans les projets Java on peut se demander où et comment les développeurs les utilisent. Ce sont ces aspects-là que nous souhaitons approfondir.
 
 ## II. Observations/General question
 
