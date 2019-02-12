@@ -1,25 +1,15 @@
 # Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?
 
-**Date de rendu finale : March 2018 au plus tard**
-
-Remarques :
-
-Les titres peuvent changer pour être en adéquation avec votre étude.
-
-De même il est possible de modifier la structure, celle qui est proposée ici est là pour vous aider.
-
-Utilisez des références pour justifier votre argumentaire, vos choix etc.
-
 ## Authors
 
 Nous sommes quatre étudiants en Master 2 d'Architecture logicielle : 
 
 * Rudy Meersman &lt;rudy.meersman@etu.unice.fr&gt;
 * Gaétan Duminy &lt;gaetan.duminy@etu.unice.fr&gt;
-* Damoy Fornali &lt;damien.fornali@etu.unice.fr&gt;
+* Damien Fornali &lt;damien.fornali@etu.unice.fr&gt;
 * Amandine Benza &lt;amandine.benza@etu.unice.fr&gt;
 
-## I. Contexte de recherche / projet
+## I. Contexte de recherche
 
 ### 1.1. Présentation de XWiki <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
@@ -41,9 +31,9 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 * L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
 * Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
-## II. Observations / Question générale
+## II. Question générale
 
-### 2.1  Question Générale <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 * Plusieurs questions se posent : Où trouver les tests existants ? Est-il nécessaire de tout tester ? Comment trouver les zones chaudes d'un code ?
 * Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki. \(On associe ici la métrique de la chaleur à la fréquence d'accès à un composant lors d'une utilisation classique de XWiki\)
