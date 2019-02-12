@@ -28,10 +28,31 @@ Cependant même si les properties sont omniprésentes dans les projets Java on p
 
 ## II. Observations/General question
 
-1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses.
-2. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
+### A Question
 
-Cette première étape nécessite beaucoup de réflexion pour se définir la bonne question afin de poser les bonnes bases pour la suit.
+Nous avons constaté que la plupart des projets Java utilisent à un moment donné des properties. Nous nous sommes donc demandé jusqu'où les développeurs poussent l’utilisation de cette technologie.
+
+En effet, nous trouvons intéressant de comprendre et de pouvoir quantifier l’utilisation que font les développeurs de cette brique élémentaire de java.
+
+Nous avons découpé ce thème en trois questions : 
+
+* Où les développeurs utilisent les properties ? Uniquement dans le code ou bien dans l’ensemble du projet ? 
+* Comment les properties sont utilisés ? Directement grâce aux méthodes natives de java ou sont-elles manipulées par le biais de librairie ou de wrappers ? 
+* Est ce que la majorité des projets utilisent les properties Java dans un même but ?
+
+### B KPI
+
+Pour répondre à ces trois questions, nous avons défini les KPI suivants. En ce qui concerne la question d'où sont utilisé les properties, nous allons, afin d’y répondre, localiser l’ensemble des appels aux méthodes permettant d’accéder ou de modifier les properties. Que ce soit grâce aux méthodes natives de java ou bien à l’aide d’une librairie / wrapper. Nous avons défini que les properties sont utilisés dans une des parties d’un projet \(par exemple la partie test\) si le rapport entre le nombre d’appels aux méthodes trouvées dans la partie courante sur le nombre total d’utilisations des properties doit être supérieur à 0,05 \(5%\) . Nous avons défini cette limite a 5% pour éviter de nous retrouver dans le cas extrême ou un projet qui appellerait 40 000 fois les properties dans le code, mais qui appellerait seulement 4 fois les properties dans ses tests ne soit considéré comme un projet qui utilise les properties dans ses tests. Cependant, nous avons défini ce seuil assez bas, car nous estimons qu’en dessous de ce seuil, il n’y a pas assez d’appels pour considérer la partie comme utilisant réellement les properties. Une fois que nous aurons listé la position de ces appels grâce au nom des classes / package qui les contiennent, nous serons en mesure de répondre à cette première question.
+
+Afin de pouvoir différencier les projets qui utilises les méthodes natives de ceux qui utilise des librairies / wrapper, nous allons comparer le nombre de properties créées dans les fichiers .property avec le nombre d’appels aux accesseurs de ces properties. Nous allons considérer qu’un projet utilise des librairies / wrapper à partir du moment ou le rapport nombre d’appels au getter trouvé sur le nombre de properties déclaré dans le fichier properties est inférieur à 0,10 \(10%\). Sinon, nous considérons que le projet utilise les méthodes natives de java. Nous avons choisi 10% comme seuil par une première observation rapide de notre dataset ou les projets qui utilisaient des librairies ou wrappeur s'approchait de cette valeur sans jamais la dépasser.
+
+Pour répondre à notre dernière question, nous allons lister les noms des properties utilisés dans l’ensemble des projets. Nous allons par la suite vérifier naïvement si certains noms se retrouvent dans différents projets.
+
+Nous avons conscience que cette méthode de validation reste limitée puisqu'il est possible que deux projets utilisent une properties pour les mêmes raisons, mais nommée différemment. Cependant, cette métrique nous donnera une première réponse partielle.
+
+
+
+
 
 ## III. information gathering
 
