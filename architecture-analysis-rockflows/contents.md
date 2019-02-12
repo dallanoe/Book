@@ -1,4 +1,4 @@
-# En quoi la qualité des dépendances influe sur la qualité globale du projet ROCKFlows ?
+# En quoi les dépendances influent la complexité d'un projet : Étude du projet ROCKFlows
 
 ## Auteurs
 
@@ -11,11 +11,19 @@ Nous sommes quatre étudiants en dernière année à Polytech Nice Sophia Antipo
 
 
 
-## Introduction
+## Introduction : Dépendre avec modération
 
-Ce chapitre présente le travail d'étude produit par notre groupe sur le projet de _machine learning_ ROCKFlows, dans le cadre de la matière Rétro-Ingénierie, Maintenance et Évolution des Logiciels \(RIMEL\). 
+Les dépendances sont un merveilleux moyen de réutiliser des codes existants et obtenir un gain de temps conséquent. Cependant, il est souvent impossible de connaitre la globalité de ces dernières et d'en appréhender leurs qualités à première vue. Nous devenons dépendant de toutes les erreurs persistantes transmisses par les dépendances.
 
-Pour commencer, nous allons présenter notre contexte de recherche. Nous continuerons par une présentation de notre question, accompagnée de nos hypothèses. Ensuite, nous expliquerons notre démarche et nous terminerons par une analyse des résultats obtenus.
+De plus, un projet de taille importante contenant de nombreuses dépendances peut rapidement gagner en complexité. En effet, à cause de ces dernières, un projet devient difficilement contrôlable en terme de complexité.
+
+Est-ce vraiment si facile de réutiliser ces dépendances ? Qu’en est-il de la qualité et qu’est-ce alors que cette qualité ? 
+
+Nous vous proposons dans ce chapitre de vous présenter une démarche à suivre lors de l'arrivée dans un projet de taille conséquente en tant que développeur pour mieux l'appréhender. Nous prenons appui sur notre retour d'expérience sur le projet ROCKFlows et ce à quoi nous avons été confrontés à notre arrivé sur ce dernier. 
+
+Notre développement se divise en deux parties principales :
+
+La première présente les différentes complexités résultants des dépendances et la seconde introduit notre solution à l'échelle globale du projet et à plus petit grain, pour chaque type de complexité.
 
 ## I. Contexte de recherche : ROCKFlows
 
