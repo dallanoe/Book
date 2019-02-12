@@ -36,8 +36,8 @@ En effet, nous trouvons intéressant de comprendre et de pouvoir quantifier l’
 
 Nous avons découpé ce thème en trois questions : 
 
-* Où les développeurs utilisent les properties ? Uniquement dans le code ou bien dans l’ensemble du projet ? 
-* Comment les properties sont utilisés ? Directement grâce aux méthodes natives de java ou sont-elles manipulées par le biais de librairie ou de wrappers ? 
+* Où les développeurs utilisent les properties ? Uniquement dans le code ou bien dans l’ensemble du projet ?  
+* Comment les properties sont utilisés ? Directement grâce aux méthodes natives de java ou sont-elles manipulées par le biais de librairie ou de wrappers ?  
 * Est ce que la majorité des projets utilisent les properties Java dans un même but ?
 
 ### B KPI
@@ -58,20 +58,58 @@ Nous avons conscience que cette méthode de validation reste limitée puisqu'il 
 
 ### A. Dataset
 
+Nous avons fait le choix de l'imiter le scope des projets que nous allons analyser afin de nous créer un point d'entrée et de rendre le projet réalisable en deux mois.
+
+Nous nous sommes dans un premier temps restreints au projet GitHub car c’est une des sources de données les plus rapidement utilisables et les plus populaires. De plus, nous avons préféré nous concentrer sur les trente premiers projets Java qui avaient le plus d’étoiles. Nous avons fait ce choix dans l’optique d’obtenir un dataset contenant seulement des “gros” projets Java qui ont du vécu et qui donc, pour nous, sont bien plus représentatif dans l’utilisation qu’ils vont faire des Properties que si nous avions sélectionné des projets de manière aléatoire par l’API GitHub. Au vu de l’ancienneté des Properties \(Java 1.0\), nous n’avons pas exclu les projets qui ne sont plus maintenus, car ils restent pertinents dans notre contexte. Enfin, nous avons réduit une seconde fois notre dataset en nous focalisant uniquement sur des projets Maven puisqu’ils offrent une structure définie et constante, ce qui nous permet de plus facilement parcourir et localiser les appels au properties.
+
 
 
 ### B. Protocole
 
+Notre protocole est découpé en trois parties distinctes.
 
+#### Récupération et filtrage des répositories
+
+* Dans un premier temps, on collecte l’ensemble des repository \(30 premiers projets java qui ont le plus d’étoiles sur GitHub\).  
+* Afin d’épurer le dataset, nous allons lancer plusieurs scripts bash qui ont pour but de nous indiquer les projets qui ne sont pas pertinents pour notre étude. 
+  * Un premier script bash nous indique quels projets ne sont pas des projets Maven.
+  * Un second script qui permet de vérifier la présence de properties java pour éliminer les projets qui n’en contiennent pas.
+
+#### Analyse et cartographie des projets
+
+* Dans un premier temps, nous parcourons l’ensemble des fichiers properties afin de lister les properties et récupérer leurs noms. 
+* Ensuite, grâce a Spoon, nous allons effectuer un premier passage pour répertorier la localisation des différents appels aux méthodes Java “System.setProperties” et System.getProperties”. Cette étape est importante, car elle nous permet de différencier les deux types de projets que nous allons traiter. Ceux qui utilise directement les méthodes Java natives \(“System.setProperties” et System.getProperties”\) des projets qui utilise une librairie ou un wrapper pour interagir avec les properties.   Cette différenciation est cruciale, car dans le premier cas, nous ne devons effectuer qu’un seul passage avec spoon pour localiser les appels aux méthodes natives. Alors que dans le second cas, nous ne devons pas cette fois-ci localiser les méthodes natives Java, mais identifier quelles méthodes du wrapper / librairie encapsule ces méthodes. Puis, effectuer une seconde passe avec spoon pour localiser l’utilisation de ces méthodes encapsulantes. 
+* Nous exportons ces résultats au format CSV pour qu’ils puissent être utilisés par notre générateur de graphique.
+
+#### Génération des graphiques
+
+Nous passons nos CSV précédemment générés à un script R qui va construire les graphiques pour chaque projet analysé, mais également, des graphiques pour l’ensemble des projets.
 
 ### C. **Limites de notre dataset**
 
+Nous avions dans la partie filtrage des repositories un script bash qui nous permettait de vérifier la présence de fichiers liés au déploiement \(DockerFile, JenkinsFile, docker-compose.yml…\) afin de vérifier s’il était possible de cartographier l’utilisation des properties dans le déploiement. Nous avons constaté que sur les trente projets traités, seulement quatre comportaient ce type de fichier. Ces projets n’avaient pas de cohérence au niveau de la rédaction de ces fichiers ce qui rendait l’analyse automatique impossible. De plus, les fichiers étant très complexes, même une analyse manuelle aurait été difficile et chronophage. Pour toutes ces raisons, nous avons décidé de ne plus prendre en compte la partie déploiement dans notre étude.
+
 ## IV. Hypothesis & Experiences
 
-1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
-2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
-3. Explicitez bien les outils utilisés et comment.
-4. Justifiez vos choix
+Intuitivement, d’après notre expérience et une analyse rapide des projets de notre dataset, nous avons formulé les hypothèses suivantes.
+
+#### Les properties Java sont principalement utilisées grâce aux méthodes Java natives
+
+Nous pense qu’au vu de la simplicité de l’utilisation des properties java \( appel à un simple getter ou setter\), nous pouvons supposer qu’il n’est pas nécessaire de mettre en place une encapsulation pour utiliser ces méthodes.
+
+Pour vérifier cette hypothèse, nous allons nous appuyer sur le rapport entre le nombre de properties set et le nombre d’utilisations de “System.getProperty”
+
+#### Seules quelques properties sont présentes dans les tests 
+
+Nous avons l’intuition que seul un sous-ensemble des properties sont utilisées dans les tests. Notamment les properties de configuration par exemple celles qui indiquent quel type base de données utiliser ou encore son adresse.
+
+Pour valider cette hypothèse, nous allons utiliser notre cartographie des projets afin de vérifier qu’effectivement, le nombre d’appels aux properties dans les tests est supérieur à 5% du nombre d’appels total, mais est bien inférieur au nombre de properties utiliser dans le code.
+
+#### Une partie des properties sont génériques, un sous-ensemble des properties java sont donc utilisé de la même manière dans tous les projets
+
+Nous avons constaté en parcourant les ReadMe des différents projets qu’en plus des properties spécifiques au métier de chaque projet, une partie était identiques dans plusieurs projets. Notamment les properties qui permettent de configurer les éléments communs au projet tels que les bases de données, les loggers ou la localisation des fichiers en entrée et en sortie.
+
+Pour répondre à cette question , nous allons lister le nom des properties utilisées dans chaque projet. Nous allons ensuite vérifier que les mêmes noms apparaissent dans plusieurs projets.
 
 ## V. Result Analysis and Conclusion
 
