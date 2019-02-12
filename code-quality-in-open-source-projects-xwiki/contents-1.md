@@ -9,6 +9,12 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 * Damien Fornali &lt;damien.fornali@etu.unice.fr&gt;
 * Amandine Benza &lt;amandine.benza@etu.unice.fr&gt;
 
+## Introduction
+
+Des technologies émergent tous les jours. Les organisations, Open Source comme privées, produisent de plus en plus des systèmes qui utilisent une multitude de technologies, concepts et outils. Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ce problèmes émergent. Avant de proposer une méthodologie afin de tenter de répondre à ce problème, comment pouvons nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
+
+Ce document va donc présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Open Source, car il est assez peu envisageable de travailler sur un projet sans posséder ses sources ainsi que les informations relatives aux problèmes rencontrés. Afin de les présenter concrètement, nous présentons dans une première partie le contexte de notre recherche. Ensuite, nous présenterons notre démarche ainsi que les résultats que nous avons obtenus.
+
 ## I. Contexte de recherche
 
 ### 1.1. Présentation de XWiki <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
@@ -31,10 +37,6 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 * L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
 * Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
-## II. Question générale
-
-### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
 Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
 
 Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécéssaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
@@ -42,6 +44,10 @@ Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander o
 De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
+
+## II. Question générale
+
+### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 2.2 Raisonnement/Méthodologie
 
@@ -88,7 +94,5 @@ Précisez votre utilisation des outils ou les développements \(e.g. scripts\) r
 
 ## VI. Références
 
-
-
-![](../.gitbook/assets/logo_uns%20%281%29.png) UCA : University Côte d'Azur \(french Riviera University\)
+UCA : University Côte d'Azur \(french Riviera University\)![](../.gitbook/assets/logo_uns%20%281%29.png)
 
