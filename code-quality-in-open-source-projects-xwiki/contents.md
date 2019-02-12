@@ -9,7 +9,7 @@ Nous sommes quatre étudiants en dernière année de Sciences Informatiques à P
 * MORTARA Johann &lt;johann.mortara@etu.unice.fr&gt;
 * ROUSSEAU Nikita &lt;nikita.rousseau@etu.unice.fr&gt;
 
-## I. Contexte de recherche
+## I. Les contributeurs, la vraie ressource de l'open-source
 
 Le sujet ayant retenu notre attention concernait le projet XWiki. Le sujet initial, était subdivisé en deux questions :
 
