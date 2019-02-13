@@ -116,6 +116,8 @@ De plus, en regardant certains commentaires de certains membres de JUnit à l'é
 
 ![Pas tr&#xE8;s encourageant de dire: &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
 
+Pour confirmer mes propos je me suis rendu sur le **Gitter** de l'équipe JUnit, me suis fait passé pour un nouveau contributeur qui aimerait contribuer mais qui ne sait pas par où commencer. Le résultat est assez décevant... les membres de l'équipe JUnit ne m'ont pas répondu et ont continué leur discussion. C'est un contributeur externe qui m'a aiguillé sur une de ses _issues_ qu'il a fait il y'a quelques années et qui s'est proposé de m'aider si j'en avais le besoin.
+
 On en déduit que les contributions externes ne semble pas être une priorité pour l'équipe.
 
 ### Mockito

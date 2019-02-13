@@ -127,6 +127,8 @@ Nous avons décidé de prendre SonarQube comme premier projet test car il a :
 
 **6. Comment pousser l’analyse plus loin \( comparer les sections de code \)  ?**
 
+Nous avons trouvé un moyen de pousser notre analyse plus loin en inspectant le code des fichiers modifier. De ce manière, on peut être plus précis sur nos résultats. En plus de dire que c'est le code ajouté qui a provoqué l'erreur, nous serons capable de préciser si la personne a enlever ou ajouter du code et préciser la fonction/ligne qui provoque l'erreur modulo les erreurs d'implémentation.
+
 ## III. Expériences
 
 Nous avons décidé de nous intéresser au merge qui sont des pulls resquest afin de restreindre la taille des données manipulé. Dans un premier temps nous avons extrait automatiquement 61 pulls requests contenant un total de 665 commis dont 36 commis sont en erreurs.
