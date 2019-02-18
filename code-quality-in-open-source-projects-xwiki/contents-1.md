@@ -37,30 +37,35 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 * L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
 * Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
+## II. Question générale
+
+### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
 Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
 
-Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécéssaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
+Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécessaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
 
 De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
 
-## II. Question générale
+### 2.2 Raisonnement/Première Méthodologie //RENAME
 
-### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+La première méthodologie que nous avions envisagé de mettre en place était la suivante:
 
-### 2.2 Raisonnement/Méthodologie
+* 1° : Identifier les parties de XWiki les plus utilisées par des utilisateurs lambda.
+* 2° : Installer XWiki et suivre des cas d'utilisations prédéfinis en gardant une trace de nos parcours.
+* 3° : Comparer nos différentes utilisations afin d'identifier les composants les plus utilisés.
+* 4° : S'assurer que les composants que nous avons le plus utilisés lors de nos parcours font bien partie de ceux par lesquels passent le plus les utilisateurs moyens.
+* 5° : Essayer de lier ces points "chauds" du code de XWiki avec les parties posant le plus de problèmes. C'est à dire les composants ayant le plus d'issues critiques.
 
-* **Méthodologie de départ :**
-* Trouver quelles parties de XWiki sont les plus utilisées par des utilisateurs lambda.
-* Installer XWiki et suivre des cas d’utilisations prédéfinis.
-* Comparer nos différentes utilisations pour trouver les composants les plus utilisés.
-* Essayer de lier les points “chauds” du code avec les parties posant les plus de problèmes \(avec le plus d’issues\).
-*  **Soucis d’une telle méthodologie :**
-* Impossibilité d’identifier les points chauds des utilisateurs lambda : le coeur de XWiki étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Il est en revanche possible de savoir quelles extensions additionnelles sont les plus utilisées, en se basant sur leur nombre de téléchargements. 
-* =&gt; Cette partie n’est pas forcément utile pour nous puisque nous voulons nous baser sur le cœur de XWiki.
-* Faire une heatmap à la main perd alors de son intérêt : car nous ne serions capable de ne collecter qu’une faible quantité de données. Ces données ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
-* De plus difficultés à lier le code avec les pages XWiki associées.
+Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette méthodologie.
+
+Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de XWiki étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon, nous ne serions capable de ne collecter qu’une faible quantité de données. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
+
+Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur laquelle nous appuyer, celle-ci n'étant pas adaptée à notre étude et ne fournissant pas des résultats significatifs. 
+
+En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki, une telle méthodologie pourrait être adaptée. En effet, contrairement au cœur de XWiki, il est possible de savoir quelles extensions sont les plus utilisées, en se basant sur leur nombre de téléchargements. Ainsi, se baser sur ces informations et des informations récoltées à la main pourrait être intéressant si nous choisissions d'étendre le sujet de cette étude au delà du cœur de XWiki.
 
 ## III. Collecte d''informations
 
