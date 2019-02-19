@@ -47,7 +47,23 @@ Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir conf
 
 ## IV. Une chambre bien rangée est-elle plus accueillante ?
 
+En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
+En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :R
+
+* README.md
+* Getting started ?
+* Getting help ?
+* Badges ?
+* How to build
+* Code example
+* Contributing.md
+* Intégration continue
+* Javadoc
+* Nombre de jours depuis la dernière mise à jour de la documentation
+* Temps moyen de réponse aux issues
+* Nombre de commits
+* Nombre de contributeurs
 
 ## V. Analyse des résultats et Conclusion
 
