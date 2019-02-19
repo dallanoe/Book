@@ -35,15 +35,15 @@
 * [Comment les utilisateurs de Docker Compose s'adaptent-ils aux changements de version selon les spéci](docker-ecosystem-analysis/comment-les-utilisateurs-de-docker-compose-sadaptent-ils-aux-changements-de-version-selon-les-specif.md)
 * [Comment les projets s’adaptent à l’évolution de Docker ?](docker-ecosystem-analysis/comment-les-projets-sadaptent-a-levolution-de-docker.md)
 
-## Code Quality in Open Source Projects \(XWiki\)
-
-* [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
-* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
-
 ## Analyzing PIX ecosystem
 
 * [Caractériser et mesurer l'évolutivité d'une base de code](analyzing-pix-ecosystem/caracteriser-et-mesurer-levolutivite-dune-base-de-code.md)
 * [Etude sur l'agilité d'un projet de start-up d'état](analyzing-pix-ecosystem/etude-sur-lagilite-dun-projet-de-start-up-detat.md)
+
+## Code Quality in Open Source Projects \(XWiki\)
+
+* [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
+* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
 
 ## 2017 : Best Article
 
