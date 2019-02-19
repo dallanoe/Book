@@ -26,10 +26,9 @@ Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur co
 
 ## III. Collecte d'informations
 
-1. les articles ou documents utiles à votre projet
-2. les outils
-
 Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
+
+
 
 * Junit 5
 * Mockito
@@ -40,8 +39,6 @@ Afin de cadrer notre recherche nous avons du définir la notion de contributeur.
 
 Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre analyse puisque l'ensemble des projets retenus reposent tous sur une communauté alors qu'XWiki est soutenu avec la société XWiki SAS. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets \(condition préalable à notre sélection\).
 
-
-
 Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
 ## IV. Hypothèses et expériences
@@ -50,6 +47,12 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
+
+* Papier 1
+* Papier 2
+* Papier 3
+
+Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grands de développeurs. Nous avons décider de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
 
 ## V. Analyse des résultats et Conclusion
 
@@ -145,8 +148,6 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 ### Hibernate
 
-Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
-
 #### Analyse des KPI
 
 * Présence d'un `README.md` :
@@ -154,6 +155,8 @@ Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer
   * Propose une redirection vers le `CONTRIBUTING.md`
 * Méthode de contribution :
   * Un fichier CONTRIBUTING.md est présent. Il apporte des précisions sur les licences utilisées dans le projet et fournit un guide des étapes à réaliser pour pouvoir contribuer au projet.
+
+Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
 
 #### Analyse des contributions
 
