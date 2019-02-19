@@ -24,16 +24,16 @@
 ## Code Analysis
 
 * [Projet Java Properties](code-analysis/contents.md)
-* [Projet 2](code-analysis/contents-1.md)
+* [Les feature toggles créent-ils de la dette technique ?](code-analysis/contents-1.md)
+
+## Machine Learning Explorations
+
+* [Comment est organisé le développement d'un projet Open Source de Machine Learning ?](machine-learning-explorations/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning.md)
 
 ## Code Quality in Open Source Projects \(XWiki\)
 
 * [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
 * [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
-
-## Machine Learning Explorations
-
-* [Comment est organisé le développement d'un projet Open Source de Machine Learning ?](machine-learning-explorations/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning.md)
 
 ## Docker Ecosystem Analysis
 
