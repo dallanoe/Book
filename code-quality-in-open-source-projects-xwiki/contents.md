@@ -49,7 +49,7 @@ Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir conf
 
 En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
-En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :R
+En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :
 
 * README.md
 * Getting started ?
@@ -70,14 +70,6 @@ En partant de cette hypothèse nous avons défini des métriques pouvant, d'apr�
 ### JUnit5
 
 JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
-
-En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
-
-En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :
-
-* KPI 1
-* KPI 2
-* KPI 3
 
 #### Analyses des KPI \(analyse faite le 27 Janvier 2019\)
 
