@@ -17,7 +17,19 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 
 ## I. Contexte de la recherche
 
-### 1.1. Qu'est-ce que XWiki ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
+### 1.1. Pourquoi des projets Open Source ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
+
+À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse grandement au fil du temps, tant au niveau de son code que de sa communauté.
+
+Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
+
+Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir.
+
+Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes.
+
+C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici XWiki, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention.
+
+### 1.2. Qu'est-ce que XWiki ?
 
 **XWiki** est un projet **Open Source** mature \(2003\) écrit en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
 
@@ -28,20 +40,6 @@ XWiki apporte une solution générique et configurable au client. Cela permet d'
 Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse les 100 000 lignes, il existe plus de 750 extensions et le nombre d'installations actives est estimé à 4500.
 
 Étudier un tel projet a une valeur inestimable. Vu la croissance des projets ouverts à multiple contributeurs, il est probable que nous soyons impliqués dans de tel projets dans notre carrière professionnelle. 
-
-### 1.2. Pourquoi des projets Open Source ?
-
-_Les projets Open Source sont de plus nombreux et populaires. Ceci est dû au fait qu'un tel projet implique généralement des contraintes différentes, souvent plus légères, que le développement d'un projet en entreprise._
-
-Cependant, ils peuvent très facilement grossir aussi bien au niveau du code qu’au niveau de sa communauté. Un projet d’une aussi grande taille créait des problèmes aussi bien gênants que variés. Son côté OpenSource est lui aussi source de bugs. En effet, plusieurs personnes pouvant participer inclus plusieurs façons de coder et donc plus de chance d’avoir des erreurs. Dans ce contexte, la qualité et la quantité de tests est primordial pour corriger ou éviter tous les soucis lié au code et à sa mise en place. Cependant, il est possible d’oublier ou alors de sauter une partie de code qui nous semble peu important mais qui peut mener à des cas problématiques mettant plusieurs heures, voir jours, pour être résolus dans un OpenSource entrainant donc une perte de temps qui accumulé, est considérable.
-
-Dans ce contexte, nous allons analyser le projet Xwiki avec plusieurs outils, sur lesquels le programme est hébergé, afin de fournir une solution ou piste pour répondre à ce problème. Pour cela nous avons Jira qui, grâce à son dashboard, nous fournira certaines informations sur le code en lui-même. Nous allons aussi utiliser Clover pour voir plus en profondeur les tests déjà existants et leur portée. Le code est hébergé sur Github, permettant ainsi l’analyse en profondeur des tests ou encore du code en lui même. Les résultats de ces outils seront ensuite mis en corrélation afin de fournir une réponse à cette problématique et aux questions que nous allons traiter tout au long de ce chapitre.
-
-* **Intérêts :**
-* Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source. 
-* **Objectifs :** 
-* L’objectif concret serait le suivant : à partir des issues se trouvant sur JIRA, des tests existants, des rapports d'engagement et des rapports de Clover, identifier où la qualité devrait être améliorée et où des tests automatisés devraient être nécessaires dans XWiki .
-* Augmenter la couverture de tests / automatisation de tests \(facilité à tester: augmentation de la fréquence de tests..\) devrait améliorer la qualité du code open sourc
 
 ## II. Question générale
 
