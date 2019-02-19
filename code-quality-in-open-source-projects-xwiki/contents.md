@@ -145,7 +145,15 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 ### Hibernate
 
-Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de \_Hibernate ORM\_.
+Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
+
+#### Analyse des KPI
+
+* Présence d'un `README.md` :
+  * Contient les consignes de base permettant de construire le projet.
+  * Propose une redirection vers le `CONTRIBUTING.md`
+* Méthode de contribution :
+  * Un fichier CONTRIBUTING.md est présent. Il apporte des précisions sur les licences utilisées dans le projet et fournit un guide des étapes à réaliser pour pouvoir contribuer au projet.
 
 #### Analyse des contributions
 
