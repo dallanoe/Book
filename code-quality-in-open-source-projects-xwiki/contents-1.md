@@ -29,7 +29,7 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 * 4500 installations actives
 * Projet de grande envergure
 
-### 1.2. Pourquoi XWiki ?
+### 1.2. Pourquoi des projets Open Source ?
 
 Les projets OpenSources commencent à être de plus en plus nombreux et populaires
 
@@ -75,7 +75,9 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ### 3.1.  Nouvelle Méthodologie <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-### 3.2.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 3.2.  Métriques <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+### 3.3.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ## III. Collecte d''informations
 
@@ -91,15 +93,15 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ![XWiki components issues](https://lh6.googleusercontent.com/aQAXC5tdJANK-tJ-5yhXHY5sqmIBpZ8-UhLoybQ6agKSH9NNIpk4YOkNGC2FgyHgbac90q1KkwY2RMipSfBTiZW3ux1_YkNa1Mnh0969gEj5w0Gx3D04lZQF5qm9qyQ3Ctn1nQsq)
 
-### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
-### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
 ![](https://lh6.googleusercontent.com/3VCprCHxCBPLG9PrU0x2sRIdlp5UDA7FhcjUQgyf-w0MxtB9rwpbFU9S0aINDIoQwVzCtkyz2viSuTknpjYI_TOEwdxBrfbMgB-8R1qnUPGDmkCpyYoUrFF538KBMbISVfdo3hGG)
 
 ## VI. Conclusion 
 
+### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
 ## VI. Outils\(?\) / Références
+
+### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 UCA : University Côte d'Azur \(french Riviera University\)![](../.gitbook/assets/logo_uns%20%281%29.png)
 
