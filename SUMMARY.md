@@ -40,12 +40,12 @@
 * [Caractériser et mesurer l'évolutivité d'une base de code](analyzing-pix-ecosystem/caracteriser-et-mesurer-levolutivite-dune-base-de-code.md)
 * [Etude sur l'agilité d'un projet de start-up d'état](analyzing-pix-ecosystem/etude-sur-lagilite-dun-projet-de-start-up-detat.md)
 
+## 2017 : Best Article
+
+* [What are the impacts of Test-Driven Development on code quality, code maintainability and test cover](2017-best-article/what-are-the-impacts-of-test-driven-development-on-code-quality-code-maintainability-and-test-covera.md)
+
 ## Code Quality in Open Source Projects \(XWiki\)
 
 * [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
 * [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
-
-## 2017 : Best Article
-
-* [What are the impacts of Test-Driven Development on code quality, code maintainability and test cover](2017-best-article/what-are-the-impacts-of-test-driven-development-on-code-quality-code-maintainability-and-test-covera.md)
 

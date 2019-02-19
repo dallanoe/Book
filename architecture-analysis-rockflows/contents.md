@@ -112,9 +112,44 @@ Nous avons pu voir différents types de problèmes liés aux dépendances. Ces p
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
 
-### IV.1. Mise en avant de chaque type de complexité
+### IV.1. Une première analyse avec SonarQube
 
+Notre démarche à pour objectif d'aider l'utilisateur à se faire une idée globale d'un projet pour qu'il puisse mieux l'appréhender. Nous proposons dans un premier temps un script qui de façon automatique va analyser l'ensemble des dépôts à condition qu'ils soient tous dans le même dossier. Nous avons choisi pour cela **SonarQube** car il supporte plus de vingt-cinq langages \(_Java, C, C++, Objective-C, C\#, PHP, Flex, Groovy, JavaScript, Python, PL/SQL, COBOL_…\) ce qui permet une grande flexibilité vis à vis des projets. De plus, nous pouvons également exposer les métriques suivantes :
 
+* identification des **duplications de code**
+* mesure du niveau de **documentation**
+* respect des **règles de programmation**
+* détection des **bugs potentiels**
+* évaluation de la **couverture de code** par les tests unitaires
+* Implémentation de SQALE pour évaluer la **dette technique**
+
+Cette première partie va nous permettre d'exposer les parties critiques du projet suivant les critères listés ci-dessus. Ainsi, le nouvel utilisateur ou dévelopeur peut rapidement avoir un premier aperçu du projet.
+
+Par conséquent, nous avons essayer de faire une analyse du projet ROCKFlows pour voir si les partie critique comme le coeur de ROCKFlows allait être exposer comme une partie critique ou non. Voici nos résultats :
+
+| Nom du dépôt  | Quality gate | Bugs | Vulnérabilités | Dettes technique | Code "puant" | Couverture tests | Duplication |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Workflow-composition | Passé | 3 \(E\) | A \(B\) | 4h \(A\) | 40 \(A\) | 0% | 0% |
+| StatisticAnalyzer | Passé | 1 \(E\) | 122 \(B\) | 2j \(A\) | 87 \(A\) | 0% | 0% |
+| PatternWorkFlow | Passé | 8 \(E\) | 117 \(B\) | 2j \(A\) | 133\(A\) | 0% | 4% |
+| AnalyseIntermediateResults | Passé | 4 \(E\) | 177 \(B\) | 2j \(A\) | 98 \(A\) | 0% | 14% |
+| Tester | Passé | 10\(E\) | 118 \(B\) | 2j \(A\) | 80 \(A\) | 0% | 0.8% |
+| FindDatasets | Passé | 6 \(E\) | 108 \(B\) | 2j \(A\) | 143\(A\) | 0% | 3.9% |
+| Experiments-core | Passé | 4 \(C\) | 1 \(B\) | 5h \(A\) | 35 \(A\) | 0% | 1.7% |
+| Fold-splitter | Passé | 0 \(A\) | 0 \(A\) | 11min\(A\) | 4 \(A\) | 0% | 0% |
+| Experiments \(weka-algo\) | Passé | 2 \(D\) | 0 \(A\) | 4h \(A\) | 23\(A\) | 0% | 13.1% |
+| dm-experiments | Passé | 15\(E\) | 167 \(B\) | 7j \(A\) | 317\(A\) | 0% | 13.1% |
+| rockflows | Passé | 8 \(E\) | 16 \(B\) | 23j \(A\) | 268\(A\) | 0% | 11% |
+| Prediction | Passé | 3 \(E\) | 12 \(B\) | 7h \(A\) | 116\(A\) | 2.1% | 0% |
+| openML-datasets | Passé | 2 \(E\) | 8 \(B\) | 1j \(A\) | 79 \(A\) | 0% | 0% |
+| experiments-ui-master | Passé | 12\(D\) | 0 \(A\) | 1j \(A\) | 130\(A\) | 0% | 0.3% |
+| Image-Analysis | Passé | 0 \(A\) | 0 \(A\) | 2h \(A\) | 29 \(A\) | 0% | 0% |
+| database-master | Passé | 2 \(C\) | 1 \(E\) | 9j \(A\) | 320\(A\) | 0% | 7.3% |
+| Pipelines-generation | Passé | 2 \(E\) | 1 \(B\) | 5h \(A\) | 38 \(A\) | 0% | 0% |
+| pfe-deep-learning | Passé | 0 \(A\) | 0 \(A\) | 1j \(A\) | 33 \(A\) | 0%  | 30.2% |
+| splar | Passé | 57\(E\) | 36 \(B\) | 23j \(A\) | 1.4k\(A\) | 0% | 6% |
+| openML-metrics | Passé | 0 \(A\) | 4 \(B\) | 4h \(A\) | 30 \(A\) | 0% | 9.2% |
+| justifications | Passé  | 1 \(E\) | 0 \(A\) | 1j \(A\) | 43 \(A\) | 0% | 2.2% |
 
 ### IV.2. Notre outil de visualisation globale du projet
 
@@ -123,20 +158,20 @@ _Pom-Explorer_ permet également de trouver des problèmes de dépendances qui p
 
 ## VI. Conclusion
 
-1. _Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route._ 
-
-
-
-## VII. Outils utilisés
-
-_Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils._
-
 Pour arriver à ces résultats, nous avons utilisé les outils suivants :
 
 * [Pom-Explorer](https://github.com/ltearno/pom-explorer) \(open-source\) : permettant de visualiser les dépendances entre les sous-projets
 * [SonarQube](https://www.sonarqube.org/) : permettant d'analyser les sous-projets et récupérer les complexités
 
 
+
+1. _Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route._ 
+
+
+
+## VII. Outils utilisés
+
+Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expérimentations, \(2\) partager/expliquer à d'autres l'usage des outils.
 
 
 
