@@ -153,9 +153,22 @@ Pour pouvoir visualiser les dépendances au sein d'un projet, nous avons utilis�
   
 _Pom-Explorer_ permet également de _trouver_ des problèmes de dépendances qui peuvent survenir lors du développement. En effet, _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifiée, ce qui est une mauvaise pratique.
 
-## V. Conclusion
+## VI. Conclusion
 
-Pour conclure, nous pouvons observer que les résultats obtenus par l'analyse de la complexité et la visualisation des dépendances ne sont pas corrélées pour le projet ROCKFlows. En effet, les sous-projets les plus complexes ont un nombre raisonnable de dépendances. Ils se retrouvent dans la moyenne du nombre de dépendances au sein du projet ROCKFlows. Pour ce qui est des projets contenant de nombreuses dépendances, leur complexité n'est pas parmi les plus élevées. 
+Pour arriver à ces résultats, nous avons utilisé les outils suivants :
 
-Cependant, ce résultat se base sur un projet précis \(ROCKFlows\). Il est donc à mettre en perspective. Il est difficile de tirer des conclusions générales sur les résultats d'un simple projet. Il aurait donc été intéressant d'appliquer notre analyse à d'autres projets de grande envergure pour obtenir plus de résultats. 
+* [Pom-Explorer](https://github.com/ltearno/pom-explorer) \(open-source\) : permettant de visualiser les dépendances entre les sous-projets
+* [SonarQube](https://www.sonarqube.org/) : permettant d'analyser les sous-projets et récupérer les complexités
+
+
+
+1. _Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route._ 
+
+
+
+## VII. Outils utilisés
+
+Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expérimentations, \(2\) partager/expliquer à d'autres l'usage des outils.
+
+
 
