@@ -30,15 +30,15 @@
 
 * [Comment est organisé le développement d'un projet Open Source de Machine Learning ?](machine-learning-explorations/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning.md)
 
-## Code Quality in Open Source Projects \(XWiki\)
-
-* [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
-* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
-
 ## Docker Ecosystem Analysis
 
 * [Comment les utilisateurs de Docker Compose s'adaptent-ils aux changements de version selon les spéci](docker-ecosystem-analysis/comment-les-utilisateurs-de-docker-compose-sadaptent-ils-aux-changements-de-version-selon-les-specif.md)
 * [Comment les projets s’adaptent à l’évolution de Docker ?](docker-ecosystem-analysis/comment-les-projets-sadaptent-a-levolution-de-docker.md)
+
+## Code Quality in Open Source Projects \(XWiki\)
+
+* [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
+* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
 
 ## Analyzing PIX ecosystem
 

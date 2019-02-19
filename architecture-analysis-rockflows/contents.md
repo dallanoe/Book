@@ -127,12 +127,16 @@ _Pom-Explorer_ permet également de trouver des problèmes de dépendances qui p
 
 ![](../.gitbook/assets/logo_uns%20%284%29.png) UCA : University Côte d'Azur \(french Riviera University\)
 
-## VI. Tools \(facultatif\)
+## VI. Outils utilisés
 
-Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
+_Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils._
 
-## VI. References
+Pour arriver à ces résultats, nous avons utilisé les outils suivants :
 
-1.
+* [Pom-Explorer](https://github.com/ltearno/pom-explorer) \(open-source\) : permettant de visualiser les dépendances entre les sous-projets
+* [SonarQube](https://www.sonarqube.org/) : permettant d'analyser les sous-projets et récupérer les complexités
 
-1. 
+
+
+
+
