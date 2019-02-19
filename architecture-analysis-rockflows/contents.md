@@ -105,13 +105,6 @@ Nous avons pu voir différents types de problèmes liés aux dépendances. Ces p
 
 ## IV. Quelle solution pour appréhender ces problèmes ?
 
-## V. Hypothesis & Experiences
-
-1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
-2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
-3. Explicitez bien les outils utilisés et comment.
-4. Justifiez vos choix
-
 ### IV.1. Une première analyse avec SonarQube
 
 Notre démarche à pour objectif d'aider l'utilisateur à se faire une idée globale d'un projet pour qu'il puisse mieux l'appréhender. Nous proposons dans un premier temps un script qui de façon automatique va analyser l'ensemble des dépôts à condition qu'ils soient tous dans le même dossier. Nous avons choisi pour cela **SonarQube** car il supporte plus de vingt-cinq langages \(_Java, C, C++, Objective-C, C\#, PHP, Flex, Groovy, JavaScript, Python, PL/SQL, COBOL_…\) ce qui permet une grande flexibilité vis à vis des projets. De plus, nous pouvons également exposer les métriques suivantes :
