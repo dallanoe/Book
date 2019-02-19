@@ -31,6 +31,12 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 
 ### 1.2. Pourquoi XWiki ?
 
+Les projets OpenSources commencent à être de plus en plus nombreux et populaires
+
+à cause de la liberté offerte dans sa façons d’être codé mais aussi des fonctions qui peuvent être implémentés. Cependant, ils peuvent très facilement grossir aussi bien au niveau du code qu’au niveau de sa communauté. Un projet d’une aussi grande taille créait des problèmes aussi bien gênants que variés. Son côté OpenSource est lui aussi source de bugs. En effet, plusieurs personnes pouvant participer inclus plusieurs façons de coder et donc plus de chance d’avoir des erreurs. Dans ce contexte, la qualité et la quantité de tests est primordial pour corriger ou éviter tous les soucis lié au code et à sa mise en place. Cependant, il est possible d’oublier ou alors de sauter une partie de code qui nous semble peu important mais qui peut mener à des cas problématiques mettant plusieurs heures, voir jours, pour être résolus dans un OpenSource entrainant donc une perte de temps qui accumulé, est considérable.
+
+Dans ce contexte, nous allons analyser le projet Xwiki avec plusieurs outils, sur lesquels le programme est hébergé, afin de fournir une solution ou piste pour répondre à ce problème. Pour cela nous avons Jira qui, grâce à son dashboard, nous fournira certaines informations sur le code en lui-même. Nous allons aussi utiliser Clover pour voir plus en profondeur les tests déjà existants et leur portée. Le code est hébergé sur Github, permettant ainsi l’analyse en profondeur des tests ou encore du code en lui même. Les résultats de ces outils seront ensuite mis en corrélation afin de fournir une réponse à cette problématique et aux questions que nous allons traiter tout au long de ce chapitre.
+
 * **Intérêts :**
 * Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source. 
 * **Objectifs :** 
@@ -67,27 +73,27 @@ Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur la
 
 En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki, une telle méthodologie pourrait être adaptée. En effet, contrairement au cœur de XWiki, il est possible de savoir quelles extensions sont les plus utilisées, en se basant sur leur nombre de téléchargements. Ainsi, se baser sur ces informations et des informations récoltées à la main pourrait être intéressant si nous choisissions d'étendre le sujet de cette étude au delà du cœur de XWiki.
 
-## III. Collecte d''informations
-
 ### 3.1.  Nouvelle Méthodologie <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 3.2.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
+## III. Collecte d''informations
+
 ## IV. Recherches et experimentations
+
+## V. Analyse de nos résultats
 
 ### 4.1. Hypothèses à démontrer <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-## V. Analyse de nos résultats
+![](https://lh4.googleusercontent.com/wDkJcwofr25OJ468L0WWyRfI5Vbhn4M5YFN8SWRF989OMnRW_pFhsWC9f4oCm0hviZqjU7-2BOMwg4EVKd4m4BBLsSgL9-JpK6_BHWQqHcvcuyB30isNqORVeBJeX4G8a4hso7Up)
+
+![XWiki components issues](https://lh6.googleusercontent.com/aQAXC5tdJANK-tJ-5yhXHY5sqmIBpZ8-UhLoybQ6agKSH9NNIpk4YOkNGC2FgyHgbac90q1KkwY2RMipSfBTiZW3ux1_YkNa1Mnh0969gEj5w0Gx3D04lZQF5qm9qyQ3Ctn1nQsq)
 
 ### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
-![](https://lh4.googleusercontent.com/wDkJcwofr25OJ468L0WWyRfI5Vbhn4M5YFN8SWRF989OMnRW_pFhsWC9f4oCm0hviZqjU7-2BOMwg4EVKd4m4BBLsSgL9-JpK6_BHWQqHcvcuyB30isNqORVeBJeX4G8a4hso7Up)
-
-![XWiki components issues](https://lh6.googleusercontent.com/aQAXC5tdJANK-tJ-5yhXHY5sqmIBpZ8-UhLoybQ6agKSH9NNIpk4YOkNGC2FgyHgbac90q1KkwY2RMipSfBTiZW3ux1_YkNa1Mnh0969gEj5w0Gx3D04lZQF5qm9qyQ3Ctn1nQsq)
 
 ![](https://lh6.googleusercontent.com/3VCprCHxCBPLG9PrU0x2sRIdlp5UDA7FhcjUQgyf-w0MxtB9rwpbFU9S0aINDIoQwVzCtkyz2viSuTknpjYI_TOEwdxBrfbMgB-8R1qnUPGDmkCpyYoUrFF538KBMbISVfdo3hGG)
 
