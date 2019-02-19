@@ -39,13 +39,19 @@ Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre a
 
 Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
+## IV. Une chambre bien rangée est-elle plus accueillante ?
+
 * Papier 1
 * Papier 2
 * Papier 3
 
 Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grands de développeurs. Nous avons décider de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
 
-## IV. Une chambre bien rangée est-elle plus accueillante ?
+## V. Analyse des résultats et Conclusion
+
+### JUnit5
+
+JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
 
 En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
@@ -54,12 +60,6 @@ En partant de cette hypothèse nous avons défini des métriques pouvant, d'apr�
 * KPI 1
 * KPI 2
 * KPI 3
-
-## V. Analyse des résultats et Conclusion
-
-### JUnit5
-
-JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
 
 #### Analyses des KPI \(analyse faite le 27 Janvier 2019\)
 
@@ -153,15 +153,21 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 * Présence d'un `README.md` :
   * Contient les consignes de base permettant de construire le projet.
-  * Propose une redirection vers le `CONTRIBUTING.md`
+  * Propose une redirection vers le `CONTRIBUTING.md`.
 * Méthode de contribution :
   * Un fichier CONTRIBUTING.md est présent. Il apporte des précisions sur les licences utilisées dans le projet et fournit un guide des étapes à réaliser pour pouvoir contribuer au projet.
-
-Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
+  * Les issues sont gérées avec un JIRA externe. Les premières réponses sont de l'ordre de quelques heures.
+* Badges :
+  * Jenkins : _build passing_
+  * LGTM \(qualité du code\) : A
+* Intégration continue : Jenkins, LGTM
+* Documentation : présence d'une AsciiDoc sur le dépôt du projet.
+* Nombre de contributeurs au moment de l'étude : 346
+* Nombre de commits sur `master` au moment de l'étude : 9436
 
 #### Analyse des contributions
 
-En analysant la répartitions des commits sur la branche \`\`master\`\` du project, nous pouvons dégager plusieurs profils de contributeurs :
+En analysant la répartitions des commits sur la branche `master` du projet, nous pouvons dégager plusieurs profils de contributeurs :
 
 * 1 → 2 : contributeurs réguliers
 * 3 → 10 : contributeurs ayant bien contribué sur une période
@@ -169,6 +175,8 @@ En analysant la répartitions des commits sur la branche \`\`master\`\` du proje
 * 51+ : contribution unique
 
 Il est intéressant de remarquer que les 18 premiers contributeurs font partie de l'organisation GitHub _Hibernate_. Hibernate étant développé par JBoss \(qui est une division de RedHat\), nous pouvons supposer que ces contributeurs sont rémunérés pour contribuer au projet.
+
+Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
 
 Ce projet vérifie également la loi de Pareto : de par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet.
 
@@ -178,7 +186,7 @@ Ce projet vérifie également la loi de Pareto : de par la quantité de contribu
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
-![](../.gitbook/assets/logo_uns%20%286%29.png) UCA : University Côte d'Azur \(french Riviera University\)
+UCA : University Côte d'Azur \(french Riviera University\)
 
 ## VI. Tools \(facultatif\)
 
