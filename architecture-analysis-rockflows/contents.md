@@ -153,8 +153,12 @@ Par conséquent, nous avons essayer de faire une analyse du projet ROCKFlows pou
 
 ### IV.2. Notre outil de visualisation globale du projet
 
-Pour pouvoir visualiser les dépendances au sein d'un projet, nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _Maven_. Cet outil nous permet de voir les dépendances sous forme de graphe entre tous les projets _Maven_ aussi bien internes qu'externes. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de sous-projets _Maven_ inférieur à environ 80 projets. Au-delà, le graphe est illisible. Le graphe nous permet de filtrer les projets affichés et de les colorer pour une meilleure visibilité.  
-_Pom-Explorer_ permet également de trouver des problèmes de dépendances qui peuvent survenir lors du développement. En effet, _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifiée, ce qui est une mauvaise pratique.
+Pour pouvoir visualiser les dépendances au sein d'un projet, nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _Maven_. Cet outil nous permet de voir les dépendances sous forme de graphe entre tous les projets _Maven_ aussi bien internes qu'externes. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de sous-projets _Maven_ inférieur à environ 80 projets. Au-delà, le graphe est illisible. Le graphe nous permet de filtrer les projets affichés et de les colorer pour une meilleure visibilité.
+
+![Figure n&#xB0;1 : Graphe de ROCKFlows g&#xE9;n&#xE9;r&#xE9; par Pom-Explorer](../.gitbook/assets/graph.png)
+
+  
+_Pom-Explorer_ permet également de _trouver_ des problèmes de dépendances qui peuvent survenir lors du développement. En effet, _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifiée, ce qui est une mauvaise pratique.
 
 ## VI. Conclusion
 
