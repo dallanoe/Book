@@ -27,7 +27,7 @@ Dans ce contexte, la quantité et la qualité des tests sont des métriques prim
 
 Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes.
 
-C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici XWiki, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention.
+C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention.
 
 ### 1.2. Qu'est-ce que XWiki ?
 
@@ -37,9 +37,9 @@ Même si ce type de solution est très courante sur le net ou dans les intranet 
 
 XWiki apporte une solution générique et configurable au client. Cela permet d'avoir un seul produit initial et de le décliner de moultes manières suivant les besoins du client. Cette solution va permettre aux clients de XWiki \(typiquement une entreprise nécessitant de regrouper des informations\) d'obtenir sa propre base de connaissance structurée. XWiki propose aussi une interface permettant à ses utilisateurs d'avoir en plus la possibilité de personnaliser les barres latérales de leur interface pour améliorer leur appréhension personnelle de l’outil.
 
-Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse les 100 000 lignes, il existe plus de 750 extensions et le nombre d'installations actives est estimé à 4500.
+Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
 
-Étudier un tel projet a une valeur inestimable. Vu la croissance des projets ouverts à multiple contributeurs, il est probable que nous soyons impliqués dans de tel projets dans notre carrière professionnelle. 
+~~Étudier un tel projet a une valeur inestimable. Vu la croissance des projets ouverts à multiple contributeurs, il est probable que nous soyons impliqués dans de tel projets dans notre carrière professionnelle.~~  
 
 ## II. Question générale
 
@@ -52,8 +52,6 @@ Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander o
 De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
-
-
 
 ### 2.2. Méthodologie de départ
 
