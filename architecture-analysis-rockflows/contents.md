@@ -83,13 +83,25 @@ De nombreuses interfaces présentes dans ROCKFlows présentent ce problème. Les
 
 #### III.3.a. Présentation du problème 
 
+Dans ce troisième exemple, nous nous intéressons aux dépendances Docker. Les images Docker dépendent d'images parentes. Or il arrive que des dépendances soient présentes à la fois dans l'image fille et dans l'image parente. La dépendance dans la fille est donc inutile. En effet, il existe une transitivité entre les parents et les enfants pour les images Docker. Toute dépendance présente dans l'image parente est transitivement présente dans l'image fille. Il est donc inutile de répéter cette dépendance dans la fille. Ce type de problème arrive souvent car le créateur de l'image fille n'a pas connaissance des dépendances utilisées dans les images parentes.
+
 #### III.3.b. Retour d'expérience avec ROCKFlows
+
+Lors de notre développement d'images Docker pour ROCKFlows, nous avons rapidement fait face à ce type de problème. En effet, nous n'avions pas accès à certaines images Docker parentes et donc aucun possibilité de connaître les dépendances déjà présentes. Nous avons donc dû ajouter nos dépendances sans savoir si ces dernières étaient déjà présentes dans des images parentes.
 
 ### III.4. Erreurs propagées
 
 #### III.4.a. Présentation du problème 
 
+Ce dernier problème est le plus classique que nous pouvons rencontrer avec les dépendances entre différents sous-projets au sein d'un projet. Si une erreur est présente dans un sous-projet et que ce dernier est utilisé par un autre sous-projet, l'erreur présente dans le premier sous-projet se propagera au second. Ce type de propagation peut rapidement atteindre la majorité du projet si ce dernier contient un nombre élevé de dépendances entre les sous-projets. Ce type de propagation peut aussi passer par les images Docker.
+
 #### III.4.b. Retour d'expérience avec ROCKFlows
+
+C'est le cas auquel nous avons fait face lors de notre développement au sein de ROCKFlows. Une image Docker parente contenait une erreur qui empêchait de lancer le traitement de données par ROCKFlows. Or, nous utilisions cette image pour la création d'une seconde image permettant de travailler sur le traitement des images. L'erreur était donc propagée à notre image. Il nous a été très difficile de remonter à la source du problème car nous n'avions pas de connaissance sur la structure du projet.
+
+### III.5. Conclusion
+
+Nous avons pu voir différents types de problèmes liés aux dépendances. Ces problèmes sont souvent présents dans les projets de grande envergure. Nous avons pu voir que ROCKFlows contient la totalité des problèmes présentés ci-dessus et que nous, en tant que nouveaux développeurs sur le projet, avons fait face à tous ces problèmes en l'espace de 4 semaines de développement sur ce dernier. Ce sont donc des problèmes qui semblent récurrents.
 
 ## IV. Quelle solution pour appréhender ces problèmes ?
 
