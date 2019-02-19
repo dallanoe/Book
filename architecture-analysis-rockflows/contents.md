@@ -57,19 +57,41 @@ L'intérêt principal de notre point de vue est de fournir une aide tant aux dé
 
 Fournir cet outil permettra donc d'élargir la vision des développeurs sur un projet de taille conséquente, ainsi que fournir un point d'entrée dans le projet pour les nouveaux arrivants.
 
-## III. Les différents types de complexité
+## III. Les différents types de problèmes liés aux dépendances
 
-Préciser vos zones de recherches en fonction de votre projet,
+### III.1. Gestion de version 
 
-1. les articles ou documents utiles à votre projet
-2. les outils
-3. dette technique grandis avec les dépendances ?
+#### III.1.a. Présentation du problème 
 
-## IV. Quelle solution pour appréhender cette complexité ?
+Un premier type de complexité se situe au niveau des dépendances vers des bibliothèques externes. En effet, ces dernières sont utiles, mais il arrive que différents utilisateurs aient besoin de versions différentes de cette même bibliothèque. Par exemple, dans le cas où une fonctionnalité est présente dans une nouvelle version, un utilisateur arrivant sur le projet va privilégier l'utilisation de cette nouvelle version, sans se soucier si une version antérieure est déjà présente dans le projet. Cet empilement de versions peut mener à des erreurs d'utilisation de la bibliothèque. 
 
-### IV.1. Notre outil de visualisation globale du projet
+#### III.1.b. Retour d'expérience avec ROCKFlows
 
-### IV.2. Mise en avant de chaque type de complexité
+Lors de notre analyse de ROCKFlows, nous avons pu observer de nombreuses bibliothèques comptant trois versions ou plus. De plus, il y avait de mauvaises pratiques mises en place dans le projet. Par exemple, toutes les versions des dépendances Docker étaient mises en _latest_. Cette fonctionnalité entraîne l'utilisation forcée de la dernière version de la bibliothèque. Si cette dernière version contient des modifications sur le comportement interne d'une commande,  l'utilisateur n'en aura aucune idée et utilisera donc un commande sans connaitre son comportement.
+
+### III.2. Interface non utilisable
+
+#### III.2.a. Présentation du problème 
+
+Ce second problème est plus lié à l'être humain. En effet, le précédent est lié intrinsèquement à l'informatique. A l'inverse, celui-ci est lié à la compréhension humaine du code. Si une interface est mal présentée, avec des noms de fonction qui ne reflètent pas leur rôle, la compréhension de cette interface s'en voit compliquée. Ce type d'incompréhension peut mener à des erreurs d'utilisation de ladite interface.
+
+#### III.2.b. Retour d'expérience avec ROCKFlows
+
+De nombreuses interfaces présentes dans ROCKFlows présentent ce problème. Les noms des interfaces ne sont pas clairs sur leur rôle,  et combinés à l'absence de documentation, rendent la compréhension de leur utilisation très complexe. Il faut donc entrer dans le code pour comprendre le comportement. Ceci est un gros frein lors de la première approche de ROCKFlows.
+
+### III.3. Dépendances inutiles à cause de la transitivité
+
+#### III.3.a. Présentation du problème 
+
+#### III.3.b. Retour d'expérience avec ROCKFlows
+
+### III.4. Erreurs propagées
+
+#### III.4.a. Présentation du problème 
+
+#### III.4.b. Retour d'expérience avec ROCKFlows
+
+## IV. Quelle solution pour appréhender ces problèmes ?
 
 ## V. Hypothesis & Experiences
 
@@ -77,6 +99,14 @@ Préciser vos zones de recherches en fonction de votre projet,
 2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
+
+### IV.1. Mise en avant de chaque type de complexité
+
+
+
+### IV.2. Notre outil de visualisation globale du projet
+
+Pour pouvoir visualiser les dépendances au sain d'un projet nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _maven_. Cet outils nous permet de voir les dépendances sous forme de graphe entre tous les projets maven aussi bien internes qu'externe. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de projet maven inférieur à environ 50 projets, au delà le graphe est illisible.
 
 ## VI. Result Analysis and Conclusion
 
