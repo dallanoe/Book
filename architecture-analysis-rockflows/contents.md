@@ -106,7 +106,8 @@ De nombreuses interfaces présentes dans ROCKFlows présentent ce problème. Les
 
 ### IV.2. Notre outil de visualisation globale du projet
 
-Pour pouvoir visualiser les dépendances au sain d'un projet nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _maven_. Cet outils nous permet de voir les dépendances sous forme de graphe entre tous les projets maven aussi bien internes qu'externe. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de projet maven inférieur à environ 50 projets, au delà le graphe est illisible.
+Pour pouvoir visualiser les dépendances au sain d'un projet nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _maven_. Cet outils nous permet de voir les dépendances sous forme de graphe entre tous les projets maven aussi bien internes qu'externe. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de projet maven inférieur à environ 80 projets, au delà le graphe est illisible. Le graphe nous permet de filtrer les projets affichés et de les colorer pour une meilleure visibilité.   
+_Pom-Explorer_ permet également de trouver des problèmes de dépendances qui peuvent survenir lors du développement. En effet _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifié ce qui est une mauvaise pratique.
 
 ## VI. Result Analysis and Conclusion
 
