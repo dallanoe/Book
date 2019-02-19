@@ -1,6 +1,6 @@
 # Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?
 
-## Authors
+## Auteurs 
 
 Nous sommes quatre étudiants en Master 2 d'Architecture logicielle : 
 
@@ -15,9 +15,9 @@ Des technologies émergent tous les jours. Les organisations, Open Source comme 
 
 Ce document va donc présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Open Source, car il est assez peu envisageable de travailler sur un projet sans posséder ses sources ainsi que les informations relatives aux problèmes rencontrés. Afin de les présenter concrètement, nous présentons dans une première partie le contexte de notre recherche. Ensuite, nous présenterons notre démarche ainsi que les résultats que nous avons obtenus.
 
-## I. Contexte de recherche
+## I. Contexte de la recherche
 
-### 1.1. Présentation de XWiki <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
+### 1.1. Qu'est-ce que XWiki ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
 * Présenter XWiki
 * But/Contexte/Contributeur
@@ -29,7 +29,7 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 * 4500 installations actives
 * Projet de grande envergure
 
-### 1.2 Objectifs et intérêt
+### 1.2. Pourquoi XWiki ?
 
 * **Intérêts :**
 * Étude d’un projet de grande envergure \(750 modules développés, + 100K lignes, de nombreuses branches et releases\): c’est l’opportunité de s’investir dans un gros projet open source. 
@@ -39,7 +39,7 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 
 ## II. Question générale
 
-### 2.1  Question Générale TODO rename <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 2.1.  Hypothèse <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
 
@@ -49,7 +49,7 @@ De ces diverses questions découle la problématique à laquelle nous allons ess
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
 
-### 2.2 Raisonnement/Première Méthodologie //RENAME
+### 2.2. Méthodologie de départ
 
 La première méthodologie que nous avions envisagé de mettre en place était la suivante:
 
@@ -69,23 +69,21 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ## III. Collecte d''informations
 
-Préciser vos zones de recherches en fonction de votre projet,
+### 3.1.  Nouvelle Méthodologie <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-1. les articles ou documents utiles à votre projet
-2. les outils
+### 3.2.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-## IV. Expériences et hypothèses
+## IV. Recherches et experimentations
 
-1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
-2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
-3. Explicitez bien les outils utilisés et comment.
-4. Justifiez vos choix
+### 4.1. Hypothèses à démontrer <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
+### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
+## V. Analyse de nos résultats
 
-## V. Résultats, analyse et conclusion
+### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
+### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ![](https://lh4.googleusercontent.com/wDkJcwofr25OJ468L0WWyRfI5Vbhn4M5YFN8SWRF989OMnRW_pFhsWC9f4oCm0hviZqjU7-2BOMwg4EVKd4m4BBLsSgL9-JpK6_BHWQqHcvcuyB30isNqORVeBJeX4G8a4hso7Up)
 
@@ -93,11 +91,9 @@ Préciser vos zones de recherches en fonction de votre projet,
 
 ![](https://lh6.googleusercontent.com/3VCprCHxCBPLG9PrU0x2sRIdlp5UDA7FhcjUQgyf-w0MxtB9rwpbFU9S0aINDIoQwVzCtkyz2viSuTknpjYI_TOEwdxBrfbMgB-8R1qnUPGDmkCpyYoUrFF538KBMbISVfdo3hGG)
 
-## VI. Outils \(facultatif\)
+## VI. Conclusion 
 
-Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
-
-## VI. Références
+## VI. Outils\(?\) / Références
 
 UCA : University Côte d'Azur \(french Riviera University\)![](../.gitbook/assets/logo_uns%20%281%29.png)
 
