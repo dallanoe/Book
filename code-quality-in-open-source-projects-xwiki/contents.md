@@ -198,6 +198,9 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 
 * Présence d'un `README.md` :
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
+* Méthode de contribution :
+* Badges : Non
+* Intégration continue : Jenkins
 * Nombre de contributeurs au moment de l'étude : 95
 * Nombre de commits sur `master` au moment de l'étude : 36053
 
