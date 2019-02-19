@@ -159,6 +159,8 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 ### Hibernate
 
+Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
+
 #### Analyse des KPI
 
 * Présence d'un `README.md` :
@@ -186,9 +188,22 @@ En analysant la répartitions des commits sur la branche `master` du projet, nou
 
 Il est intéressant de remarquer que les 18 premiers contributeurs font partie de l'organisation GitHub _Hibernate_. Hibernate étant développé par JBoss \(qui est une division de RedHat\), nous pouvons supposer que ces contributeurs sont rémunérés pour contribuer au projet.
 
-Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
-
 Ce projet vérifie également la loi de Pareto : de par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet.
+
+### XWiki
+
+Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _XWiki Platform_.
+
+#### Analyse des KPI
+
+* Présence d'un `README.md` :
+  * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
+* Nombre de contributeurs au moment de l'étude : 95
+* Nombre de commits sur `master` au moment de l'étude : 36053
+
+
+
+#### Analyse des contributions
 
 #### Conclusion
 
