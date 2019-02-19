@@ -148,13 +148,13 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 * Nombre de commits sur master : ??? au moment de la vérification
 * Nombre de contributeurs : ???
 
-\#\#\#\# Analyse des contributions
+#### Analyse des contributions
 
 ### Hibernate
 
 Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de \_Hibernate ORM\_.
 
-\#\#\#\# Analyse des contributions
+#### Analyse des contributions
 
 En analysant la répartitions des commits sur la branche \`\`master\`\` du project, nous pouvons dégager plusieurs profils de contributeurs :
 
@@ -162,6 +162,10 @@ En analysant la répartitions des commits sur la branche \`\`master\`\` du proje
 * 3 → 10 : contributeurs ayant bien contribué sur une période
 * 11 → 50 : contributions occasionnelles
 * 51+ : contribution unique
+
+Il est intéressant de remarquer que les 18 premiers contributeurs font partie de l'organisation GitHub _Hibernate_. Hibernate étant développé par JBoss \(qui est une division de RedHat\), nous pouvons supposer que ces contributeurs sont rémunérés pour contribuer au projet.
+
+Ce projet vérifie également la loi de Pareto : de par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet.
 
 #### Conclusion
 
