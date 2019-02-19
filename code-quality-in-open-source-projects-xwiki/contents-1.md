@@ -55,13 +55,15 @@ En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifie
 
 ### 2.2. Méthodologie de départ
 
-La première méthodologie que nous avions envisagé de mettre en place était la suivante:
+Afin de valider cette hypothèse, nous avons envisagé de mettre en place la méthodologie décrite ci-dessous. 
 
-* 1° : Identifier les parties de XWiki les plus utilisées par des utilisateurs lambda.
-* 2° : Installer XWiki et suivre des cas d'utilisations prédéfinis en gardant une trace de nos parcours.
-* 3° : Comparer nos différentes utilisations afin d'identifier les composants les plus utilisés.
-* 4° : S'assurer que les composants que nous avons le plus utilisés lors de nos parcours font bien partie de ceux par lesquels passent le plus les utilisateurs moyens.
-* 5° : Essayer de lier ces points "chauds" du code de XWiki avec les parties posant le plus de problèmes. C'est à dire les composants ayant le plus d'issues critiques.
+Tout d'abord, nous aurions identifié quelles parties de XWiki sont les plus utilisées par des utilisateurs lambda, en récupérant par exemple des statistiques sur le nombre d'utilisations de certains composants. Cette première étape nous aurait permis de commencer à discerner des zones chaudes.
+
+Ensuite, chaque membre de notre groupe aurait installé XWiki puis suivi des cas d'utilisation prédéfinis. Par exemple en éditant certaines pages, en commentant des sections, etc...Nous aurions gardé des traces de nos parcours afin de comparer nos différentes utilisations. Ces traces nous auraient permis de distinguer les composants les plus utilisés lors d'une utilisation très basique de XWiki.
+
+Une fois cette étape complétée, nous aurions comparés les zones chaudes des utilisateurs type de XWiki avec celles identifiées lors de notre propre cartographie. Nos utilisations étant plutôt basiques, il aurait été normal que certains composants n'apparaissent pas dans nos résultats mais soient visibles en récupérant des statistiques globales. En revanche, nous nous attendions à ce que les zones que nous aurions identifiées comme "chaudes" le soient aussi pour des utilisateurs lambdas de XWiki.
+
+En dernier lieu, nous aurions essayé d'établir une corrélation entre les points chauds identifiés dans le code et les composants ayant le plus d'issues critiques.
 
 Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette méthodologie.
 
