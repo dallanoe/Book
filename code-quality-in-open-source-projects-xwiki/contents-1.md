@@ -19,21 +19,19 @@ Ce document va donc présenter les résultats de nos recherches sur l'identifica
 
 ### 1.1. Qu'est-ce que XWiki ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
-* Présenter XWiki
-* But/Contexte/Contributeur
-* Pourquoi intéressant étudier XWiki et projets Open Source en général ? 
-* Projet OpenSource lancé en 2003 \(+15 ans\)
-* Wiki d’entreprise
-* Plus de 100 000 lignes de code
-* 750 extensions
-* 4500 installations actives
-* Projet de grande envergure
+**XWiki** est un projet **Open Source** mature \(2003\) écrit en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme
+
+Même si ce type de solution est très courante sur le net ou dans les intranet de sociétés, attention à ne pas le confondre avec le premier venu. Il se targue en effet d’être non seulement un “**Wiki d’entreprise**” mais aussi un “**Wiki Applicatif**” ce qui fait de lui bien plus qu’un simple outil de gestion d’articles.
+
+XWiki apporte une solution générique et configurable au client. Cela permet d'avoir un seul produit initial et de le décliner de moultes manières suivant les besoins du client. Cette solution va permettre aux clients de XWiki \(typiquement une entreprise nécessitant de regrouper des informations\) d'obtenir sa propre base de connaissance structurée. XWiki propose aussi une interface permettant à ses utilisateurs d'avoir en plus la possibilité de personnaliser les barres latérales de leur interface pour améliorer leur appréhension personnelle de l’outil.
+
+Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse les 100 000 lignes, il existe plus de 750 extensions et le nombre d'installations actives est estimé à 4500.
+
+Étudier un tel projet a une valeur inestimable. Vu la croissance des projets ouverts à multiple contributeurs, il est probable que nous soyons impliqués dans de tel projets dans notre carrière professionnelle. 
 
 ### 1.2. Pourquoi des projets Open Source ?
 
-Les projets OpenSources commencent à être de plus en plus nombreux et populaires
-
-à cause de la liberté offerte dans sa façons d’être codé mais aussi des fonctions qui peuvent être implémentés. Cependant, ils peuvent très facilement grossir aussi bien au niveau du code qu’au niveau de sa communauté. Un projet d’une aussi grande taille créait des problèmes aussi bien gênants que variés. Son côté OpenSource est lui aussi source de bugs. En effet, plusieurs personnes pouvant participer inclus plusieurs façons de coder et donc plus de chance d’avoir des erreurs. Dans ce contexte, la qualité et la quantité de tests est primordial pour corriger ou éviter tous les soucis lié au code et à sa mise en place. Cependant, il est possible d’oublier ou alors de sauter une partie de code qui nous semble peu important mais qui peut mener à des cas problématiques mettant plusieurs heures, voir jours, pour être résolus dans un OpenSource entrainant donc une perte de temps qui accumulé, est considérable.
+Les projets Open Source sont de plus nombreux et populaires. Ceci est dû au fait qu'un tel projet implique généralement des contraintes différentes, souvent plus légères, que le développement d'un projet en entreprise. Cependant, ils peuvent très facilement grossir aussi bien au niveau du code qu’au niveau de sa communauté. Un projet d’une aussi grande taille créait des problèmes aussi bien gênants que variés. Son côté OpenSource est lui aussi source de bugs. En effet, plusieurs personnes pouvant participer inclus plusieurs façons de coder et donc plus de chance d’avoir des erreurs. Dans ce contexte, la qualité et la quantité de tests est primordial pour corriger ou éviter tous les soucis lié au code et à sa mise en place. Cependant, il est possible d’oublier ou alors de sauter une partie de code qui nous semble peu important mais qui peut mener à des cas problématiques mettant plusieurs heures, voir jours, pour être résolus dans un OpenSource entrainant donc une perte de temps qui accumulé, est considérable.
 
 Dans ce contexte, nous allons analyser le projet Xwiki avec plusieurs outils, sur lesquels le programme est hébergé, afin de fournir une solution ou piste pour répondre à ce problème. Pour cela nous avons Jira qui, grâce à son dashboard, nous fournira certaines informations sur le code en lui-même. Nous allons aussi utiliser Clover pour voir plus en profondeur les tests déjà existants et leur portée. Le code est hébergé sur Github, permettant ainsi l’analyse en profondeur des tests ou encore du code en lui même. Les résultats de ces outils seront ensuite mis en corrélation afin de fournir une réponse à cette problématique et aux questions que nous allons traiter tout au long de ce chapitre.
 
@@ -54,6 +52,8 @@ Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander o
 De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
+
+### 3.3.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 2.2. Méthodologie de départ
 
@@ -77,8 +77,6 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ### 3.2.  Métriques <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-### 3.3.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
 ## III. Collecte d''informations
 
 ## IV. Recherches et experimentations
@@ -97,11 +95,11 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ## VI. Conclusion 
 
-### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
 ## VI. Outils\(?\) / Références
 
-### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
 UCA : University Côte d'Azur \(french Riviera University\)![](../.gitbook/assets/logo_uns%20%281%29.png)
+
+### 5.1. ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+### 5.2. ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
