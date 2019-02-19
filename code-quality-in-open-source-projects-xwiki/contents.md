@@ -28,8 +28,6 @@ Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur co
 
 Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
 
-
-
 * Junit 5
 * Mockito
 * Hibernate ORM
@@ -49,10 +47,13 @@ Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir conf
 
 ## IV. Une chambre bien rangée est-elle plus accueillante ?
 
-1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
-2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
-3. Explicitez bien les outils utilisés et comment.
-4. Justifiez vos choix
+En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
+
+En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :
+
+* KPI 1
+* KPI 2
+* KPI 3
 
 ## V. Analyse des résultats et Conclusion
 
