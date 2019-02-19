@@ -57,15 +57,17 @@ En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifie
 
 Afin de valider cette hypothèse, nous avons envisagé de mettre en place la méthodologie décrite ci-dessous. 
 
-Tout d'abord, nous aurions identifié quelles parties de XWiki sont les plus utilisées par des utilisateurs lambda, en récupérant par exemple des statistiques sur le nombre d'utilisations de certains composants. Cette première étape nous aurait permis de commencer à discerner des zones chaudes.
+Tout d'abord, nous souhaitions identifier quelles parties de XWiki sont les plus utilisées par des utilisateurs lambda, en récupérant par exemple des statistiques sur le nombre d'utilisations de certains composants. Cette première étape nous aurait permis de commencer à discerner des zones chaudes.
 
 Ensuite, chaque membre de notre groupe aurait installé XWiki puis suivi des cas d'utilisation prédéfinis. Par exemple en éditant certaines pages, en commentant des sections, etc...Nous aurions gardé des traces de nos parcours afin de comparer nos différentes utilisations. Ces traces nous auraient permis de distinguer les composants les plus utilisés lors d'une utilisation très basique de XWiki.
 
-Une fois cette étape complétée, nous aurions comparés les zones chaudes des utilisateurs type de XWiki avec celles identifiées lors de notre propre cartographie. Nos utilisations étant plutôt basiques, il aurait été normal que certains composants n'apparaissent pas dans nos résultats mais soient visibles en récupérant des statistiques globales. En revanche, nous nous attendions à ce que les zones que nous aurions identifiées comme "chaudes" le soient aussi pour des utilisateurs lambdas de XWiki.
+Une fois cette étape complétée, nous aurions comparé les zones chaudes des utilisateurs type de XWiki avec celles identifiées lors de notre propre cartographie. Nos utilisations étant plutôt basiques, il aurait été normal que certains composants n'apparaissent pas dans nos résultats mais soient visibles en récupérant des statistiques globales. En revanche, nous nous attendions à ce que les zones que nous aurions identifiées comme "chaudes" le soient aussi pour des utilisateurs lambdas de XWiki.
 
-En dernier lieu, nous aurions essayé d'établir une corrélation entre les points chauds identifiés dans le code et les composants ayant le plus d'issues critiques.
+En dernier lieu, nous aurions essayé d'établir une corrélation entre les points chauds identifiés dans le code et les composants ayant le plus d'_issues_ critiques.
 
 Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette méthodologie.
+
+//SCREEN REPONSE
 
 Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de XWiki étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon, nous ne serions capable de ne collecter qu’une faible quantité de données. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
 
