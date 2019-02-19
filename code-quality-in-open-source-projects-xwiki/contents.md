@@ -110,6 +110,8 @@ Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet,
 
 De plus, en regardant certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageants. Ce qui a pour effet de créer une sorte de syndrome de la tour d'ivoire.
 
+#### Analyses des contributions
+
 ![Pas de r&#xE9;ponse pour les questions de ce pauvre contributeur](../.gitbook/assets/no-answer-to-question-issue.png)
 
 ![Pull request ferm&#xE9;e, mainteneur &quot;qui n&apos;a pas le temps&quot; de review le code](../.gitbook/assets/denied-pull-request.png)
@@ -146,7 +148,20 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 * Nombre de commits sur master : ??? au moment de la vérification
 * Nombre de contributeurs : ???
 
-#### Analyses des contributions
+\#\#\#\# Analyse des contributions
+
+### Hibernate
+
+Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de \_Hibernate ORM\_.
+
+\#\#\#\# Analyse des contributions
+
+En analysant la répartitions des commits sur la branche \`\`master\`\` du project, nous pouvons dégager plusieurs profils de contributeurs :
+
+* 1 → 2 : contributeurs réguliers
+* 3 → 10 : contributeurs ayant bien contribué sur une période
+* 11 → 50 : contributions occasionnelles
+* 51+ : contribution unique
 
 #### Conclusion
 
