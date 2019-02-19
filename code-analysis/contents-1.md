@@ -80,7 +80,13 @@ Ces projets témoins \(avec le même métier donc\) aurait donc la même évolut
 
 Néanmoins, il aurait été beaucoup trop compliqué et fasitdieux pour nous de trouvé pour chaque projet selectionné un projet témoin de la même envergure avec le même métier. S'en sont suivies d'autres discussion avec Xavier Blanc et notre professeur encadrant Philippe Collet. 
 
-A ce point, nous avons décidé de radicalement changer notre jeu de données. Si nous nous concentions sur un unique projet, nous aurions toutes les données dont nous avions besoin, et le témoin serait le projet lui-même, pour peut qu'il soit assez gros.
+A ce point, nous avons décidé de radicalement changer notre jeu de données. Si nous nous concentrions sur un unique projet, nous aurions toutes les données dont nous avions besoin, et le témoin serait le projet lui-même, pour peut qu'il soit assez gros.
+
+Pour le choix du projet, il nous fallait donc un projet conséquent, utilisant le feature toggle, avec assez de contributeurs et une assez grosse base de code pour avoir des résultats non-biaisés. Aynt un unique projet à analyser, nous pouvions nous libérer de la contrainte du langage et du framework.
+
+Notre première idée a été le noyau Linux. En effet, c'est un projet avec plus de 800,000 commits, connu pour reposer énormément sur le feature toggle \(cf. La distribution [Gentoo Linux](https://fr.wikipedia.org/wiki/Gentoo_Linux), tirant pleinement avantage de ceux-ci\). Cependant, nous avons rapidemment abandonné cette idée, le noyau Linux étant trop complexe et ayant déjà été largement étudié, ne nous voyions pas de plus-value à ajouter.
+
+Après une longue recherche de projet opensource à analyser, nous sommes tombés d'accord sur [Chromium](https://github.com/chromium/chromium), qui avec plus de 750,000 commits et une communauté très active est le candidats parfait pour nos expérimentations.
 
 
 
