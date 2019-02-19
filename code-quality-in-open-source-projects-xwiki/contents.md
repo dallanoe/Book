@@ -39,13 +39,15 @@ Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre a
 
 Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
-## IV. Une chambre bien rangée est-elle plus accueillante ?
-
 * Papier 1
 * Papier 2
 * Papier 3
 
 Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grands de développeurs. Nous avons décider de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
+
+## IV. Une chambre bien rangée est-elle plus accueillante ?
+
+
 
 ## V. Analyse des résultats et Conclusion
 
