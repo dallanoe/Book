@@ -214,7 +214,7 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
-UCA : University Côte d'Azur \(french Riviera University\)
+![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
 ## VI. Tools \(facultatif\)
 
