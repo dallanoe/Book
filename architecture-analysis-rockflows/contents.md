@@ -107,7 +107,7 @@ Nous avons pu voir différents types de problèmes liés aux dépendances. Ces p
 
 ### IV.1. Une première analyse avec SonarQube
 
-Notre démarche à pour objectif d'aider l'utilisateur à se faire une idée globale d'un projet pour qu'il puisse mieux l'appréhender. Nous proposons dans un premier temps un script qui de façon automatique va analyser l'ensemble des dépôts à condition qu'ils soient tous dans le même dossier. Nous avons choisi pour cela **SonarQube** car il supporte plus de vingt-cinq langages \(_Java, C, C++, Objective-C, C\#, PHP, Flex, Groovy, JavaScript, Python, PL/SQL, COBOL_…\) ce qui permet une grande flexibilité vis à vis des projets. De plus, nous pouvons également exposer les métriques suivantes :
+Notre démarche a pour objectif d'aider l'utilisateur à se faire une idée globale d'un projet, pour qu'il puisse mieux l'appréhender. Nous proposons dans un premier temps un script qui, de façon automatique, va analyser l'ensemble des dépôts, à condition qu'ils soient tous dans le même dossier. Nous avons choisi pour cela **SonarQube** car il supporte plus de vingt-cinq langages \(_Java, C, C++, Objective-C, C\#, PHP, Flex, Groovy, JavaScript, Python, PL/SQL, COBOL_…\) ce qui permet une grande flexibilité vis à vis des projets. De plus, nous pouvons également exposer les métriques suivantes :
 
 * identification des **duplications de code**
 * mesure du niveau de **documentation**
@@ -116,9 +116,9 @@ Notre démarche à pour objectif d'aider l'utilisateur à se faire une idée glo
 * évaluation de la **couverture de code** par les tests unitaires
 * Implémentation de SQALE pour évaluer la **dette technique**
 
-Cette première partie va nous permettre d'exposer les parties critiques du projet suivant les critères listés ci-dessus. Ainsi, le nouvel utilisateur ou dévelopeur peut rapidement avoir un premier aperçu du projet.
+Cette première partie va nous permettre d'exposer les parties critiques du projet suivant les critères listés ci-dessus. Ainsi, le nouvel utilisateur ou développeur peut rapidement avoir un premier aperçu du projet.
 
-Par conséquent, nous avons essayer de faire une analyse du projet ROCKFlows pour voir si les partie critique comme le coeur de ROCKFlows allait être exposer comme une partie critique ou non. Voici nos résultats \(nous n'exposons pas tous les dépôts car certain ne donne pas de résultat en effet ils ne contiennent que des jeux de donnée\) :
+Par conséquent, nous avons essayé de faire une analyse du projet ROCKFlows pour voir si les parties centrales, comme le coeur de ROCKFlows, allaient être exposées comme des parties critique ou non. Voici nos résultats \(nous n'exposons pas tous les dépôts car certains ne donnent pas de résultat en effet ils ne contiennent que des jeux de données\) :
 
 | Nom du dépôt  | Quality gate | Bugs | Vulnérabilités | Dettes technique | Code "puant" | Couverture tests | Duplication |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -144,26 +144,28 @@ Par conséquent, nous avons essayer de faire une analyse du projet ROCKFlows pou
 | openML-metrics | Passé | 0 \(A\) | 4 \(B\) | 4h \(A\) | 30 \(A\) | 0% | 9.2% |
 | justifications | Passé  | 1 \(E\) | 0 \(A\) | 1j \(A\) | 43 \(A\) | 0% | 2.2% |
 
-Pour pouvoir visualiser les dépendances au sein d'un projet, nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _Maven_. Cet outil nous permet de voir les dépendances sous forme de graphe entre tous les projets _Maven_ aussi bien internes qu'externes. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de sous-projets _Maven_ inférieur à environ 80 projets. Au-delà, le graphe est illisible. Le graphe nous permet de filtrer les projets affichés et de les colorer pour une meilleure visibilité.
-
 Ainsi, nous pouvons observer qu'il en ressort deux parties critiques qui sont :
 
-![SonarQube : Splar](../.gitbook/assets/capture-de-cran-2019-02-19-a-11.03.04.png)
+![SonarQube : D&#xE9;p&#xF4;t Splar](../.gitbook/assets/capture-de-cran-2019-02-19-a-11.03.04.png)
 
-![SonarQube : ROCKFlows](../.gitbook/assets/capture-de-cran-2019-02-19-a-11.00.46.png)
-
-![Figure n&#xB0;1 : Graphe de ROCKFlows g&#xE9;n&#xE9;r&#xE9; par Pom-Explorer](../.gitbook/assets/graph.png)
+![SonarQube : D&#xE9;p&#xF4;t ROCKFlows](../.gitbook/assets/capture-de-cran-2019-02-19-a-11.00.46.png)
 
   
-_Pom-Explorer_ permet également de _trouver_ des problèmes de dépendances qui peuvent survenir lors du développement. En effet, _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifiée, ce qui est une mauvaise pratique.
-
 Cette première étape dans notre démarche suggère donc aux nouveaux arrivants de commencer par s'intéresser à ces parties car elles sont très probablement des parties importantes du projet notamment dû à la dette technique exposé dans le tableau précédent. Cependant, l'analyse de SonarQube est loin d'être suffisante. En effet, le projet ROCKFlows est confronté au problème "du plat de spaghetti". Il nous fallait donc corréler la partie de l'analyse faite ci-dessus avec un graphe de dépendance pour confirmer si les deux dépôts sont bel et bien des parties critiques mais également si de nouvelle partie critique émerge dû à leur haute dépendance par exemple au dépôt "rockflow-core" exposé précédemment.
 
 ### IV.2. Notre outil de visualisation globale du projet
+
+Pour pouvoir visualiser les dépendances au sein d'un projet, nous avons utilisé _Pom-Explorer_ un outil qui permet de visualiser les dépendances entres différents projets _Maven_. Cet outil nous permet de voir les dépendances sous forme de graphe entre tous les projets _Maven_ aussi bien internes qu'externes. __Cette visualisation n'est utilisable que pour les projets qui ont un nombre de sous-projets _Maven_ inférieur à environ 80 projets. Au-delà, le graphe est illisible. Le graphe nous permet de filtrer les projets affichés et de les colorer pour une meilleure visibilité.
+
+![Figure n&#xB0;1 : Graphe de ROCKFlows g&#xE9;n&#xE9;r&#xE9; par Pom-Explorer](../.gitbook/assets/graph.png)
+
+_Pom-Explorer_ permet également de trouver des problèmes de dépendances qui peuvent survenir lors du développement. En effet, _Pom-Explorer_ permet de trouver les dépendances qui sont utilisées avec des versions multiples. Cet outil permet aussi de trouver les dépendances qui n'ont pas de version spécifiée, ce qui est une mauvaise pratique.
 
 ## V. Conclusion
 
 Pour conclure, nous pouvons observer que les résultats obtenus par l'analyse de la complexité et la visualisation des dépendances ne sont pas corrélées pour le projet ROCKFlows. En effet, les sous-projets les plus complexes ont un nombre raisonnable de dépendances. Ils se retrouvent dans la moyenne du nombre de dépendances au sein du projet ROCKFlows. Pour ce qui est des projets contenant de nombreuses dépendances, leur complexité n'est pas parmi les plus élevées. 
 
-Cependant, ce résultat se base sur un projet précis \(ROCKFlows\). Il est donc à mettre en perspective. Il est difficile de tirer des conclusions générales sur les résultats d'un simple projet. Il aurait donc été intéressant d'appliquer notre analyse à d'autres projets de grande envergure pour obtenir plus de résultats. 
+Cependant, ce résultat se base sur un projet précis \(ROCKFlows\). Il est donc à mettre en perspective. Il est difficile de tirer des conclusions générales sur les résultats d'un simple projet. Il aurait donc été intéressant d'appliquer notre analyse à d'autres projets de grande envergure pour obtenir plus de résultats.
+
+ 
 
