@@ -201,12 +201,12 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 * Méthode de contribution :
 * Badges : Non
 * Intégration continue : Jenkins
-* Nombre de contributeurs au moment de l'étude : 95
-* Nombre de commits sur `master` au moment de l'étude : 36053
-
-
+* Nombre de contributeurs au moment de l'étude : 96
+* Nombre de commits sur `master` au moment de l'étude : 36.461
 
 #### Analyse des contributions
+
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
 
 #### Conclusion
 
