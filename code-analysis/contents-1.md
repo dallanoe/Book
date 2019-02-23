@@ -49,12 +49,14 @@ Ainsi, l'objectif pour nous sera de chercher une corrélation en l'évolution de
 
 Afin de faciliter notre étude, nous avons restreint notre analyse au projet utilisant effectivement un framework de _feature toggling_ \(sachant que ceux-ci peuvent être "fait maison"\) et de laisser de côté les simples if. En effet, il serait beaucoup trop compliqué pour nous dans un grand nombre de projet de disinguer les if lié aux métiers de l'application et les if liés à un _feature flag_.
 
-## III. Information gathering
+## III. Rassemblement d'informations
 
 Préciser vos zones de recherches en fonction de votre projet,
 
 1. les articles ou documents utiles à votre projet
 2. les outils
+
+### III.1. Les projets à analyser
 
 Afin de mener notre étude à bien, nous avons entamés la recherche d'un jeu de données. Pour prouver notre point, nous devions avoir des projets utilisant du _feature toggling_ de manière régulière, mais aussi avec une base de code conséquente, nécessaire pour mesurer l'évolution de la dette technique. Pour la base de projet, nous avons utilisé la plateforme [GitHub](https://github.com/), une source reconnue inépuisable de projet opensource.
 
@@ -86,16 +88,34 @@ Pour le choix du projet, il nous fallait donc un projet conséquent, utilisant l
 
 Notre première idée a été le noyau Linux. En effet, c'est un projet avec plus de 800,000 commits, connu pour reposer énormément sur le feature toggle \(cf. La distribution [Gentoo Linux](https://fr.wikipedia.org/wiki/Gentoo_Linux), tirant pleinement avantage de ceux-ci\). Cependant, nous avons rapidemment abandonné cette idée, le noyau Linux étant trop complexe et ayant déjà été largement étudié, ne nous voyions pas de plus-value à ajouter.
 
-Après une longue recherche de projet opensource à analyser, nous sommes tombés d'accord sur [Chromium](https://github.com/chromium/chromium), qui avec plus de 750,000 commits et une communauté très active est le candidats parfait pour nos expérimentations.
+Après une longue recherche de projet opensource à analyser, nous sommes tombés d'accord sur [Chromium](https://github.com/chromium/chromium), qui avec plus de 750,000 commits et une communauté très active est le candidat parfait pour nos expérimentations.
 
+Chromium est écrit en C++, et possède son propre framework de _feature toggle_. Leurs framework permet de supporter 2 type de _feature flag_ : Certaines fonctionnalités seront activées à la compilation, en fonction par exemple du type de plateforme \(mobile, desktop,...\) ou de son système d'exploitation, et d'autres fonctionnalités dites "runtime", qui permettent par example d'avoir des accès anticipé sur les nouvelles fonctionnalités. Les deux types de _feature flag_ seront analysés dans ce projet.
 
+### III.2. Les outils utilisés
 
-## IV. Hypothesis & Experiences
+Dans les parties précédentes et pendant la recherche de notre projet, nous avons désigné la "dette technique" comme une métrique "magique", qui nous permettrait d'évaluer l'état d'un projet à un instant t.
+
+Après discussion avec nos professeurs, il en est ressorti que "la dette technique" était beaucoup trop vague, et surtout que pas toutes les métriques étaient utiles pour ce que nous souhaitions mesurer. En effet, le nombre de ligne dans une méthode ou la couverture de tests ne sont pas forcement lié au _feature toggling_.
+
+Ils nous a donc fallu affiner ce que nous entendions par "dette technique". Nous sommes revenu à la definition même de _feature toggle_ : A quoi sert un _feature toggle_ ? A cette question, nous repondons qu'un _feature toggle_ permet de changer le comportement d'un logiciel. En d'autres termes, a certains endroit du code, il y a 2 \(ou plus\) flows d'executions, en fonction de la valeur du _feature flag_. C'est a ce moment que c'est devenu clair: la métrique la plus importante est la complexité cyclomatique.
+
+Il nous fallait donc un outil pour rechercher la compléxité cyclomatique en C++ **performant**. En effet, avec des milliers de commits à analyser pour avoir des résultats pertinents, on ne pouvais pas se permettre de passer plus de quelques minutes sur chacun. C'est alors que nous avons découvert [Lizard](https://github.com/terryyin/lizard). Lizard permet de mesurer la complexiter cyclomatique et le nombre de lignes de code dans de nombreux langages, on obtenant des rapports précis \(resultat global, par fichier et par méthode\). Il remplit même le critère du temps d'execution, en s'exécutant en quelques minutes sur une bonne machine dans le cas de Chromium.
+
+Pour le reste des outils, à savoir les scripts pour avoir la liste des commits qui ajoute un feature flag, _checkout_ un commit précis, l'analyser, extraire les résultats, nous avons écrits des scripts "maison".
+
+## IV. Hypothèses et expériences <a id="iv-hypotheses-et-experiences"></a>
 
 1. Il s'agit ici d'énoncer sous forme d' hypothèses ce que vous allez chercher à démontrer. Vous devez définir vos hypothèses de façon à pouvoir les _mesurer facilement._ Bien sûr, votre hypothèse devrait être construite de manière à v_ous aider à répondre à votre question initiale_.Explicitez ces différents points.
 2. Test de l’hypothèse par l’expérimentation. 1. Vos tests d’expérimentations permettent de vérifier si vos hypothèses sont vraies ou fausses. 2. Il est possible que vous deviez répéter vos expérimentations pour vous assurer que les premiers résultats ne sont pas seulement un accident.
 3. Explicitez bien les outils utilisés et comment.
 4. Justifiez vos choix
+
+Avec le raffinement de noter sujet expliqué dans la partie III, l'hypothèse que nous allons essayer de prouver est la suivante.
+
+**Hypothèse: Dans le cas de Chromium, l'ajout d'un feature toggle entraine une augmentation de la complexité cyclomatique.**
+
+Pour prouver cette hypothèse, nous avons établit le protocole suivant:
 
 ## V. Result Analysis and Conclusion
 
