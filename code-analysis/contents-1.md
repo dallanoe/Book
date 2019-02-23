@@ -10,7 +10,7 @@ De même il est possible de modifier la structure, celle qui est proposée ici e
 
 Utilisez des références pour justifier votre argumentaire, vos choix etc.
 
-## Authors
+## Auteurs <a id="auteurs"></a>
 
 We are four students in last year of Polytech' Nice-Sophia specialized in Software Architecture :
 
@@ -19,7 +19,7 @@ We are four students in last year of Polytech' Nice-Sophia specialized in Softwa
 * Junac Jérémy
 * Melkonian François
 
-## I. Research context /Project
+## I. Contexte de recherche <a id="i-contexte-de-recherche"></a>
 
 > _"Feature Toggles \(often also refered to as Feature Flags\) are a powerful technique, allowing teams to modify system behavior without changing code."  
 > --_ Pete Hodgson, sur le site[ martinfowler.com](https://martinfowler.com/)
@@ -34,7 +34,7 @@ De plus, découle du _feature toggling_ d'autre technique, utiliser pour rendre 
 
 
 
-## II. Observations/General question
+## II. Observations et question générale <a id="ii-observations-et-question-generale"></a>
 
 1. Commencez par formuler une question sur quelque chose que vous observez ou constatez ou encore une idée émergente. Attention pour répondre à cette question vous devrez être capable de quantifier vos réponses.
 2. Préciser bien pourquoi cette question est intéressante de votre point de vue et éventuellement en quoi la question est plus générale que le contexte de votre projet \(ex: Choisir une libraire de code est un problème récurrent qui se pose très différemment cependant en fonction des objectifs\)
