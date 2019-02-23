@@ -11,9 +11,11 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 ## Introduction
 
-Des technologies émergent tous les jours. Les organisations, Open Source comme privées, produisent de plus en plus des systèmes qui utilisent une multitude de technologies, concepts et outils. Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ce problèmes émergent. Avant de proposer une méthodologie afin de tenter de répondre à ce problème, comment pouvons nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
+Des technologies émergent tous les jours. Les organisations, Open Source comme privées, produisent de plus en plus des systèmes qui utilisent une multitude de technologies, concepts et outils. 
 
-Ce document va donc présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Open Source, car il est assez peu envisageable de travailler sur un projet sans posséder ses sources ainsi que les informations relatives aux problèmes rencontrés. Afin de les présenter concrètement, nous présentons dans une première partie le contexte de notre recherche. Ensuite, nous présenterons notre démarche ainsi que les résultats que nous avons obtenus.
+Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ce problèmes émergent. Avant de proposer une méthodologie afin de tenter de répondre à ce problème, comment pouvons nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
+
+Ce document va présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Nous présentons donc dans une première partie le contexte de notre recherche puis, dans un second temps ,la démarche que nous avons suivie que les différents résultats obtenus.
 
 ## I. Contexte de la recherche
 
@@ -38,8 +40,6 @@ Même si ce type de solution est très courante sur le net ou dans les intranet 
 XWiki apporte une solution générique et configurable au client. Cela permet d'avoir un seul produit initial et de le décliner de moultes manières suivant les besoins du client. Cette solution va permettre aux clients de XWiki \(typiquement une entreprise nécessitant de regrouper des informations\) d'obtenir sa propre base de connaissance structurée. XWiki propose aussi une interface permettant à ses utilisateurs d'avoir en plus la possibilité de personnaliser les barres latérales de leur interface pour améliorer leur appréhension personnelle de l’outil.
 
 Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
-
-~~Étudier un tel projet a une valeur inestimable. Vu la croissance des projets ouverts à multiple contributeurs, il est probable que nous soyons impliqués dans de tel projets dans notre carrière professionnelle.~~  
 
 ## II. Question générale
 
@@ -67,7 +67,7 @@ En dernier lieu, nous aurions essayé d'établir une corrélation entre les poin
 
 Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette méthodologie.
 
-//SCREEN REPONSE
+![](../.gitbook/assets/responsexwiki.png)
 
 Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de XWiki étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon, nous ne serions capable de ne collecter qu’une faible quantité de données. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de XWiki ne seraient pas exhaustives.
 
