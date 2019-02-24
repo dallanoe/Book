@@ -41,7 +41,7 @@ XWiki apporte une solution générique et configurable au client. Cela permet d'
 
 Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
 
-## II. Première Approche
+## II. Première approche
 
 ### 2.1.  Hypothèse de départ <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
@@ -79,11 +79,19 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 Nouvelle hypothèse + Méthodologie
 
+N'ayant pas trouvé de manière de définir ; la métrique "chaleur" que nous avions défini \(todo dire que impact sur l'hypothèse: todo changer hypothèse\)
+
+N'ayant pas réussi à donner de réponse claire à notre première approche, nous avons choisi de changer de direction. La nouvelle hypothèse à laquelle nous avons tenté de répondre est la suivante:
+
+_**Dans un projet Open Source, est-ce qu'une zone sensible est forcément une zone dans laquelle le nombre de tickets soulevés est important ?**_
+
 ## IV. Recherches et expérimentations
 
 ### 4.1. Collecte d'informations <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 Métriques + Sources + Hypothèses à prouver
+
+Métriques: Chaleur, complexité d'une méthode, sévérité d'un bug
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
