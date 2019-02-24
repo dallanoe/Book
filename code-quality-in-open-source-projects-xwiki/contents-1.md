@@ -113,9 +113,9 @@ Description des experimentations menées
 
 ## VI. Outils\(?\) / Références
 
-UCA : University Côte d'Azur \(french Riviera University\)![](../.gitbook/assets/logo_uns%20%281%29.png)
-
 ###  <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+![](../.gitbook/assets/logo_uns_epu_uca.png)
 
 
 
