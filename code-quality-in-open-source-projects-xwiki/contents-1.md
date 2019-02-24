@@ -95,7 +95,15 @@ Cette nouvelle approche va nous permettre de valider ou d'invalider l'hypothèse
 
 ### 4.1. Collecte d'informations <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-~~_Métriques + Sources + Hypothèses à prouver_~~
+**Sources**
+
+Afin de collecter des données \(voir expériences, _Livrable L3_\), nous avons utilisé différentes sources.
+
+* **Jira**
+
+Jira est le système de tickets utilisé majoritairement par _XWiki_.
+
+**Métriques**
 
 Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisi en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
 
