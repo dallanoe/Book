@@ -117,9 +117,16 @@ Description des expérimentations menées
 
 
 
-## VI. Outils\(?\) / Références
+## VI. Références
 
-###  <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+* Les [sources](https://github.com/xwiki/xwiki-platform) _Github_ du projet.
+* Le topics utilisés sur le forum _XWiki_ pour communiquer avec les développeurs:
+  * [Topic 1](https://forum.xwiki.org/t/student-what-are-the-hot-spots-of-xwiki-code/4213/2)
+  * [Topic 2](https://forum.xwiki.org/t/student-issues-code-linking/4329)
+* Les données [Clover](http://maven.xwiki.org/site/clover/20190202/clover-commons+rendering+platform-20190202-0222/dashboard.html) permettant de lier _Jira_ et _Github_ pour les 20 derniers commits.
+* Le tableau d'ensemble listant tous les serveurs composant l'écosystème [_XWiki_](https://dev.xwiki.org/xwiki/bin/view/Community/DevelopmentPractices#HGeneralDevelopmentFlow).
+* Le [système](https://jira.xwiki.org/secure/Dashboard.jspa) de tickets utilisé par _XWiki_.
+* Les [extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/WebHome) _XWiki_.
 
 ![](../.gitbook/assets/logo_uns_epu_uca.png)
 
