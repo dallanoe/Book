@@ -107,15 +107,15 @@ Jira est le système de tickets utilisé majoritairement par _XWiki_.
 
 Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisi en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
 
-Afin que nos expériences puissent être claires pour leurs lecteurs, nous définissons ici les métriques utilisées.
+Afin que nos expériences puissent être claires pour les lecteurs, nous définissons ici les métriques utilisées.
 
 #### **Métriques de couverture de code**
 
-Nos expériences introduisent la notion de couverture de code. Cette notion est composite et pour obtenir la couverture globale on applique une fonction sur les trois métriques suivantes.
+Nos expériences introduisent la notion de couverture de code. Cette notion est composite et pour obtenir la couverture globale, une fonction est appliquée sur les trois métriques suivantes.
 
 * _Couverture de branche._ 
 
-Cette métrique mesure quelles branches possibles dans les structures de contrôle de flux sont suivies. Sur _Clover_, elle est réalisée en enregistrant si l'expression booléenne dans la structure de contrôle a été évaluée à la fois à vraie et à fausse pendant l'exécution.
+Cette métrique mesure quelles branches possibles dans les structures de contrôle de flux sont suivies. Sur _Clover_, elle est obtenue en enregistrant si l'expression booléenne dans la structure de contrôle a été évaluée à la fois à vraie et à la fois fausse pendant l'exécution.
 
 * _Couverture d'instruction_
 
@@ -146,9 +146,17 @@ C'est une métrique calculée de manière arbitraire, par exemple, sous _Clover_
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Description des expérimentations menées 
+En suivant la méthodologie présentée plus tôt, nous pouvons discerner cinq expérimentations distinctes.
 
-![](../.gitbook/assets/schemaexperiences%20%281%29.png)
+Les trois premières vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants.
+
+La quatrième expérience va consister à repartir du sous-projet identifié dans la première expérience, puis à récupérer la complexité et la couverture de code de chacune des classes dudit sous-projet.
+
+La cinquième expérience, quant à elle, va correspondre au cinquième point de notre méthodologie. Elle va nous permettre d'établir, ou non, une corrélation entre zones sensibles et couverture de code.
+
+Vous trouverez ci-dessous un schéma résumant notre démarche.
+
+![](../.gitbook/assets/schemaexperiences.png)
 
 ## V. Analyse de nos résultats
 
