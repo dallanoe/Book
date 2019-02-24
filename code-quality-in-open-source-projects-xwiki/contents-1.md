@@ -173,17 +173,11 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 ## V. Analyse de nos résultats
 
-### 5.1 ???? // Parties en fonction des différents types de résultats/des sources ? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 5.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-### 5.2 ???? <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 5.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-###  <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
-![](https://lh4.googleusercontent.com/wDkJcwofr25OJ468L0WWyRfI5Vbhn4M5YFN8SWRF989OMnRW_pFhsWC9f4oCm0hviZqjU7-2BOMwg4EVKd4m4BBLsSgL9-JpK6_BHWQqHcvcuyB30isNqORVeBJeX4G8a4hso7Up)
-
-![XWiki components issues](https://lh6.googleusercontent.com/aQAXC5tdJANK-tJ-5yhXHY5sqmIBpZ8-UhLoybQ6agKSH9NNIpk4YOkNGC2FgyHgbac90q1KkwY2RMipSfBTiZW3ux1_YkNa1Mnh0969gEj5w0Gx3D04lZQF5qm9qyQ3Ctn1nQsq)
-
-![](https://lh6.googleusercontent.com/3VCprCHxCBPLG9PrU0x2sRIdlp5UDA7FhcjUQgyf-w0MxtB9rwpbFU9S0aINDIoQwVzCtkyz2viSuTknpjYI_TOEwdxBrfbMgB-8R1qnUPGDmkCpyYoUrFF538KBMbISVfdo3hGG)
+### 5.3. Expérience 5
 
 ## VI. Conclusion 
 
