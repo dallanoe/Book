@@ -102,7 +102,19 @@ Afin de collecter des données \(voir expériences, _Livrable L3_\), nous avons 
 
 * **Jira**
 
-Jira est le système de tickets utilisé majoritairement par _XWiki_.
+_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et en extraire certaines informations comme le nombre de problèmes liés à un certain projet.
+
+* **Github**
+
+_Github_ est l'hôte des sources de _XWiki_. Il nous a par exemple permis de définir le sous-projet \(repository\) sur lequel nous concentrer ainsi qu'accéder à des bouts d'implémentation.
+
+* **Clover**
+
+_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences.
+
+* **Jenkins**
+
+_Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relevés \(_Jira_\). Cependant il ne stocke seulement que les informations des 20 derniers builds générés.
 
 **Métriques**
 
