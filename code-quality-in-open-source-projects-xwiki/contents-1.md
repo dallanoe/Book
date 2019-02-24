@@ -49,7 +49,7 @@ Comme mentionné précédemment, notre objectif principal est ici de trouver une
 
 Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécessaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
 
-De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ? Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
+De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : _**les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ?**_ Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de XWiki.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
 
@@ -77,13 +77,9 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 ## III. Nouvel objectif 
 
-Nouvelle hypothèse + Méthodologie
+Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise quels composants sont les plus sollicités par les utilisateurs de XWiki. Ainsi, notre première hypothèse reposant sur cette métrique, il a été nécessaire d'en trouver une nouvelle. 
 
-N'ayant pas trouvé de manière de définir ; la métrique "chaleur" que nous avions défini \(todo dire que impact sur l'hypothèse: todo changer hypothèse\)
-
-N'ayant pas réussi à donner de réponse claire à notre première approche, nous avons choisi de changer de direction. La nouvelle hypothèse à laquelle nous avons tenté de répondre est la suivante:
-
-_**Dans un projet Open Source, est-ce qu'une zone sensible est forcément une zone dans laquelle le nombre de tickets soulevés est important ?**_
+Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dans laquelle le nombre de bugs soulevés est important ?**_
 
 ## IV. Recherches et expérimentations
 
