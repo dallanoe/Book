@@ -173,6 +173,8 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 ## V. Analyse de nos résultats
 
+Nous présentons dans cette partie les résultats de nos différentes expériences.
+
 ### 5.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 ### 5.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
