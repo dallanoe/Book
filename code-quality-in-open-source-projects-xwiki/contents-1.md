@@ -11,7 +11,7 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 ## Introduction
 
-Des technologies émergent tous les jours. Les organisations, Open Source comme privées, produisent de plus en plus des systèmes qui utilisent une multitude de technologies, concepts et outils. 
+Des technologies émergent tous les jours. Les organisations, Open Source comme privées, produisent de plus en plus de systèmes qui utilisent une multitude de technologies, concepts et outils. 
 
 Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ce problèmes émergent. Avant de proposer une méthodologie afin de tenter de répondre à ce problème, comment pouvons nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
 
@@ -81,15 +81,16 @@ Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise q
 
 Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de tests est importante ?**_
 
-Avec cette nouvelle approche, nous avons mis en place une nouvelle méthodologie expérimentale :
+Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
-* 1° - Tout d'abord, partir du projet complet, ici XWiki, et déterminer quels sous-projets ont le plus de bugs actifs actuellement. XWiki proposant de nombreuses extensions, nous ne pouvons pas malheuresement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre scope de recherche sur quelques sous-projets.
-* 2° - Ensuite, choisir parmi les différents sous-projets celui ou ceux présentant le plus d'interêt pour notre étude. Une fois ceux-ci choisis, calculer la sévérité des bugs des composants présentant le plus d'issues.
-* 3° - Parmi les composants présentant le plus d'issues, identifier les classes associées à ces issues.   
-* 4° - Indépendamment des points deux et trois, se baser sur le sous-projet identifié dans le premier point.  Récupérer la complexité ainsi que la couverture de test de chacune des classes de ce sous-projet.
-* 5° - Essayer d'établir une corrélation entre les classes identifiées dans le troisième point et leur complexité et couverture de code.
+1. Tout d'abord, partir du projet complet, ici _XWiki_, et déterminer, parmi les plus gros sous-projets, ceux qui ont le plus de **bugs** non résolus. _XWiki_ propose de nombreuses extensions, de ce fait, nous ne pouvons malheureusement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre **scope** de recherche sur un ou plusieurs sous-projets.
+2. Ensuite, choisir parmi les différents sous-projets, identifier celui qui présente le plus d'intérêt \(critère à définir\) pour notre étude.
+3. Une fois celui-ci choisi, définir la **sévérité** des bugs des composants présentant le plus d'issues.
+4. Parmi ces composants, identifier, cette fois, les **classes** associées à ces issues.   
+5. Indépendamment des points deux et trois, se baser sur le sous-projet identifié dans le premier point. Récupérer la **complexité** ainsi que la **couverture** de test de chacune des classes de ce sous-projet.
+6. Essayer d'établir une corrélation entre les classes identifiées dans le quatrième point et leur complexité et couverture de code.
 
-Cette nouvelle approche va nous permettre de valider ou d'invalider l'hypothèse précédente, qui elle même propose une piste à la résolution de notre question globale.
+Cette nouvelle approche va nous permettre de valider ou invalider l'hypothèse précédente, qui elle même propose une piste à la résolution de notre question globale.
 
 ## IV. Recherches et expérimentations
 
