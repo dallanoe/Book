@@ -79,11 +79,17 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki
 
 Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise quels composants sont les plus sollicités par les utilisateurs de XWiki. Ainsi, notre première hypothèse reposant sur cette métrique, il a été nécessaire d'en trouver une nouvelle. 
 
-Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dans laquelle le nombre de bugs soulevés est important ?**_
+Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de tests est importante ?**_
 
-Avec cette nouvelle approche, nous avons mis en place une nouvelle méthodologie expérimentale : 
+Avec cette nouvelle approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
+* 1° - Tout d'abord, partir du projet complet, ici XWiki, et déterminer quels sous-projets ont le plus de bugs actifs actuellement. XWiki proposant de nombreuses extensions, nous ne pouvons pas malheuresement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre scope de recherche sur quelques sous-projets.
+* 2° - Ensuite, choisir parmi les différents sous-projets celui ou ceux présentant le plus d'interêt pour notre étude. Une fois ceux-ci choisis, calculer la sévérité des bugs des composants présentant le plus d'issues.
+* 3° - Parmi les composants présentant le plus d'issues, identifier les classes associées à ces issues.   
+* 4° - Indépendamment des points deux et trois, se baser sur le sous-projet identifié dans le premier point.  Récupérer la complexité ainsi que la couverture de test de chacune des classes de ce sous-projet.
+* 5° - Essayer d'établir une corrélation entre les classes identifiées dans le troisième point et leur complexité et couverture de code.
 
+Cette nouvelle approche va nous permettre de valider ou d'invalider l'hypothèse précédente, qui elle même propose une piste à la résolution de notre question globale.
 
 ## IV. Recherches et expérimentations
 
