@@ -81,6 +81,10 @@ Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise q
 
 Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dans laquelle le nombre de bugs soulevés est important ?**_
 
+Avec cette nouvelle approche, nous avons mis en place une nouvelle méthodologie expérimentale : 
+
+
+
 ## IV. Recherches et expérimentations
 
 ### 4.1. Collecte d'informations <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
@@ -91,7 +95,9 @@ Métriques: Chaleur, complexité d'une méthode, sévérité d'un bug
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Description des experimentations menées 
+Description des expérimentations menées 
+
+![](../.gitbook/assets/schemaexperiences%20%281%29.png)
 
 ## V. Analyse de nos résultats
 
