@@ -41,9 +41,9 @@ XWiki apporte une solution générique et configurable au client. Cela permet d'
 
 Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
 
-## II. Question générale
+## II. Première Approche
 
-### 2.1.  Hypothèse <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 2.1.  Hypothèse de départ <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
 
@@ -53,7 +53,7 @@ De ces diverses questions découle la problématique à laquelle nous allons ess
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que XWiki.
 
-### 2.2. Méthodologie de départ
+### 2.2. Première méthodologie 
 
 Afin de valider cette hypothèse, nous avons envisagé de mettre en place la méthodologie décrite ci-dessous. 
 
@@ -75,19 +75,19 @@ Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur la
 
 En revanche, dans le cas d'une étude sur les extensions additionnelles de XWiki, une telle méthodologie pourrait être adaptée. En effet, contrairement au cœur de XWiki, il est possible de savoir quelles extensions sont les plus utilisées, en se basant sur leur nombre de téléchargements. Ainsi, se baser sur ces informations et des informations récoltées à la main pourrait être intéressant si nous choisissions d'étendre le sujet de cette étude au delà du cœur de XWiki.
 
-## III. Collecte d''informations
+## III. Nouvel objectif 
 
-### 3.1.  Nouvelle Méthodologie <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
-### 3.2.  Métriques <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
-
-### 3.3.  Sources <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+Nouvelle hypothèse + Méthodologie
 
 ## IV. Recherches et expérimentations
 
-### 4.1. Hypothèses à démontrer <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 4.1. Collecte d'informations <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+Métriques + Sources + Hypothèses à prouver
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+
+Description des experimentations menées 
 
 ## V. Analyse de nos résultats
 
