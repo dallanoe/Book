@@ -41,7 +41,7 @@ XWiki apporte une solution générique et configurable au client. Cela permet d'
 
 Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
 
-## II. Première approche
+## II. Approche initiale
 
 ### 2.1.  Hypothèse de départ <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
@@ -95,9 +95,46 @@ Cette nouvelle approche va nous permettre de valider ou d'invalider l'hypothèse
 
 ### 4.1. Collecte d'informations <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Métriques + Sources + Hypothèses à prouver
+~~_Métriques + Sources + Hypothèses à prouver_~~
 
-Métriques: Chaleur, complexité d'une méthode, sévérité d'un bug
+Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisi en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
+
+Afin que nos expériences puissent être claires pour leurs lecteurs, nous définissons ici les métriques utilisées.
+
+#### **Métriques de couverture de code**
+
+Nos expériences introduisent la notion de couverture de code. Cette notion est composite et pour obtenir la couverture globale on applique une fonction sur les trois métriques suivantes.
+
+* _Couverture de branche._ 
+
+Cette métrique mesure quelles branches possibles dans les structures de contrôle de flux sont suivies. Sur _Clover_, elle est réalisée en enregistrant si l'expression booléenne dans la structure de contrôle a été évaluée à la fois à vraie et à fausse pendant l'exécution.
+
+* _Couverture d'instruction_
+
+La couverture d'instruction est une métrique mesurant quelles instructions d'un corps de code ont été exécutées au cours d'un test, et quelles instructions ne l'ont pas été.
+
+* _Couverture de méthode_
+
+La couverture de méthode est une métrique mesurant si une méthode a été accédée pendant l'exécution d'un programme.
+
+#### **Métriques de complexité de code**
+
+Nous introduisons aussi la notion de complexité d'un code.
+
+* _Complexité_
+
+C'est la métrique globale donnant la complexité cyclomatique d'une entité dans un contexte donné. Les contextes possibles étant une _classe_, un _package_ ou encore un _projet_.
+
+* _Complexité d'une méthode_
+
+C'est une métrique calculée de manière arbitraire, par exemple, sous _Clover_ le calcul est effectué de la façon suivante:
+
+1. _`Méthode vide: 1 point`_
+2. _`Instruction unique: 0 point`_
+3. _`Bloc Switch: (nombre de Case) points`_
+4. _`Bloc Try Catch: (nombre de Catch) points`_ 
+5. _`Expression Ternaire: 1 point`_
+6. _`Expression Booléenne: (nombre de && ou ||) points`_
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
