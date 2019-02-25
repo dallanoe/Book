@@ -9,33 +9,33 @@ Nous sommes quatre étudiants en dernière année de Sciences Informatiques à P
 * MORTARA Johann &lt;johann.mortara@etu.unice.fr&gt;
 * ROUSSEAU Nikita &lt;nikita.rousseau@etu.unice.fr&gt;
 
-## I. Les contributeurs, la vraie ressource de l'open-source
+## I. Les contributeurs, la vraie ressource de l'open source
 
 Le sujet ayant retenu notre attention concernait le projet XWiki. Le sujet initial, était subdivisé en deux questions :
 
 * Comment améliorer la qualité de code chez XWiki ?
-* Comment améliorer l'onboarding des contributeurs chez XWiki ?
+* Comment améliorer l'_onboarding_ des contributeurs chez XWiki ?
 
 En partant de ces sujets nous avons redéfini une nouvelle problématique : Comment introduire une dynamique de contribution dans un projet open source et pérenniser sa communauté ?
 
-L'intérêt principal de cette recherche réside dans l'importance de la communauté dans le monde open source. De nombreux projets open-source constituent le socle de l'informatique moderne que ce soit des éditeurs, aux outils de build jusqu'aux librairies "habituelles" : Visual Code Studio, Maven, Gradle, Junit, Mockito, Apache Kafka, Jenkins, Docker...
+L'intérêt principal de cette recherche réside dans l'importance de la communauté dans le monde open source. De nombreux projets open source constituent le socle de l'informatique moderne que ce soit des éditeurs de texte, aux outils de _build_ jusqu'aux bibliothèques "habituelles" : Visual Code Studio, Maven, Gradle, JUnit, Mockito, Apache Kafka, Jenkins, Docker...
 
-L'ensemble de ces projets constituent le paysage technologique de notre époque et sont devenus incontournables pour la plupart des développeurs. Derrière ces projets et organisations se cachent souvent des centaines de contributeurs, rémunérés ou non par des sociétés pour participer à l'avancée desdits projets. Le noyau Linux peut être considéré comme le projet open source ayant le plus impacté le monde de l'informatique ces 30 dernières années. Compte tenu de son usage, le noyau Linux regroupe de nombreux contributeurs professionnels \(ie. rémunérés par une entreprise pour contribuer\).
+L'ensemble de ces projets constituent le paysage technologique de notre époque et sont devenus incontournables pour la plupart des développeurs. Derrière ces projets et organisations se cachent souvent des centaines de contributeurs, rémunérés ou non par des sociétés pour participer à l'avancée desdits projets. Le noyau Linux peut être considéré comme le projet open source ayant le plus impacté le monde de l'informatique ces 30 dernières années. Compte tenu de son usage, le noyau Linux regroupe de nombreux contributeurs professionnels \(_i.e._ rémunérés par une entreprise pour contribuer\).
 
-Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur communauté ? Comment peuvent-ils inciter les contributeurs à participer activement et sur le long terme au développement du projet ?
+Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur communauté ? Comment peuvent-ils inciter les contributeurs à participer activement et sur le long terme au développement de leur projet ?
 
 ## II. Collecte d'informations
 
 Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
 
-* Junit 5
+* JUnit 5
 * Mockito
 * Hibernate ORM
 * Log4j2
 
-Afin de cadrer notre recherche nous avons du définir la notion de contributeur. Nous avons donc restreint la définition de contributeur à toute personne ayant proposé un commit accepté sur la branche principale du projet.
+Afin de cadrer notre recherche nous avons du définir la notion de **contributeur**. Nous avons donc restreint la définition de contributeur à toute personne ayant proposé un _commit_ accepté sur la branche principale \(master\) du projet.
 
-Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre analyse puisque l'ensemble des projets retenus reposent tous sur une communauté alors qu'XWiki est soutenu avec la société XWiki SAS. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets \(condition préalable à notre sélection\).
+Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre analyse puisque l'ensemble des projets retenus reposent tous sur une communauté alors qu'XWiki est maintenu par la société XWiki SAS. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets \(condition préalable à notre sélection\).
 
 Nous avons de plus cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Parmi les papiers ayant attiré notre attention, ceux ayant eu un réel intêrét :
 
@@ -43,23 +43,23 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 * Papier 2
 * Papier 3
 
-Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grands de développeurs. Nous avons décider de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
+Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grand de développeurs. Nous avons décidé de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
 
 ## III. Une chambre bien rangée est-elle plus accueillante ?
 
-En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
+En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : pour nous, les principaux facteurs permettant d'attirer des contributeurs dans un projet open source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
 En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :
 
-* README.md
-* Getting started ?
-* Getting help ?
-* Badges ?
-* How to build
-* Code example
-* Contributing.md
-* Intégration continue
-* Javadoc
+* Présence d'un README.md détaillé avec ces informations :
+  * Présence d'une section "Getting started" ou ce qui s'en rapproche afin de proposer un point d'entrée à la contribution.
+  * Présence d'une section "Getting help" qui détaille comment contacter les mainteneurs du projets en cas de questions.
+  * Présence de badges \(ou [_shields_](https://shields.io/)_\)_ montrant l'état du _build_, la couverture de tests ou d'autres informations utiles.
+  * Présence d'une section "How to build" ou ce qui s'en rapporche détaillant comment construire la solution localement.
+* Présence d'exemples de code.
+* Présence d'un Contributing.md qui définit les conventions de nommages, les messages de _commits_, etc.
+* Présence d'un Intégration continue
+* Présence d'une Javadoc à jour
 * Nombre de jours depuis la dernière mise à jour de la documentation
 * Temps moyen de réponse aux issues
 * Nombre de commits
@@ -220,11 +220,11 @@ Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 fo
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
-## V. Tools \(facultatif\)
+## V. Outils utilisés
 
 Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
 
-## VI. References
+## VI. Références
 
 1.
 
