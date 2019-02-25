@@ -159,7 +159,7 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework.
 
-
+Le second contributeur, Brice Dutheil, représenteb 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits trés largement inférieurs à 1%.
 
 
 
