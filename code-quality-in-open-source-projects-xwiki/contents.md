@@ -24,7 +24,7 @@ L'ensemble de ces projets constituent le paysage technologique de notre époque 
 
 Qu'en est-il des projets plus petits ? Comment peuvent-ils faire grandir leur communauté ? Comment peuvent-ils inciter les contributeurs à participer activement et sur le long terme au développement du projet ?
 
-## III. Collecte d'informations
+## II. Collecte d'informations
 
 Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les contributions :
 
@@ -45,7 +45,7 @@ Nous avons de plus cherché des articles de recherche traitant de l'open source 
 
 Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir confronter nos résultats à l'avis d'un groupe plus ou moins grands de développeurs. Nous avons décider de réaliser ce sondage en fin d'analyse afin d'une part de ne pas être guidé dans nos recherches par les résultats de ce dernier et d'autre part pour nous permettre d'affiner les questions. En effet, l'étude des métriques tangibles nous a conduit à des métriques subjectives ne pouvant pas être mesurées autrement qu'en interrogeant les contributeurs.
 
-## IV. Une chambre bien rangée est-elle plus accueillante ?
+## III. Une chambre bien rangée est-elle plus accueillante ?
 
 En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : Pour nous les principaux facteurs permettant d'attirer des contributeurs dans un projet open-source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
@@ -65,7 +65,7 @@ En partant de cette hypothèse nous avons défini des métriques pouvant, d'apr�
 * Nombre de commits
 * Nombre de contributeurs
 
-## V. Analyse des résultats et Conclusion
+## IV. Analyse des résultats et Conclusion
 
 ### JUnit5
 
@@ -220,7 +220,7 @@ Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 fo
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
-## VI. Tools \(facultatif\)
+## V. Tools \(facultatif\)
 
 Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
 
