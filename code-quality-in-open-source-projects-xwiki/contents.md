@@ -91,7 +91,7 @@ JUnit5 est un _framework_ de test unitaire, un des plus utilisés pour le langag
 * Nombre de commits sur master : 5417 au moment de la vérification
 * Nombre de contributeurs : 95
 
-JUnit5 semble remplir la très grande majorité de nos critères, voyons maintenant avec l'analyse des contributions si les membres du projet portent le projet ou s'il est porté par sa communauté.
+JUnit5 semble remplir la très grande majorité de nos critères pour être un projet attirant, voyons maintenant avec l'analyse des contributions si le projet est porté par les membres de l'équipe JUnit ou par sa communauté.
 
 #### Analyse des contributions
 
