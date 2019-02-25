@@ -205,7 +205,8 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 
 * Présence d'un `README.md` :
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
-* Méthode de contribution :
+* Méthode de contribution : ??
+* Exemples de code : non
 * Badges : Non
 * Intégration continue : Jenkins
 * Documentation : disponible sur le site de XWiki, dont le lien est présent dans le `README.md`
@@ -213,16 +214,21 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
   * Blog
   * Mailing lists
   * IRC
+* Temps moyen de réponse aux issues : ??
 * Nombre de contributeurs au moment de l'étude : 96
 * Nombre de commits sur `master` au moment de l'étude : 36.461
 
-Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer à quel point le dépôt est conforme aux attentes standards de la communauté :
+Le dépôt de XWiki Platform comporte un community profile \([https://github.com/xwiki/xwiki-platform/community](https://github.com/xwiki/xwiki-platform/community)\) qui permet de mesurer à quel point le dépôt est conforme aux attentes standards de la communauté :
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
+
+Nous pouvons voir que plusieurs éléments manquent au dépôt afin de pleinement satisfaire aux bonnes pratiques des projets open-source listées sur ce site : [https://opensource.guide/](https://opensource.guide/)
 
 #### Analyse des contributions
 
 Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
+
+**Conclusions :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
 
 ## V. Sondage
 
