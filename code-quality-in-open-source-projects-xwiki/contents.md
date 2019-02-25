@@ -232,6 +232,7 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
 * Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
 * Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
 * Enfin, des questions sur son expérience de contribution:
+
   * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
   * A quelle fréquence contribue-t'elle ?
   * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
@@ -242,6 +243,9 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
   * Quel est le principal obstacle qui l'empêcherai de contribuer ?
   * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
   * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
+
+  
+  Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
 
 ## VI. Conclusion
 
