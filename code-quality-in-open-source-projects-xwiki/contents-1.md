@@ -191,7 +191,13 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 * _Expérience 1_ 
 
-\_\_
+Les données recueillies lors de l’expérience sont compté par sous-projet et priorité de bugs. Nous avons ainsi obtenu les résultats suivant:
+
+![](../.gitbook/assets/image%20%285%29.png)
+
+On remarque qu’une énorme parties des bugs ce retrouvent être le projet XWiki Platform. Parmi les autres données, bien moins représentatives, nous avons XWiki Rendering et XWiki Commons. Cependant XWiki Platform confirme sa place de sous-projet à analyser grâce à la sévérité de ses bugs
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 * _Expérience 2_
 

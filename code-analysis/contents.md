@@ -140,7 +140,7 @@ Sur cette figure qui affiche les projets qui utilisent ou non un wrapper externe
 
 Pour répondre à cette question nous devons dans un premier temps si dans les projets nous utilisons bien les properties dans les codes comme dans les tests.
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 Sur cette figure on constate bien que sur 60 % des projets de notre dataset c’est le cas. Même si nous n’avons pas un nombre assez conséquent de projets pour l'affirmer on peut supposer que de manière générale les projets utilisent les properties dans les tests et le code. Certains projets utilisent les properties uniquement dans le code et enfin peu de projets utilisent les properties uniquement dans les tests. Sur notre dataset nous avons les proportions suivantes :
 

@@ -114,7 +114,7 @@ _Figure 6 - Vue de l'outil CodeScene_
 
 On peut donc procéder à l’analyse de l’un des projets, ce qui va nous diriger vers le dashboard général récapitulant les informations générales :
 
-![](../.gitbook/assets/3%20%281%29.png)
+![](../.gitbook/assets/3.png)
 
 _Figure 7 - Vue de l'outil CodeScene_
 

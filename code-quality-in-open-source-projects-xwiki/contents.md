@@ -205,8 +205,7 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 
 * Présence d'un `README.md` :
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
-* Méthode de contribution : ??
-* Exemples de code : non
+* Méthode de contribution :
 * Badges : Non
 * Intégration continue : Jenkins
 * Documentation : disponible sur le site de XWiki, dont le lien est présent dans le `README.md`
@@ -214,25 +213,14 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
   * Blog
   * Mailing lists
   * IRC
-* Temps moyen de réponse aux issues : ??
 * Nombre de contributeurs au moment de l'étude : 96
 * Nombre de commits sur `master` au moment de l'étude : 36.461
 
-Le dépôt de XWiki Platform comporte un community profile \([https://github.com/xwiki/xwiki-platform/community](https://github.com/xwiki/xwiki-platform/community)\) qui permet de mesurer à quel point le dépôt est conforme aux attentes standards de la communauté :
+Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer à quel point le dépôt est conforme aux attentes standards de la communauté :
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
 
-Nous pouvons voir que plusieurs éléments manquent au dépôt afin de pleinement satisfaire aux bonnes pratiques des projets open-source listées sur ce site : [https://opensource.guide/](https://opensource.guide/)
-
-#### Analyse des contributions
-
-Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
-
 Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
-
-**Conclusions :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
-
-## V. Sondage
 
 Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
 
@@ -244,6 +232,7 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
 * Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
 * Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
 * Enfin, des questions sur son expérience de contribution:
+
   * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
   * A quelle fréquence contribue-t'elle ?
   * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
@@ -255,43 +244,18 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
   * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
   * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
 
-Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l). Nous avons réussi à obtenir 189 réponses ce qui nous donne un échantillon de personnes interrogées assez intéressant à étudier, surtout quand on connaît la diversité des personnes qui sont inscrites sur Dev.to.
+  
+  Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
 
-Les deux premières parties du questionnaire sont surtout des questions pour filtrer et cibler le public que l'on veut interroger \(les personnes qui développent et ont contribué au moins une fois à un projet open source\).
+#### Analyse des contributions
 
-### Situation professionnelle et question de filtrage
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
 
-La première partie avec la question "Êtes-vous développeur ou avez vous déjà codé ?" fait passer les nombres de personnes interrogées qui nous intéressent de 189 à 175.
-
-![Diagramme de la situation des personnes interrog&#xE9;es, certains ont le sens de l&apos;humour, des chatons et des poilus notamment](../.gitbook/assets/1%20%281%29.png)
-
-![Premi&#xE8;re question de filtrage](../.gitbook/assets/2%20%281%29.png)
-
-La répartition des niveaux des personnes interrogées est assez uniforme, ainsi notre sondage touche plusieurs catégories de développeurs sans pour autant donner les résultats d'une majorité.
-
-### Niveau d'expérience en développement et question de filtrage
-
-La seconde partie contient une question sur le niveau d'expérience en développement de ces personnes ainsi qu'une question de filtrage.
-
-![Diagramme de la r&#xE9;partition de l&apos;exp&#xE9;rience en tant que d&#xE9;veloppeur des personnes interrog&#xE9;es](../.gitbook/assets/3.png)
-
-1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
-
-![Seconde question de ciblage](../.gitbook/assets/4%20%281%29.png)
-
-Nous avons utilisé cette seconde question pour filtrer notre panel de personnes interrogées et ainsi n'avoir que l'avis des personnes ayant contribué à un projet open source au moins une fois, passant ainsi notre panel à 139 personnes ciblées.
-
-### Comportements autour de la contribution open source
-
-Nous allons ici exposer seulement les résultats permettant d'affirmer ou réfuter notre seconde hypothèse qui est que la complexité d'un projet et l'attitude des mainteneurs sont les principaux freins à la contribution.
-
-![Apparemment l&apos;attitude des mainteneurs a une importance pour la majorit&#xE9; des personnes interrog&#xE9;es](../.gitbook/assets/7%20%281%29.png)
-
-![4 obstacles &#xE0; la contribution ressortent principalement avec la complexit&#xE9; du projet, l&apos;attitude des mainteneurs des projets, le manque de documentation et du code peu lisible.](../.gitbook/assets/9_3.png)
-
-![Apparemment notre premi&#xE8;re hypoth&#xE8;se &#xE9;tant loin d&apos;&#xEA;tre vraie, le social semble plus important dans la vie d&apos;un projet open source que la rigueur de son d&#xE9;veloppement.](../.gitbook/assets/9_5.png)
+## V. Sondage
 
 ## VI. Conclusion
+
+1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
