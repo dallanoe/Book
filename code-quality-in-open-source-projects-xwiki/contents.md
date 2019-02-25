@@ -232,7 +232,6 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
 * Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
 * Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
 * Enfin, des questions sur son expérience de contribution:
-
   * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
   * A quelle fréquence contribue-t'elle ?
   * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
@@ -244,8 +243,16 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
   * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
   * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
 
-  
-  Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
+Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l). Nous avons réussi à obtenir 189 réponses ce qui nous donne un échantillon de personnes interrogées assez intéressant à étudier, surtout quand on connaît la diversité des personnes qui sont inscrites sur Dev.to.
+
+Les deux premières parties du questionnaire sont surtout des questions pour filtrer et cibler le public que l'on veut interroger \(les personnes qui développent et ont contribué au moins une fois à un projet open source\).  
+La première partie avec la question "Êtes-vous développeur ou avez vous déjà codé ?" fait passer les nombres de personnes interrogées qui nous intéressent de 189 à 175.
+
+![Diagramme de la situation des personnes interrog&#xE9;es, certains ont le sens de l&apos;humour, des chatons et des polius notamment](../.gitbook/assets/1%20%281%29.png)
+
+![Premi&#xE8;re question de filtrage](../.gitbook/assets/2%20%281%29.png)
+
+
 
 #### Analyse des contributions
 
