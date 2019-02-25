@@ -157,6 +157,12 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 #### Analyse des contributions
 
+Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework.
+
+
+
+
+
 ### Hibernate
 
 Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
@@ -214,12 +220,6 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
 
-#### Analyse des contributions
-
-Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
-
-## V. Sondage
-
 Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
 
 Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
@@ -246,6 +246,12 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
 
   
   Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
+
+#### Analyse des contributions
+
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
+
+## V. Sondage
 
 ## VI. Conclusion
 
