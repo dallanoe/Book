@@ -33,7 +33,7 @@ C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet
 
 ### 1.2. Qu'est-ce que XWiki ?
 
-_**XWiki**_ est un projet **Open Source** mature \(2003\) écrit en grande partie en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
+_**XWiki**_ est un projet **Open Source** mature, démarré en 2003, qui est écrit en très grande partie en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
 
 Même si ce type de solution est très courante sur le net ou dans les intranet de sociétés, attention à ne pas le confondre avec le premier venu. Il se targue en effet d’être non seulement un “**Wiki d’entreprise**” mais aussi un “**Wiki Applicatif**” ce qui fait de lui bien plus qu’un simple outil de gestion d’articles.
 
@@ -47,9 +47,9 @@ Pour mettre en avant l'ampleur du projet, le code source de l'application dépas
 
 Comme mentionné précédemment, notre objectif principal est ici de trouver une façon efficace et pertinente d'identifier les points sensibles d'un projet Open Source. Un point sensible étant, pour nous, un composant dont la panne/chute mettrait en péril le bon fonctionnement d'un projet.
 
-Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécessaire de tout tester : certains composants \(en CSS, par exemple\) nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
+Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécessaire de tout tester : certains composants, comme ceux écrit en CSS par exemple, nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
 
-De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : _**les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ?**_ Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de _XWiki_.
+De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : _**les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ?**_  Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de _XWiki_.
 
 En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que _XWiki_.
 
@@ -102,15 +102,15 @@ Afin de collecter des données \(voir expériences, _Livrable L3_\), nous avons 
 
 * **Github**
 
-_Github_ est l'hôte des sources de _XWiki_. Il nous a permis d'avoir une meilleur vu de l'architecture global du projet ainsi que de définir le sous-projet \(repository\) sur lequel nous concentrer. Avec plus de temps, nous aurions pu en plus faire une analyse plus en profondeur des parties chaudes, qu'on a découvert au fil de cette recherche, grâce au code fournis.
+_Github_ est l'hôte des sources de _XWiki_. Il nous a permis d'avoir une meilleur vu de l'architecture global du projet ainsi que de définir le sous-projet \(repository\) sur lequel nous concentrer. Avec plus de temps, nous aurions pu en plus faire une analyse plus en profondeur des parties chaudes, qu'on a découvertes au fil de cette recherche, grâce au code fournis.
 
 * **Jira**
 
-_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et d'en récupérer les bugs associés. Ces bugs nous on fournis leurs sévérité ainsi que leurs emplacement dans le code.
+_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et d'en récupérer les bugs associés. Ces bugs nous on fournit leurs sévérité ainsi que leurs emplacement dans le code.
 
 * **Clover**
 
-_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences. Ces informations sont la complexité du code ainsi que leurs couvertures. Ces informations nous on d'ailleurs aussi donné une sorte de carte de chaleur.
+_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences. Ces informations sont la complexité du code ainsi que leurs couvertures. Ces informations nous ont d'ailleurs aussi donné une sorte de carte de chaleur.
 
 * **Jenkins**
 
@@ -118,7 +118,7 @@ _Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relev
 
 **Métriques**
 
-Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisi en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
+Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisis en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
 
 Afin que nos expériences puissent être claires pour les lecteurs, nous définissons ici les métriques utilisées.
 
@@ -169,7 +169,7 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 Les trois premières vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
 
-Pour la première Nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacement à leur descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
+Pour la première Nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
 
 Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ceux-ci et regardons leurs sévérité afin de pouvoir crée nos première métriques utilisable pour notre hypothèse.
 

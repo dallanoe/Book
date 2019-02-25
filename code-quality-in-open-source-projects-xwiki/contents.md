@@ -174,6 +174,7 @@ Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer
   * LGTM \(qualité du code\) : A
 * Intégration continue : Jenkins, LGTM
 * Documentation : présence d'une AsciiDoc sur le dépôt du projet.
+* Moyen de contacter l'équipe de développement : oui, sur le site de Hibernate \([http://hibernate.org/community/](http://hibernate.org/community/)\)
 * Nombre de contributeurs au moment de l'étude : 346
 * Nombre de commits sur `master` au moment de l'étude : 9436
 
@@ -201,6 +202,11 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 * Méthode de contribution :
 * Badges : Non
 * Intégration continue : Jenkins
+* Documentation : disponible sur le site de XWiki, dont le lien est présent dans le `README.md`
+* Moyen de contacter l'équipe de développement : plusieurs moyens explicités dans le `README.md` du projet
+  * Blog
+  * Mailing lists
+  * IRC
 * Nombre de contributeurs au moment de l'étude : 96
 * Nombre de commits sur `master` au moment de l'étude : 36.461
 
