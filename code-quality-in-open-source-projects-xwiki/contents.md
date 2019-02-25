@@ -135,24 +135,22 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 ### Mockito
 
-#### Analyses des KPI \(analyse faite le 10 Février 2019\)
+#### Analyse des KPI \(analyse faite le 10 Février 2019\)
 
 * Présence d'un README.md :
-  * Présent et à jour. Le document  contient les grandes lignes permettant l'accueil dans le projet \( Version courante, liens vers les documentations fonctionnelles et techiques et les différents moyens de contacter l'équipe\)
-  * Il est clairement écrit que le projet désire des contributions externes et tout est fait pour qu'un nouvel entrant puisse construire le projet et proposer des modifications / envoyer du code.
+  * Présent et à jour. Le document contient les grandes lignes permettant l'accueil dans le projet \(Version courante, liens vers les documentations fonctionnelles et techiques et les différents moyens de contacter l'équipe\)
+  * Il est clairement écrit que le projet désire des contributions externes et tout est fait pour qu'un nouvel entrant puisse construire le projet et proposer des modifications/envoyer du code.
+* Exemples de code :
+  * Présent sur le site officiel du projet
 * Méthode de contribution :
   * Sur les 239 tickets ouverts, 14 portent un label "please contribute" et sont adaptés à un nouveau contributeur
-  * Un fichier CONTRIBUTING.md est préset et commence par les différents endroits où un externe au projet peut entrer en contact avec la communauté pour obtenir du support. Ce fichier décrit clairement les deux branches principales du projet \(version courante et version à venir\). Les attentes en terme de pull request \(commits, coding style et procédures\) sont décrites.
+  * Un fichier CONTRIBUTING.md est présent et commence par les différents endroits où un individu externe au projet peut entrer en contact avec la communauté pour obtenir du support. Ce fichier décrit clairement les deux branches principales du projet \(version courante et version à venir\). Les attentes en terme de pull request \(commits, coding style et procédures\) y sont décrites.
+* Présence d'une intégration continue sur Travis.CI et Codecov.
 * Badges \(ou _shields_\) :
   * Travis.CI \(build : passing\)
   * Codecov : Couverture en test unitaire de 88%
   * Versions : Licence, Release notes, Dernière version téléchargeable \(binaire et maven\), dernière version documentée
-* Présence d'une intégration continue sur Travis.CI et Codecov.
-* Présence d'un CONTRIBUTING.md
-  * Présent et détaillé, voir méthodes de contributions.
-* Exemples de code :
-  * Présent sur le site officiel du projet
-* Présence de Javadoc, à jour et mise à jour automatiquement à chaque commit
+* Présence de Javadoc, à jour et mise à jour automatiquement à chaque _commit_
 * Temps moyen de réponse aux issues: environ ??
 * Nombre de commits sur master : ??? au moment de la vérification
 * Nombre de contributeurs : ???
@@ -165,9 +163,9 @@ Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer
 
 #### Analyse des KPI
 
-* Présence d'un `README.md` :
+* Présence d'un README.md :
   * Contient les consignes de base permettant de construire le projet.
-  * Propose une redirection vers le `CONTRIBUTING.md`.
+  * Propose une redirection vers le CONTRIBUTING.md.
 * Méthode de contribution :
   * Un fichier CONTRIBUTING.md est présent. Il apporte des précisions sur les licences utilisées dans le projet et fournit un guide des étapes à réaliser pour pouvoir contribuer au projet.
   * Les issues sont gérées avec un JIRA externe. Les premières réponses sont de l'ordre de quelques heures.
