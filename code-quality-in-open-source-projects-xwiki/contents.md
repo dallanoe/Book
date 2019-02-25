@@ -193,9 +193,9 @@ En analysant la répartitions des commits sur la branche `master` du projet, nou
 * 11 → 50 : contributions occasionnelles
 * 51+ : contribution unique
 
-Il est intéressant de remarquer que les 18 premiers contributeurs font partie de l'organisation GitHub _Hibernate_. Hibernate étant développé par JBoss \(qui est une division de RedHat\), nous pouvons supposer que ces contributeurs sont rémunérés pour contribuer au projet.
+Il est intéressant de remarquer que les 18 premiers contributeurs font partie de l'organisation GitHub _Hibernate_. Hibernate étant développé par JBoss \(qui est une division de RedHat\), nous pouvons supposer que ces contributeurs sont rémunérés pour contribuer au projet. Le premier contributeur, Steve Ebersole, est _project lead_ de Hibernate ORM.
 
-Ce projet vérifie également la loi de Pareto : de par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet.
+De par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet \(les 19 premiers contributeurs, donc 5% des contributeurs\).
 
 ### XWiki
 
@@ -219,8 +219,6 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer à quel point le dépôt est conforme aux attentes standards de la communauté :
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
-
-Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
 
 Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
 
@@ -247,15 +245,17 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
   
   Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
 
+Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
+
+## VI. Conclusion
+
+1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
+
 #### Analyse des contributions
 
 Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
 
 ## V. Sondage
-
-## VI. Conclusion
-
-1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
