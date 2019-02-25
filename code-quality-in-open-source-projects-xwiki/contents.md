@@ -220,6 +220,12 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
 
+#### Analyse des contributions
+
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
+
+## V. Sondage
+
 Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
 
 Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
@@ -248,17 +254,11 @@ Le sondage a été posté sur des pages de développeurs des réseaux sociaux Fa
 Les deux premières parties du questionnaire sont surtout des questions pour filtrer et cibler le public que l'on veut interroger \(les personnes qui développent et ont contribué au moins une fois à un projet open source\).  
 La première partie avec la question "Êtes-vous développeur ou avez vous déjà codé ?" fait passer les nombres de personnes interrogées qui nous intéressent de 189 à 175.
 
-![Diagramme de la situation des personnes interrog&#xE9;es, certains ont le sens de l&apos;humour, des chatons et des polius notamment](../.gitbook/assets/1%20%281%29.png)
+![Diagramme de la situation des personnes interrog&#xE9;es, certains ont le sens de l&apos;humour, des chatons et des poilus notamment](../.gitbook/assets/1%20%281%29.png)
 
 ![Premi&#xE8;re question de filtrage](../.gitbook/assets/2%20%281%29.png)
 
-
-
-#### Analyse des contributions
-
-Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
-
-## V. Sondage
+La seconde partie contient une question sur le niveau d'expérience en développement de ces personnes ainsi qu'une question de filtrage
 
 ## VI. Conclusion
 
