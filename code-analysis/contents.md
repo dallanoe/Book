@@ -134,7 +134,7 @@ Pour répondre à cette question , nous allons lister le nom des properties util
 
 ![](https://lh5.googleusercontent.com/JOvA5Sj9IMf9i8wA97NrvG0pl_UCrnQc8aq6kzZDYCb2frLmS5rpqRGZOeX0d0uysbagLP_0yae_1D2lKfiOBNphTvuHzVTQSoo7gaYimV7_RvHHfaEMGNt2z6RCKCV_V9J4_U1p)
 
-Sur cette figure qui affiche les projets qui utilisent ou non un wrapper externe, on peut constater que l’ensemble des projets tester utilise directement les properties de java grâce aux méthodes présentes dans le JDK. Ce résultat semble logique, car les properties étant simple à manipuler il n’y a pas de raisons à introduire une surcouche.
+Sur cette figure qui affiche les projets qui utilisent ou non un wrapper externe, on peut constater que l’ensemble des projets testés utilise directement les properties de java grâce aux méthodes présentes dans le JDK. Ce résultat semble logique, car les properties étant simple à manipuler il n’y a pas de raisons à introduire une surcouche.
 
 #### Seules quelques properties sont présentes dans les tests
 
