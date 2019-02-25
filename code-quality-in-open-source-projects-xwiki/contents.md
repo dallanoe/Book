@@ -151,15 +151,21 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
   * Codecov : Couverture en test unitaire de 88%
   * Versions : Licence, Release notes, Dernière version téléchargeable \(binaire et maven\), dernière version documentée
 * Présence de Javadoc, à jour et mise à jour automatiquement à chaque _commit_
-* Temps moyen de réponse aux issues: environ ??
-* Nombre de commits sur master : ??? au moment de la vérification
-* Nombre de contributeurs : ???
+* Temps moyen de réponse aux issues: De nombreuses issues ne recoivent jamais de réponses
+* Nombre de commits sur master : 4960 au moment de la vérification
+* Nombre de contributeurs : 138
 
 #### Analyse des contributions
 
-Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework.
+Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework (`release/2.x`).
 
-Le second contributeur, Brice Dutheil, représenteb 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits trés largement inférieurs à 1%.
+Le second contributeur en nombre de commits, Brice Dutheil, représente 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits trés largement inférieurs à 1%.
+
+Ces proportions sont à nuancer avec la paternité réelle au sens du nombre de lignes de code. On retrouve deux contributeurs de tête qui représente à eux seuls 70% du code : Brice Dutheil et Szczpan Faber. Le point intéressant qu'en nombre de lignes de code Brice prend 45% contre 25% pour Szczpan.
+
+Cette inversion montre que les commits à eux seuls ne sont pas représentatifs cependant la tendance reste la même : Brice et Szczpan ont le leadership du projet et les 136 autres contributeurs ont une présence plus attenuée.
+
+**Conclusion :** On peut retenir de cette analyse que bien que le projet ne soit pas tenu par un groupe plus grand que ce binome, il est ouvert aux contributeurs externes. Cependant les contributions externes restent ponctuelles et ne constituent pas l'ossature principale du projet. 
 
 ### Hibernate
 
@@ -179,6 +185,7 @@ Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer
 * Intégration continue : Jenkins, LGTM
 * Documentation : présence d'une AsciiDoc sur le dépôt du projet.
 * Moyen de contacter l'équipe de développement : oui, sur le site de Hibernate \([http://hibernate.org/community/](http://hibernate.org/community/)\)
+* Temps moyen de réponse aux issues : de l'ordre de quelques heures
 * Nombre de contributeurs au moment de l'étude : 346
 * Nombre de commits sur `master` au moment de l'étude : 9436
 
@@ -206,7 +213,14 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 * Présence d'un `README.md` :
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
 * Méthode de contribution :
+  * Des sections `Contribute Designs`, `Sponsoring issues`, `Contribute code` permettent d'aiguilleur les contributeurs aussi dans le sens de la production que de la suggestion d'améliorations et fonctionnalités
+  * Un post `Onboarding` est dédié aux nouveaux entrants et propose des `Available Tracks` permettant d'intégrer le projet parmi lesquels (D'autres sont en cours de création) :
+    * Report or find an issue
+    * Understand XWiki concepts of XClass & XObjects
+    * Contribute to the core
+    * Write or run a test
 * Badges : Non
+* Pas d'exemples de code
 * Intégration continue : Jenkins
 * Documentation : disponible sur le site de XWiki, dont le lien est présent dans le `README.md`
 * Moyen de contacter l'équipe de développement : plusieurs moyens explicités dans le `README.md` du projet
@@ -220,32 +234,11 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 ![XWiki Platform community profile](../.gitbook/assets/xwiki-platform-community-standards.png)
 
-Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
+#### Analyse des contributions
 
-* La complexité trop haute de ces projets
-* Le manque d'investissement de la part des mainteneurs des projets
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs (dont 15 font partie de l'organisation XWiki) sont ceux qui portent vraiment le projet (totalisant 32.398 commits sur 36.461 commits, soit environ 89%). La loi de Pareto est vérifiée.
 
-Nous avons donc décidé de mettre en place un sondage afin de vérifier nos soupçons, il est composé de 3 parties :
-
-* Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
-* Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
-* Enfin, des questions sur son expérience de contribution:
-  * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
-  * A quelle fréquence contribue-t'elle ?
-  * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
-  * Est-ce qu'elle contribue individuellement ou en entreprise ?
-  * Est-ce que la personne préfère contribuer seule ou en équipe ?
-  * Quelle est la taille moyenne des projets auxquels elle contribue ?
-  * Qu'est-ce qui la motive à contribuer aux projets open source ?
-  * Quel est le principal obstacle qui l'empêcherai de contribuer ?
-  * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
-  * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
-
-Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
-
-Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
-
-**Conclusions :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
+**Conclusion :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
 
 ## V. Sondage
 
@@ -306,14 +299,26 @@ Nous allons ici exposer seulement les résultats permettant d'affirmer ou réfut
 
 ## VI. Conclusion
 
-![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
+Pour conclure, ce sondage va dans le sens de notre seconde hypothèse, l'attention portée à la communauté par les mainteneurs de projet et la complexité de leur projet semblent être les principaux facteurs influençant l'attractivité des contributeurs. Avec du recul ceci semble assez évident, corriger la complexité des projets semble néanmoins une tâche difficile mais améliorer la communication avec sa communauté semble moins ardu. Une autre idée de notre part serait de gamifier ces projets dans le but d'attirer et motiver les contributeurs, une solution encore en beta test mais pouvant être envisagée est ProMyze Themis.
 
 ## VII. Outils utilisés
 
-Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
+Au début du projet, nous avons commencé par déterminer des KPIs simples à évaluer, et pouvant être automatisés. Nous avons donc mis au point un script permettant d'automatiser le téléchargement de sources depuis un dépôt Git.
+
+Cependant, nous nous sommes rapidement aperçus que ces KPIs n'étaient pas assez fins pour nous permettre d'étudier le problème convenablement. Les KPIs ont donc été affinés, cependant leur évaluation ne pouvait plus être mécanisée. En effet, l'estimation de la qualité d'un `README.md` ne peut se faire automatiquement. Nous avons donc effectué la majeure partie de cette analyse à la main, en nous aidant de plusieurs outils :
+- [git-fame](https://github.com/casperdcl/git-fame) afin d'avoir un premier aperçu de la répartition de la paternité de code entre les différents contributeurs.
+- [git inspector](https://github.com/ejwa/gitinspector) nous a permis d'établir l'analyse des commits.
+- [Webscraper](https://www.webscraper.io/) afin de récupérer des informations directement depuis l'interface de Github.
+- [L'API GitHub](https://developer.github.com/v3/) dans l'optique d'obtenir des statistiques sur les issues
 
 ## VIII. Références
 
-1.
+- https://github.com/xwiki/xwiki-platform
+- https://github.com/junit-team/junit5
+- https://github.com/hibernate/hibernate-orm
+- https://github.com/apache/logging-log4j2
+- https://github.com/mockito/mockito
+- https://promyze.com/themis/
+- https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l
 
-1. 
+![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
