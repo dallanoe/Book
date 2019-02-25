@@ -49,7 +49,7 @@ Nous souhaitions initialement réaliser un sondage en ligne afin de pouvoir conf
 
 En débutant cette étude chaque membre de l'équipe a posé sur le papier ses impressions et ses préjugés. Nous nous sommes alors rendu compte que nous arrivions à la même hypothèse : pour nous, les principaux facteurs permettant d'attirer des contributeurs dans un projet open source résidaient dans la bonne tenue de celui, une bonne documentation et des régles de contributions mises en avant et détaillées.
 
-En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider.  Les métriques retenues étaient donc :
+En partant de cette hypothèse nous avons défini des métriques pouvant, d'après nous, la valider ou l'invalider. Les métriques retenues étaient donc :
 
 * Présence d'un README.md détaillé avec ces informations :
   * Présence d'une section "Getting started" ou ce qui s'en rapproche afin de proposer un point d'entrée à la contribution.
@@ -161,8 +161,6 @@ Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rap
 
 Le second contributeur, Brice Dutheil, représenteb 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits trés largement inférieurs à 1%.
 
-
-
 ### Hibernate
 
 Le projet Hibernate est composé de 39 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _Hibernate ORM_.
@@ -232,7 +230,6 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
 * Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
 * Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
 * Enfin, des questions sur son expérience de contribution:
-
   * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
   * A quelle fréquence contribue-t'elle ?
   * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
@@ -244,11 +241,9 @@ Nous avons donc décidé de mettre en place un sondage afin de vérifier nos sou
   * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
   * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
 
-  
-  Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
+Le sondage a été posté sur des pages de développeurs des réseaux sociaux Facebook et Twitter et sur le forum de développeurs [Dev.to](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l).
 
 Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
-
 
 **Conclusions :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
 
@@ -295,8 +290,6 @@ La seconde partie contient une question sur le niveau d'expérience en développ
 
 ![Diagramme de la r&#xE9;partition de l&apos;exp&#xE9;rience en tant que d&#xE9;veloppeur des personnes interrog&#xE9;es](../.gitbook/assets/3.png)
 
-1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
-
 ![Seconde question de ciblage](../.gitbook/assets/4%20%281%29.png)
 
 Nous avons utilisé cette seconde question pour filtrer notre panel de personnes interrogées et ainsi n'avoir que l'avis des personnes ayant contribué à un projet open source au moins une fois, passant ainsi notre panel à 139 personnes ciblées.
@@ -307,7 +300,7 @@ Nous allons ici exposer seulement les résultats permettant d'affirmer ou réfut
 
 ![Apparemment l&apos;attitude des mainteneurs a une importance pour la majorit&#xE9; des personnes interrog&#xE9;es](../.gitbook/assets/7%20%281%29.png)
 
-![4 obstacles &#xE0; la contribution ressortent principalement avec la complexit&#xE9; du projet, l&apos;attitude des mainteneurs des projets, le manque de documentation et du code peu lisible.](../.gitbook/assets/9_3.png)
+![4 obstacles &#xE0; la contribution ressortent principalement avec la complexit&#xE9; du projet, l&apos;attitude des mainteneurs des projets, le manque de documentation et du code peu lisible.](../.gitbook/assets/9_4.png)
 
 ![Apparemment notre premi&#xE8;re hypoth&#xE8;se &#xE9;tant loin d&apos;&#xEA;tre vraie, le social semble plus important dans la vie d&apos;un projet open source que la rigueur de son d&#xE9;veloppement.](../.gitbook/assets/9_5.png)
 
