@@ -197,6 +197,8 @@ Il est intéressant de remarquer que les 18 premiers contributeurs font partie d
 
 De par la quantité de contributions produite par les développeurs de l'organisation _Hibernate_, moins de 20% des contributeurs ont produit et maintiennent plus de 80% du projet \(les 19 premiers contributeurs, donc 5% des contributeurs\).
 
+**Conclusion :** malgré le fait que la communauté soit assez présente pour remonter les bugs, ce sont le plus souvent les membres de l'organisation _Hibernate_ qui répondent aux issues et corrigent ces bugs. L'implication de la communauté est donc relativement minime, et joue plutôt un rôle de QA que de contributeur.
+
 ### XWiki
 
 Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notre étude sur le dépôt de _XWiki Platform_.
