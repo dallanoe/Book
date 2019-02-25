@@ -212,19 +212,19 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation _XWiki_\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). Une fois de plus, la loi de Pareto est vérifiée.
 
-#### Conclusion
+## V. Sondage
 
-
+## VI. Conclusion
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
 
-## V. Outils utilisés
+## VII. Outils utilisés
 
 Précisez votre utilisation des outils ou les développements \(e.g. scripts\) réalisés pour atteindre vos objectifs. Ce chapitre doit viser à \(1\) pouvoir reproduire vos expériementations, \(2\) partager/expliquer à d'autres l'usage des outils.
 
-## VI. Références
+## VIII. Références
 
 1.
 
