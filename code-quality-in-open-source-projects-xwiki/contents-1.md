@@ -13,23 +13,23 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 De nouvelles technologies émergent chaque jour. Les organisations, Open Source comme privées, produisent de plus en plus de systèmes qui utilisent une multitude de technologies, concepts et outils. 
 
-Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ce problèmes émergent. Ainsi, comment pouvons nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
+Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ces problèmes émergent. Ainsi, comment pouvons-nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
 
-Ce document va présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Nous présenterons donc dans une première partie le contexte de notre recherche puis, dans un second temps ,la démarche que nous avons suivie ainsi que les différents résultats obtenus.
+Ce document va présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Nous présenterons donc dans une première partie le contexte de notre recherche puis, dans un second temps, la démarche que nous avons suivie ainsi que les différents résultats obtenus.
 
 ## I. Contexte de la recherche
 
 ### 1.1. Pourquoi des projets Open Source ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
-À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse énormement au fil du temps, tant au niveau de son code que de sa communauté.
+À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise du fait de sa liberté de conception. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse énormément au fil du temps, tant au niveau de son code que de sa communauté.
 
-Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
+Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, lié aussi bien au code des contributeurs que lié aux technologies utilisés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
 
-Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir.
+Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir et ainsi pouvoir faire avancer un projet plus rapidement ou encore avec une meilleure gestion.
 
-Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes.
+Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes plus ou moins important.
 
-C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention.
+C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention et donner une piste possible à suivre pour améliorer la qualité des tests.
 
 ### 1.2. Qu'est-ce que XWiki ?
 
