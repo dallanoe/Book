@@ -169,21 +169,19 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 Les trois premières vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
 
-Pour la première Nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
+Pour la première nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
 
-Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ceux-ci et regardons leurs sévérité afin de pouvoir crée nos première métriques utilisable pour notre hypothèse.
+Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ceux-ci et regardons leurs sévérité afin de pouvoir créer nos premières métriques utilisables pour notre hypothèse.
 
-Pour la troisième, nous zoomons une dernière fois sur les classes pour avoir des détails sur le type de classe causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
+Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des details suplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
 
 ### 4.2.2. Expériences 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-La quatrième expérience va consister à repartir du sous-projet identifié dans la première expérience, puis à récupérer la complexité et la couverture de code de chacune des classes dudit sous-projet. On va pour cela utilisé les données fournis par Clover. On va récupérer les données de couverture de teste afin d'avoir un graphique plus exploitable que ceux présents sur le site.
+La quatrième expérience va consister à repartir du sous-projet identifié dans la première expérience, puis à récupérer la complexité et la couverture de test de chacune des classes du dit sous-projet. On va pour cela utiliser les données fournis par Clover. On va récupérer les données de couverture de test afin d'avoir des données avec des valeurs plus lisibles, et surtout exploitables, que ceux présents sur le site.
 
 ### 4.2.3. Expériences 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-La cinquième expérience, quant à elle, va correspondre au sixième et dernier point de notre méthodologie. Elle va nous permettre d'établir, ou non, une corrélation entre zones sensibles et couverture de code.
-
-TODO : completation
+Il s'agit de la mise en relation des résultats des éxperiences 3 et 4. On va prendre les résultats obtenus lors de l'éxperience 3 sur les classes du projet puis on va récupérer les résultats des couvertures de tests sur les classes de l'éxperience 4 pour avoir des données correspondantes au résultat de notre hypothèse. 
 
 ## V. Analyse de nos résultats
 
