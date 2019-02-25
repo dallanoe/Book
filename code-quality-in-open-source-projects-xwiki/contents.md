@@ -214,6 +214,29 @@ Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 fo
 
 ## V. Sondage
 
+Les résultats d'analyse de ces projets réfutent notre hypothèse de départ, tous ces projets respectent quasiment tous les critères que nous avions établi, qui selon nous, faisaient de ces projets des projets attirants et propices à la contribution.
+
+Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypothèse de départ :
+
+* La complexité trop haute de ces projets
+* Le manque d'investissement de la part des mainteneurs des projets
+
+Nous avons donc décidé de mettre en place un sondage afin de vérifier nos soupçons, il est composé de 3 parties :
+
+* Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
+* Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
+* Enfin, des questions sur son expérience de contribution:
+  * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
+  * A quelle fréquence contribue-t'elle ?
+  * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
+  * Est-ce qu'elle contribue individuellement ou en entreprise ?
+  * Est-ce que la personne préfère contribuer seule ou en équipe ?
+  * Quelle est la taille moyenne des projets auxquels elle contribue ?
+  * Qu'est-ce qui la motive à contribuer aux projets open source ?
+  * Quel est le principal obstacle qui l'empêcherai de contribuer ?
+  * Est-ce qu'elle préfère un projet rigoureux mais avec une communauté pas très accueillante et étroite d'esprit ou un projet moins rigoureux mais avec une communauté accueillante et plus ouverte ?
+  * Enfin, une "question" libre dans laquelle elle pourrait nous raconter sa meilleure expérience concernant une contribution open source
+
 ## VI. Conclusion
 
 1. Analyse des résultats & construction d’une conclusion : Une fois votre expérience terminée, vous récupérez vos mesures et vous les analysez pour voir si votre hypothèse tient la route. 
