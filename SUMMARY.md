@@ -23,7 +23,7 @@
 
 ## Code Analysis
 
-* [Projet Java Properties](code-analysis/contents.md)
+* [Où et comment sont utilisées les Java properties ?](code-analysis/contents.md)
 * [Les feature toggles créent-ils de la dette technique ?](code-analysis/contents-1.md)
 
 ## Machine Learning Explorations
