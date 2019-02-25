@@ -33,7 +33,7 @@ C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet
 
 ### 1.2. Qu'est-ce que XWiki ?
 
-_**XWiki**_ est un projet **Open Source** mature \(2003\) écrit en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
+_**XWiki**_ est un projet **Open Source** mature \(2003\) écrit en grande partie en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
 
 Même si ce type de solution est très courante sur le net ou dans les intranet de sociétés, attention à ne pas le confondre avec le premier venu. Il se targue en effet d’être non seulement un “**Wiki d’entreprise**” mais aussi un “**Wiki Applicatif**” ce qui fait de lui bien plus qu’un simple outil de gestion d’articles.
 
@@ -69,7 +69,7 @@ Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette mé
 
 ![](../.gitbook/assets/responsexwiki.png)
 
-Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de _XWiki_ étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon, nous ne serions capable de ne collecter qu’une faible quantité de données. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de _XWiki_ ne seraient pas exhaustives.
+Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de _XWiki_ étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon et en n'utilisant que les données récupérées de nos propre parcours, nous ne serions capable de ne collecter qu’une faible quantité de données et donc avoir des résultats biaisés, ce qui n'est pas notre objectif. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de _XWiki_ ne seraient pas exhaustives.
 
 Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur laquelle nous appuyer, celle-ci n'étant pas adaptée à notre étude et ne fournissant pas des résultats significatifs. 
 
@@ -84,7 +84,7 @@ Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Ope
 Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
 1. Tout d'abord, partir du projet complet, ici _XWiki_, et déterminer, parmi les plus gros sous-projets, ceux ayant le plus de **bugs** non résolus. _XWiki_ propose de nombreuses extensions, de ce fait, nous ne pouvons malheureusement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre **scope** de recherche sur un ou plusieurs sous-projets.
-2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire \(nombre de participations, nombre de branches\) pour localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
+2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations dessus ainsi que le nombre de branches actuelle pour localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
 3. Une fois le sous-projet choisi, définir la **sévérité** des bugs des composants présentant le plus d'issues.
 4. Parmi ces composants, identifier, cette fois, les **classes** associées à ces issues.   
 5. Indépendamment des points deux, trois et quatre, se baser sur le sous-projet identifié dans le second point. Récupérer la **complexité** ainsi que la **couverture** de tests de chacune des classes de ce sous-projet.
@@ -100,21 +100,21 @@ Cette nouvelle approche va nous permettre de valider ou invalider l'hypothèse p
 
 Afin de collecter des données \(voir expériences, _Livrable L3_\), nous avons utilisé différentes sources.
 
-* **Jira**
-
-_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et en extraire certaines informations comme le nombre de problèmes liés à un certain projet.
-
 * **Github**
 
-_Github_ est l'hôte des sources de _XWiki_. Il nous a par exemple permis de définir le sous-projet \(repository\) sur lequel nous concentrer ainsi qu'accéder à des bouts d'implémentation.
+_Github_ est l'hôte des sources de _XWiki_. Il nous a permis d'avoir une meilleur vu de l'architecture global du projet ainsi que de définir le sous-projet \(repository\) sur lequel nous concentrer. Avec plus de temps, nous aurions pu en plus faire une analyse plus en profondeur des parties chaudes, qu'on a découvert au fil de cette recherche, grâce au code fournis.
+
+* **Jira**
+
+_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et d'en récupérer les bugs associés. Ces bugs nous on fournis leurs sévérité ainsi que leurs emplacement dans le code.
 
 * **Clover**
 
-_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences.
+_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences. Ces informations sont la complexité du code ainsi que leurs couvertures. Ces informations nous on d'ailleurs aussi donné une sorte de carte de chaleur.
 
 * **Jenkins**
 
-_Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relevés \(_Jira_\). Cependant il ne stocke seulement que les informations des 20 derniers builds générés.
+_Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relevés \(_Jira_\). Cependant il ne stocke seulement que les informations des 20 derniers builds générés. Il nous aura permis de connaitre les tests effectués et d'avoir une idée des problèmes du projet actuel. Cependant il nous aura été que peu utile après la découverte du Clover du projet.
 
 **Métriques**
 
