@@ -57,65 +57,67 @@ En partant de cette hypothèse nous avons défini des métriques pouvant, d'apr�
   * Présence de badges \(ou [_shields_](https://shields.io/)_\)_ montrant l'état du _build_, la couverture de tests ou d'autres informations utiles.
   * Présence d'une section "How to build" ou ce qui s'en rapporche détaillant comment construire la solution localement.
 * Présence d'exemples de code.
-* Présence d'un Contributing.md qui définit les conventions de nommages, les messages de _commits_, etc.
-* Présence d'un Intégration continue
-* Présence d'une Javadoc à jour
-* Nombre de jours depuis la dernière mise à jour de la documentation
-* Temps moyen de réponse aux issues
-* Nombre de commits
+* Présence d'un CONTRIBUTING.md qui définit les conventions de nommages, les messages de _commits_, etc.
+* Présence d'un outil d'intégration continue \(Travis CI, Jenkins, etc.\)
+* Présence d'une documentation tenue à jour
+* Nombre de jours depuis la dernière mise à jour de la documentation, si disponible
+* Temps moyen de réponse aux _issues_
+* Nombre de _commits_
 * Nombre de contributeurs
+* Analyse des contributeurs et de leur contributions
 
 ## IV. Analyse des résultats et Conclusion
 
 ### JUnit5
 
-JUnit est un framework de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un “repository” à part.
+JUnit5 est un _framework_ de test unitaire, un des plus utilisés pour le langage Java. Cette version majeure 5 succède à la version 4 et apporte beaucoup de nouvelles fonctionnalités majeures. Cette version 5 est aussi une refonte du framework et par conséquent se trouve sur un _repository_ à part.
 
-#### Analyses des KPI \(analyse faite le 27 Janvier 2019\)
+#### Analyse des KPI \(analyse faite le 27 Janvier 2019\)
 
 * Présence d'un README.md :
   * Présent et est assez complet, contient les parties \(_Contributing, Getting Help, Continuous Integration Builds, Code Coverage_ et _Building from Source_\).
+  * Il est possible de discuter avec la team de développement sur Gitter ou indirectement via StackOverflow.
 * Méthode de contribution :
   * Chercher les issues taguées avec "_up-for-grabs_" \(qui sont très peu nombreuses, 10 seulement au moment la vérification\)
-* Badges \(ou _shields_\) :
+* Badges :
   * Travis.CI et Appveyor, tous les deux au vert au moment de la vérification avec le label "_Build passing_"
 * Présence d'une intégration continue sur Travis.CI et Appveyor.
 * Présence d'un CONTRIBUTING.md
   * Présent et détaille très bien les conventions de nommage et formatage du code.
 * Exemples de code :
-  * Présent sur un autre repository, lien référencé dans le README.md
-* Présence de Javadoc, à jour et mise à jour automatiquement à chaque commit
+  * Présent sur un autre _repository_, lien référencé dans le README.md
+* Présence de Javadoc, à jour et mise à jour automatiquement à chaque _commit_
 * Temps moyen de réponse aux issues: environ 1h
 * Nombre de commits sur master : 5417 au moment de la vérification
 * Nombre de contributeurs : 95
 
-#### Analyses des contributions
+JUnit5 semble remplir la très grande majorité de nos critères, voyons maintenant avec l'analyse des contributions si les membres du projet portent le projet ou s'il est porté par sa communauté.
 
-Le projet a démarré en octobre 2015, comporte plus de 5400 commits et 95 contributeurs.
+#### Analyse des contributions
+
+Le projet a démarré en octobre 2015, comporte plus de 5400 _commits_ et 95 contributeurs.
 
 Parmis ces contributeurs :
 
-* 44 contributeurs avec 1 commit \(46,3%\)
-* 43 contributeurs avec 2 à 16 commits \(45,3%\)
-  * dont seulement 6 contributeurs avec au moins 2 commits espacés d’une semaine.
+* 44 contributeurs avec 1 _commit_ \(46,3%\)
+* 43 contributeurs avec 2 à 16 _commits_ \(45,3%\)
+  * dont seulement 6 contributeurs avec au moins 2 _commits_ espacés d’au moins une semaine.
   * et un membre de Neo4j \(un autre projet Java de gestion de base de données basé sur les graphes\).
 * 8 principaux contributeurs: \(8.4%\)
-  * Top 8: un compte nommé “junit-buildmaster” qui sert pour des opérations de gestion du code \(indentation de code, renommage de variables, mise à jour de headers dans la documentation\).
-  * Top 7: un contributeur lambda qui ne contribute plus depuis 2 ans \(dernier commit octobre 2017\)
+  * Top 8: un compte nommé “junit-buildmaster” qui sert pour des opérations de gestion du code \(indentation de code, renommage de variables, mise à jour de _headers_ dans la documentation\).
+  * Top 7: un contributeur lambda qui ne contribute plus depuis 2 ans \(dernier _commit_ octobre 2017\)
   * Top 6 : un autre contributeur lambda qui ne contribue plus depuis janvier 2017
-  * Top 5 : un contributeur lambda encore très actif \(dernier commit 24 janvier 2019 au moment de la vérification\)
-  * Top 4 : un membre de JUnit, son premier commit a été plus tardif que les autres membres, aussi très actif \(dernier commit 14 janvier 2019\)
+  * Top 5 : un contributeur lambda encore très actif \(dernier _commit_ 24 janvier 2019 au moment de la vérification\)
+  * Top 4 : un membre de JUnit, son premier commit a été plus tardif que les autres membres, aussi très actif \(dernier _commit_ 14 janvier 2019\)
   * Top 3: un contributeur lambda, grosse contribution entre fin 2015 et 2016, depuis plus rien.
   * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
 
 Une recherche sur le [site portfolio](https://blog.johanneslink.net/2016/04/16/goodbye-junit-5/) d'un des 8 contributeurs a montré que les contributeurs 2, 3, 5 et 7 se connaissent et ont travaillé en équipe ensemble, et que suite à des conflits dans l’équipe ils sont cessés de travailler ensemble. Les contributeurs 3, 5 et 7 ne sont donc pas si “étrangers” au projet. Il semble donc qu’il n’y ait qu’un seul “vrai” contributeur externe au projet dans les 8 principaux contributeurs, le contributeur 6, qui ne contribue plus.  
-Le projet est porté par les membres de l'équipe JUnit.
+Le projet est donc porté par les membres de l'équipe JUnit en très grande majorité.
 
-Il est possible de discuter avec la team de développement sur Gitter ou indirectement via StackOverflow.
+Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coût d'entrée dans le projet semble être assez conséquent, même les issues "_up-for-grabs_" sont parfois incompréhensibles pour un néophyte.
 
-Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coup d'entrée dans le projet semble être assez conséquent, même les issues "_up-for-grabs_" sont parfois incompréhensibles pour un néophyte.
-
-De plus, en regardant certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageants. Ce qui a pour effet de créer une sorte de syndrome de la tour d'ivoire.
+De plus, en regardant certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageants. Ce qui a pour effet de créer une sorte de syndrome de la tour d'ivoire. En tout cas, on relève un certain manque de tacte.
 
 #### Analyses des contributions
 
@@ -123,9 +125,9 @@ De plus, en regardant certains commentaires de certains membres de JUnit à l'é
 
 ![Pull request ferm&#xE9;e, mainteneur &quot;qui n&apos;a pas le temps&quot; de review le code](../.gitbook/assets/denied-pull-request.png)
 
-![Pas tr&#xE8;s encourageant de dire: &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
+![Pas tr&#xE8;s encourageant de dire &quot;on promet rien&quot;](../.gitbook/assets/essaie-mais-on-promet-rien.png)
 
-Pour confirmer mes propos je me suis rendu sur le **Gitter** de l'équipe JUnit, me suis fait passé pour un nouveau contributeur qui aimerait contribuer mais qui ne sait pas par où commencer. Le résultat est assez décevant... les membres de l'équipe JUnit ne m'ont pas répondu et ont continué leur discussion. C'est un contributeur externe qui m'a aiguillé sur une de ses _issues_ qu'il a fait il y'a quelques années et qui s'est proposé de m'aider si j'en avais le besoin.
+Pour confirmer mes propos je me suis rendu sur le **Gitter** de l'équipe JUnit, me suis fait passé pour un nouveau contributeur qui aimerait contribuer mais qui ne sait pas par où commencer. Le résultat est assez décevant... les membres de l'équipe JUnit ne m'ont pas répondu et ont continué leur discussion. C'est un contributeur externe qui m'a aiguillé sur une de ses _issues_ qu'il a fait il y'a quelques années et qui s'est proposé de m'aider si j'en avais besoin.
 
 ![Capture d&apos;&#xE9;cran de la discussion sur Gitter](../.gitbook/assets/snobe.png)
 
