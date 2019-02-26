@@ -1,4 +1,4 @@
-# Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?
+# Comment identifier les zones "sensibles" d'un projet Open Source ?
 
 ## Auteurs 
 

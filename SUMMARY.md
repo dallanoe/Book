@@ -47,5 +47,5 @@
 ## Code Quality in Open Source Projects \(XWiki\)
 
 * [Projet 1 : How to improve contributors onboarding](code-quality-in-open-source-projects-xwiki/contents.md)
-* [Projet 2 : Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
+* [Comment identifier les zones "sensibles" d'un projet Open Source ?](code-quality-in-open-source-projects-xwiki/contents-1.md)
 
