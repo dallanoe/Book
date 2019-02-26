@@ -271,9 +271,19 @@ Ce tableau répertorie le nombre de bugs, la couverture de tests et la complexit
 
 ## VI. Conclusion 
 
-TODO
+Notre première approche était de tenter d'identifier des zones du projet _XWiki_ utilisés par des utilisateurs lambda puis de proposer une méthodologie afin d'automatiser les tests présents dans ces zones. Ayant rencontré des limites à cette approche, nous n'avons pu aller au bout de cette idée.
 
-Avec plus de temps, nous aurions souhaité effectuer une analyse plus en profondeur des zones sensibles, identifiées lors de cette recherche. 
+Nous avons par la suite changé notre objectif ainsi que notre hypothèse en proposant d'établir un lien entre zone sensible et couverture de tests. Le but de cette seconde hypothèse était de proposer aux développeurs de _XWiki_ une manière d'identifier facilement les zones à risque.
+
+Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé notre hypothèse. En effet, ceux-ci sont en contradiction avec ceux attendus. Nous considérons la couverture de tests du composant de _XWiki_ _Platform_ présentant le plus de bugs comme trop faible pour pouvoir valider notre hypothèse \(expérience 5\).
+
+Toutefois, cette infirmation présente des limites. Notre étude est fortement restreinte. Tout d'abord nos résultats ne reposent que sur un sous-projet d'un seul projet Open Source. Ensuite les données collectées sur ce sous-projet sont aussi limitées si ce n'est biaisées puisqu'elles sont constituées des vingt derniers builds réalisés à la date de cette étude.
+
+D'autre part, notre méthodologie n'est pas infaillible, les expériences réalisées peuvent présenter des problèmes. Par exemple, la réalisation de nos scripts d'analyse de données peuvent comporter des erreurs, comme l'oubli de certaines données ou un filtrage incomplet de ces dernières.
+
+Certains choix arbitraires que nous avons fait sont de plus discutables, par exemple, le fait de considérer que 60% représente un taux de couverture de code faible est sujet à débat.
+
+Cette étude n'est donc pas une conclusion en soit mais une porte ouverte à l'élaboration d'études similaires.
 
 ## VI. Références
 
@@ -281,7 +291,8 @@ Avec plus de temps, nous aurions souhaité effectuer une analyse plus en profond
 * Le topics utilisés sur le forum _XWiki_ pour communiquer avec les développeurs:
   * [Topic 1](https://forum.xwiki.org/t/student-what-are-the-hot-spots-of-xwiki-code/4213/2)
   * [Topic 2](https://forum.xwiki.org/t/student-issues-code-linking/4329)
-* Les données [Clover](http://maven.xwiki.org/site/clover/20190202/clover-commons+rendering+platform-20190202-0222/dashboard.html) permettant de lier _Jira_ et _Github_ pour les 20 derniers commits.
+* Les données [Jenkins](https://ci.xwiki.org/blue/organizations/jenkins/XWiki%2Fxwiki-platform/branches/) permettant de collecter les informations relatives aux 20 derniers builds sur XWiki Platform.
+* Les données [Clover](http://maven.xwiki.org/site/clover/20190202/clover-commons+rendering+platform-20190202-0222/dashboard.html) permettant de lier _Jira_ et _Github_.
 * Le tableau d'ensemble listant tous les serveurs composant l'écosystème [_XWiki_](https://dev.xwiki.org/xwiki/bin/view/Community/DevelopmentPractices#HGeneralDevelopmentFlow).
 * Le [système](https://jira.xwiki.org/secure/Dashboard.jspa) de tickets utilisé par _XWiki_.
 * Les [extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/WebHome) _XWiki_.
