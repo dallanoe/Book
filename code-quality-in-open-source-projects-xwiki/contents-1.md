@@ -213,7 +213,7 @@ Suite aux résultats de l'expérience 1, nous avons analysé les composants du s
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
-Si nous approchons naïvement ces données, nous aurions tendance à dire que les composants _OldCore_, _Web_ et _WYSWIG_ posent le plus de problèmes car ce sont ceux qui possèdent le plus de bugs \(premier critère\). Cependant, nous avons aussi décidé de prendre en compte la sévérité de ces bugs \(second critère\) et avons crée une métrique prenons en compte ces deux critères: l'indice de sensibilité.
+Si nous approchons naïvement ces données, nous aurions tendance à dire que les composants **OldCore**, **Web** et **WYSWIG** posent le plus de problèmes car ce sont ceux qui possèdent le plus de bugs \(premier critère\). Cependant, nous avons aussi décidé de prendre en compte la sévérité de ces bugs \(second critère\) et avons crée une métrique prenons en compte ces deux critères: l'indice de sensibilité.
 
 Pour les expériences suivantes, nous ne prenons pas forcément en compte les composants qui ont le plus de bugs mais ceux qui possèdent un indice de sensibilité important.
 
@@ -223,13 +223,41 @@ La visualisation ci-dessus nous permet de mieux appréhender cette métrique ind
 
 * _Expérience 3_ 
 
-\_\_
+Cette étape est principalement une étape de collecte de données. Les résultats collectés ici n'avaient pas pour but d'être analysés de façon brute mais d'être utilisés par la suite. Ici nous collectons les données relatives aux 20 derniers builds sur chaque branche de _XWiki_ _Platform_ proposés sur Jenkins.
 
 ### 5.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
+L'objectif principal de cette expérience est de récupérer la complexité ainsi que la couverture de tests des classes de _XWiki_ _Platform_ sous une forme exploitable. Nous n'avons rien à présenter à ce niveau car il s'agit d'une collecte de données.
+
+Cependant, avec ces dernières nous tentons de corréler complexité et couverture de test. -- todo ?
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
+On dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion à cette expérience.
+
 ### 5.3. Expérience 5
 
+Cette étape est la plus importante car elle cherche à mettre en relation les résultats obtenus lors des expériences précédentes.
+
+-- TODO besoin d'introduire les classes
+
+Les données de l'expérience 3 nous ont permis de récupérer les noms des classes posant problème ainsi que les composants auxquels elles appartiennent.
+
+Nous avons donc regroupé les classes en composant afin d'obtenir une complexité et couverture de tests moyenne.
+
+![](../.gitbook/assets/image%20%288%29.png)
+
+Ce graphe présente la répartition des bugs pour les composants identifiés. Il nous montre que la majorité des bugs se situe dans le composant **oldcore**, qui est présent parmi les composants les plus sensibles \(voir expérience 2, indice de sensibilité ~20%\). Cela permet de confirmer que l'indice ce sensibilité est fiable puisqu'il prend en compte cette métrique du nombre de bugs. -- todo ?
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+Ce tableau répertorie le nombre de bugs, la couverture de tests et la complexité estimée par composant. Nous remarquons que le composant **oldcore** a une couverture de tests parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
+
+**D'après ces résultats nous pouvons infirmer notre hypothèse**. En effet, nous nous attendions à obtenir les résultat inverse, c'est à dire que la couverture de tests de ce composant soit bien plus élevée. Or, comme dit plus haut, sa couverture fait partie des plus faibles.
+
 ## VI. Conclusion 
+
+TODO
 
 Avec plus de temps, nous aurions souhaité effectuer une analyse plus en profondeur des zones sensibles, identifiées lors de cette recherche. 
 
