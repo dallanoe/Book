@@ -29,7 +29,7 @@ Dans ce contexte, la quantité et la qualité des tests sont des métriques prim
 
 Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes plus ou moins important.
 
-C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention. ~~Ces résultats pouvant nous permettre de founir une piste possible afin améliorer la qualité des tests.~~  &lt;=\(On laisse ou pas ? La tournure fait un peu bizarre peut être.\)
+C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention. Ces résultats pourront, par exemple, nous fournir une piste possible afin d'améliorer la qualité des tests.  
 
 ### 1.2. Qu'est-ce que XWiki ?
 
