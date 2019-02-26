@@ -169,21 +169,25 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 Les trois premières expériences vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
 
-Pour la première de nos expériences, nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci. Cette expérience va ainsi nous fournir une première piste à exploiter. 
+Pour **la première de nos expériences**, nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci. Cette expérience va ainsi nous fournir une première piste à exploiter. 
 
-Pour la seconde, nous allons exploiter les résultats obtenus plus tôt afin de cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ces composants et regardons leurs différentes sévérités afin de pouvoir créer les premières métriques utilisables pour notre hypothèse.
+Pour la **seconde**, nous allons exploiter les résultats obtenus plus tôt afin de cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ces composants et regardons leurs différentes sévérités afin de pouvoir créer les premières métriques utilisables pour notre hypothèse.
 
-Enfin, pour la troisième expérience, nous zoomons une dernière fois. Cette fois-ci, nous allons nous pencher sur des classes comportant des bugs référencés sur Jenkins. Cependant, ne pouvant récupérer que les données des vingt derniers builds,  nous avons décidé de ne pas zoomer sur des composants en particulier. En effet, la plage de données récupérée étant déjà faible, nous n'avons pas voulu la réduire plus que nécessaire. 
+Enfin, pour **la troisième expérience**, nous zoomons une dernière fois. Cette fois-ci, nous allons nous pencher sur des classes comportant des bugs référencés sur Jenkins. Cependant, ne pouvant récupérer que les données des vingt derniers builds,  nous avons décidé de ne pas zoomer sur des composants en particulier. En effet, la plage de données récupérée étant déjà faible, nous n'avons pas voulu la réduire plus que nécessaire. 
 
-Au terme de ces trois expériences, nous nous attendons à ce que la plupart des classes obtenues dans l'expérience trois soient présentes dans les composants identifiés dans l'expérience deux. 
+Au terme de ces **trois expériences**, nous nous attendons à ce que la plupart des classes obtenues dans l'**expérience trois** soient présentes dans les composants identifiés dans l'**expérience deux**. 
 
 ### 4.2.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-La quatrième expérience va consister à repartir du sous-projet identifié dans la première expérience, puis à récupérer la complexité et la couverture de test de chacune des classes du dit sous-projet. On va pour cela utiliser les données fournis par Clover. On va récupérer les données de couverture de test afin d'avoir des données avec des valeurs plus lisibles, et surtout exploitables, que ceux présents sur le site.
+La **quatrième expérience** va consister à repartir du sous-projet identifié dans la **première expérience**, puis à récupérer la complexité et la couverture de test de chacune des classes dudit sous-projet. Pour cela, on va notamment pouvoir utiliser les données fournies par _Clover_. 
+
+Nous allons récupérer les données de couverture de test afin d'avoir des données aux valeurs plus lisibles, et surtout plus exploitables, que celles présentes sur le site.
 
 ### 4.2.3. Expérience 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Il s'agit de la mise en relation des résultats des expériences 3 et 4. On va prendre les résultats obtenus lors de l'expérience 3 sur les classes du projet puis on va récupérer les résultats des couvertures de tests sur les classes de l'expérience 4 pour avoir des données correspondantes au résultat de notre hypothèse. 
+Finalement, cette **cinquième et dernière expérience** va consister à mettre en relation les résultats des **expériences trois et quatre**. 
+
+Nous allons utiliser les résultats obtenus lors des **expériences trois et quatre** afin de tenter d'établir une corrélation entre les classes comportant le plus de bugs et leur couverture de tests/complexité. 
 
 ## V. Analyse de nos résultats
 
