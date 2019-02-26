@@ -163,7 +163,7 @@ En suivant la méthodologie présentée plus tôt, nous pouvons discerner cinq e
 
 Vous trouverez ci-dessous un schéma résumant notre démarche.
 
-![](../.gitbook/assets/schemaexperiences.png)
+![Figure 1 : Sch&#xE9;ma r&#xE9;sumant nos diff&#xE9;rentes exp&#xE9;riences](../.gitbook/assets/schemaexperiences.png)
 
 ### 4.2.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
@@ -195,19 +195,29 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 ### 5.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-* _Expérience 1_ 
+* _**Expérience 1**_ 
 
-Les données recueillies lors de cette expérience sont réparties par sous-projet. Elles indiquent le nombre actifs de bugs relevés lors de notre étude.
+Les données recueillies lors de cette expérience sont réparties par sous-projet. Elles indiquent le nombre actifs de bugs relevés lors de notre étude. Vous trouverez ci-dessous un  schéma retranscrivant nos résultats. 
 
-![](../.gitbook/assets/image%20%287%29.png)
+![Figure 2 : R&#xE9;sultats de l&apos;exp&#xE9;rience 1 - Nombre de bugs en fonction des sous-projets](../.gitbook/assets/image%20%287%29.png)
 
-On remarque qu'une grosse proportion des bugs est liée au sous-projet _XWiki_ _Platform_. On note de même qu'une proportion non négligeable des bugs est liée aux deux sous-projets _XWiki_ _Rendering_ et _XWiki_ _Commons_. Cependant comme indiqué plus haut et afin de réduire notre scope nous avons choisi de ne traiter que _XWiki_ _Platform_ pour les expériences suivantes.
+On remarque, sur la figure ci-dessus, que la majorité des bugs actifs semble liée au sous-projet _XWiki_ _Platform_. Nous pouvons également noter qu'une proportion non négligeable des bugs n'étant pas situés dans _XWiki_ _Platform_ se trouvent dans les deux sous-projets _XWiki_ _Rendering_ et _XWiki_ _Commons_. Il pourrait donc être intéressant d'analyser chacun de ces sous-projets.
 
-![](../.gitbook/assets/assets_-lt8wejr-hqa4bzftuer_-lz_9yjtig5hva0zf0pe_-lz_a-_oeftxs878xkdq_image.png)
+Cependant, comme indiqué plus haut, nous avons fait le choix de ne traiter qu'un seul sous-projet dans le cadre de cette étude.
 
-Notons qu'une grande partie des bugs de ces sous-projets est considérée comme problème majeur. De plus, on observe que les diagrammes ci-dessus sont similaires et donc que ces sous-projets partagent une répartition semblable de types de bugs. // TODO
+![Figure 3 : Les trois principaux sous-projets \(repositories\) de XWiki. ](../.gitbook/assets/commits.png)
 
-* _Expérience 2_
+Comme nous pouvons le voir sur la _`Figure 3`_, _XWiki_ _Platform_ semble être de loin le sous-projet le plus populaire et important parmi ceux mentionnés plus haut. Étant également celui comportant le plus de bugs, nous nous sommes naturellement tournés vers celui-ci afin d'effectuer notre étude. 
+
+Vous trouverez ci-dessous sur la _`Figure 4`_  les types de bugs qui composent _XWiki Platform._
+
+![Figure 4 : Comparaison entre les types de bugs de XWiki Platform et ceux d&apos;autres sous-projets](../.gitbook/assets/assets_-lt8wejr-hqa4bzftuer_-lz_9yjtig5hva0zf0pe_-lz_a-_oeftxs878xkdq_image.png)
+
+Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs présents dans _XWiki Platform_ sont majeurs. Des bugs majeurs pouvant donc indiquer l'apparition d’éléments bloquants venant entraver l'expérience utilisateur. Identifier la provenance de ces bugs pourraient donc nous aider à identifier les zones sensibles du sous-projet _XWiki Platform_. 
+
+De plus, la répartition du type de bugs des autres repositories étant semblable à celle du sous-projet étudié, on peut envisager que la reproduction de notre démarche puisse amener à des résultats semblables sur d'autres sous-projets. 
+
+* _**Expérience 2**_
 
 Suite aux résultats de l'expérience 1, nous avons analysé les composants du sous-projet _XWiki_ _Platform_. Voici les résultats que nous obtenons.
 
@@ -221,7 +231,7 @@ Pour les expériences suivantes, nous ne prenons pas forcément en compte les co
 
 La visualisation ci-dessus nous permet de mieux appréhender cette métrique indice de sensibilité.
 
-* _Expérience 3_ 
+* _**Expérience 3**_ 
 
 Cette étape est principalement une étape de collecte de données. Les résultats collectés ici n'avaient pas pour but d'être analysés de façon brute mais d'être utilisés par la suite. Ici nous collectons les données relatives aux 20 derniers builds sur chaque branche de _XWiki_ _Platform_ proposés sur Jenkins.
 
