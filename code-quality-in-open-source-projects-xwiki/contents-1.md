@@ -199,7 +199,7 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 Les données recueillies lors de cette expérience sont réparties par sous-projet. Elles indiquent le nombre actifs de bugs relevés lors de notre étude. Vous trouverez ci-dessous un  schéma retranscrivant nos résultats. 
 
-![Figure 2 : R&#xE9;sultats de l&apos;exp&#xE9;rience 1 - Nombre de bugs en fonction des sous-projets](../.gitbook/assets/bugs.png)
+![Figure 2 : R&#xE9;sultats de l&apos;exp&#xE9;rience 1 - Pourcentage de bugs en fonction des sous-projets](../.gitbook/assets/bugs.png)
 
 On remarque, sur la figure ci-dessus, que la majorité des bugs actifs semble liée au sous-projet _XWiki_ _Platform_. Nous pouvons également noter qu'une proportion non négligeable des bugs n'étant pas situés dans _XWiki_ _Platform_ se trouvent dans les deux sous-projets _XWiki_ _Rendering_ et _XWiki_ _Commons_. Il pourrait donc être intéressant d'analyser chacun de ces sous-projets.
 
@@ -217,7 +217,7 @@ Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs pré
 
 * _**Expérience 2**_
 
-Suite aux résultats obtenus dans l'**expérience 1**, nous avons analysé les composants du sous-projet _XWiki_ _Platform_. Voici, ci-dessous, les résultats que nous obtenons
+Suite aux résultats obtenus dans l'**expérience 1**, nous avons analysé les bugs des composants du sous-projet _XWiki_ _Platform_. Voici, ci-dessous, les résultats que nous obtenons
 
 ![Figure 5 : R&#xE9;sultats de l&apos;exp&#xE9;rience 2.](../.gitbook/assets/image%20%284%29.png)
 
@@ -247,27 +247,31 @@ Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de d
 
 ![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de tests](../.gitbook/assets/correlation.png)
 
-En étudiant la _`Figure 7`_,  on dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience.
+En étudiant la _`Figure 7`_,  on dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience
 
 ### 5.3. Expérience 5
 
 Cette étape est la plus importante car elle cherche à mettre en relation les résultats obtenus lors des expériences précédentes.
 
--- TODO besoin d'introduire les classes
+Les données récoltées grâce à l'**expérience 3** nous ont permis de récupérer les classes posant problème ainsi que les composants auxquels elles appartiennent. Nous avons donc regroupé ces dernières en fonction de leur composant d'origine afin d'obtenir des résultats plus représentatifs que si nous nous focalisions uniquement sur des classes. 
 
-Les données de l'expérience 3 nous ont permis de récupérer les noms des classes posant problème ainsi que les composants auxquels elles appartiennent.
+Cette répartition nous permet d'obtenir la _`Figure 8`_ se trouvant ci-dessous.
 
-Nous avons donc regroupé les classes en composant afin d'obtenir une complexité et couverture de tests moyenne.
+![Figure 8 : R&#xE9;sultats de l&#x2019;exp&#xE9;rience 5 - R&#xE9;partition des bugs par composants de XWiki Platform.](../.gitbook/assets/image%20%288%29.png)
 
-![](../.gitbook/assets/image%20%288%29.png)
+La _`Figure 8`_ présente la répartition des bugs pour les composants identifiés après que nos différentes classes aient été regroupées. 
 
-Ce graphe présente la répartition des bugs pour les composants identifiés. Il nous montre que la majorité des bugs se situe dans le composant **oldcore**, qui est présent parmi les composants les plus sensibles \(voir expérience 2, indice de sensibilité ~20%\). Cela permet de confirmer que l'indice ce sensibilité est fiable puisqu'il prend en compte cette métrique du nombre de bugs. -- todo ?
+Ainsi, en partant d'une approche différente nous obtenons des résultats semblables. Notre approche par composants dans l'expérience 2 nous avait permi d'identifier **OldCore** comme un des composants les plus sensibles de _XWiki Platform_., son indice de sensibilité étant d'environs 20%. 
 
-![](../.gitbook/assets/image%20%2811%29.png)
+De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
 
-Ce tableau répertorie le nombre de bugs, la couverture de tests et la complexité estimée par composant. Nous remarquons que le composant **oldcore** a une couverture de tests parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
+![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de tests des composants de la Figure 8](../.gitbook/assets/image%20%2811%29.png)
 
-**D'après ces résultats nous pouvons infirmer notre hypothèse**. En effet, nous nous attendions à obtenir les résultat inverse, c'est à dire que la couverture de tests de ce composant soit bien plus élevée. Or, comme dit plus haut, sa couverture fait partie des plus faibles.
+La _`Figure 9`_ se trouvant ci-dessus répertorie le nombre de bugs, la couverture de tests et la complexité estimée par composant. Nous remarquons que le composant **OldCore** a une couverture de tests parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
+
+**D'après ces résultats nous pouvons donc infirmer notre hypothèse**. 
+
+Nous nous attentions initialement à ce que des zones plus sensibles soient plus couvertes que d'autres de par leur propension à causer plus d'erreurs et à pouvoir mettre en péril le fonctionnement du projet. Cependant, nos analyses des données récoltées montrent que l'inverse à tendance à se produire et que les couvertures des composants les plus sensibles apparaissent plus faibles.
 
 ## VI. Conclusion 
 
