@@ -275,19 +275,25 @@ Nous nous attentions initialement à ce que des zones plus sensibles soient plus
 
 ## VI. Conclusion 
 
-Notre première approche était de tenter d'identifier des zones du projet _XWiki_ utilisés par des utilisateurs lambda puis de proposer une méthodologie afin d'automatiser les tests présents dans ces zones. Ayant rencontré des limites à cette approche, nous n'avons pu aller au bout de cette idée.
+Au terme de cette étude, nous ne pouvons malheureusement pas confirmer ou infirmer notre hypothèse de façon certaine.
 
-Nous avons par la suite changé notre objectif ainsi que notre hypothèse en proposant d'établir un lien entre zone sensible et couverture de code. Le but de cette seconde hypothèse était de proposer aux développeurs de _XWiki_ une manière d'identifier facilement les zones à risque.
+Notre approche initiale, consistant à identifier les zones "chaudes" du code, a très vite rencontré des limites nous empêchant d'aller au bout de cette idée.
 
-Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé notre hypothèse. En effet, ceux-ci sont en contradiction avec ceux attendus. Nous considérons la couverture de code du composant de _XWiki_ _Platform_ présentant le plus de bugs comme trop faible pour pouvoir valider notre hypothèse \(expérience 5\).
+Notre seconde hypothèse, quant à elle, proposait d'établir un lien entre zone sensible et couverture de code. Son but, à terme, étant de proposer aux développeurs de XWiki une manière d'identifier facilement les zones à risque pour éviter les erreurs plus facilement. Notre hypothèse était donc la suivante : dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de code est importante ?
 
-Toutefois, cette infirmation présente des limites. Notre étude est fortement restreinte. Tout d'abord nos résultats ne reposent que sur un sous-projet d'un seul projet Open Source. Ensuite les données collectées sur ce sous-projet sont aussi limitées si ce n'est biaisées puisqu'elles sont constituées des vingt derniers builds réalisés à la date de cette étude.
+Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé cette hypothèse. En effet, il est apparu que les zones que nous avons identifiées comme "sensibles" peuvent être bien moins couvertes que des zones ne l'étant pas.
 
-D'autre part, notre méthodologie n'est pas infaillible, les expériences réalisées peuvent présenter des problèmes. Par exemple, la réalisation de nos scripts d'analyse de données peuvent comporter des erreurs, comme l'oubli de certaines données ou un filtrage incomplet de ces dernières.
+Cette approche nous a tout de même permis d'identifier des zones à risques, malgré le fait que notre hypothèse soit invalidée. En effet, nous pensions que les développeurs auraient plus tendance à surveiller les parties de code pouvant poser problème et que les zones sensibles connues seraient donc bien couvertes. Nos résultats nous ont prouvés le contraire et montrent que de nombreux tests sont nécessaires pour certains composants pouvant poser problème.
 
-Certains choix arbitraires que nous avons fait sont de plus discutables, par exemple, le fait de considérer que 60% représente un taux de couverture de code faible est sujet à débat.
+Toutefois, notre étude étant fortement restreinte, l'infirmation de cette hypothèse et nos résultats comportent beaucoup de limites.
 
-Cette étude n'est donc pas une conclusion en soit mais une porte ouverte à l'élaboration d'études similaires.
+En effet, nos résultats ne reposent que sur un unique sous-projet d'un seul projet Open Source. De plus, les données collectées sur ce sous-projet sont très limitées, si ce n'est biaisées, puisqu'elles sont constituées des vingt derniers builds réalisés à la date de cette étude.
+
+D'autre part, notre méthodologie n'est pas infaillible, les expériences réalisées pouvant présenter des erreurs. Par exemple, la réalisation de nos scripts d'analyse de données peuvent comporter des inexactitudes, comme l'oubli de certaines données ou un filtrage incomplet de ces dernières.
+
+De plus, certains choix arbitraires que nous avons fait sont de plus discutables. Par exemple, le fait de considérer que 60% représente un taux de couverture de code faible est sujet à débat.
+
+Ainsi, cette étude n'est donc pas une conclusion en soit mais plutôt une porte ouverte à l'élaboration d'études similaires sur des données plus représentatives.
 
 ## VI. Références
 
