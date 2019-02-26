@@ -79,7 +79,7 @@ En revanche, dans le cas d'une étude sur les extensions additionnelles de _XWik
 
 Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise quels composants sont les plus sollicités par les utilisateurs de _XWiki_. Ainsi, étant donné que notre première hypothèse reposait sur cette métrique, il a été nécessaire d'en trouver une nouvelle. 
 
-Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de tests est importante ?**_
+Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de code est importante ?**_
 
 Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
@@ -87,7 +87,7 @@ Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie 
 2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations dessus ainsi que le nombre de branches actuelles afin de localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
 3. Une fois le sous-projet choisi, définir la **sévérité** des bugs des composants présentant le plus d'issues.
 4. Parmi ces composants, identifier, cette fois, les **classes** associées à ces issues.   
-5. Indépendamment des points deux, trois et quatre, se baser sur le sous-projet identifié dans le second point. Récupérer la **complexité** ainsi que la **couverture** de tests de chacune des classes de ce sous-projet.
+5. Indépendamment des points deux, trois et quatre, se baser sur le sous-projet identifié dans le second point. Récupérer la **complexité** ainsi que la **couverture** de code de chacune des classes de ce sous-projet.
 6. Essayer d'établir une corrélation entre les classes identifiées dans le quatrième point et leur complexité et couverture de code.
 
 Cette nouvelle approche va nous permettre de valider ou invalider l'hypothèse précédente, qui elle même propose une piste à la résolution de notre question globale.
@@ -187,7 +187,7 @@ Nous allons récupérer les données de couverture de test afin d'avoir des donn
 
 Finalement, cette **cinquième et dernière expérience** va consister à mettre en relation les résultats des **expériences trois et quatre**. 
 
-Nous allons utiliser les résultats obtenus lors des **expériences trois et quatre** afin de tenter d'établir une corrélation entre les classes comportant le plus de bugs et leur couverture de tests/complexité. 
+Nous allons utiliser les résultats obtenus lors des **expériences trois et quatre** afin de tenter d'établir une corrélation entre les classes comportant le plus de bugs et leur couverture de code/complexité. 
 
 ## V. Analyse de nos résultats
 
@@ -241,13 +241,13 @@ Dans cette expérience, nous collectons donc les données relatives aux 20 derni
 
 ### 5.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-L'objectif principal de cette expérience est de récupérer la complexité ainsi que la couverture de tests des classes de _XWiki_ _Platform_ sous une forme exploitable. 
+L'objectif principal de cette expérience est de récupérer la complexité ainsi que la couverture de code des classes de _XWiki_ _Platform_ sous une forme exploitable. 
 
-Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de données menant à **l'expérience cinq.** Cependant, avec ces dernières nous avons tout de même tenté d'établir une corrélation entre complexité et couverture de tests.
+Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de données menant à **l'expérience cinq.** Cependant, avec ces dernières nous avons tout de même tenté d'établir une corrélation entre complexité et couverture de code.
 
-![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de tests](../.gitbook/assets/correlation.png)
+![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de code](../.gitbook/assets/correlation.png)
 
-En étudiant la _`Figure 7`_,  on dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience
+En étudiant la _`Figure 7`_,  on dénote une importante couverture de code pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience
 
 ### 5.3. Expérience 5
 
@@ -265,9 +265,9 @@ Ainsi, en partant d'une approche différente nous obtenons des résultats sembla
 
 De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
 
-![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de tests des composants de la Figure 8](../.gitbook/assets/image%20%2811%29.png)
+![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2811%29.png)
 
-La _`Figure 9`_ se trouvant ci-dessus répertorie le nombre de bugs, la couverture de tests et la complexité estimée par composant. Nous remarquons que le composant **OldCore** a une couverture de tests parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
+La _`Figure 9`_ se trouvant ci-dessus répertorie le nombre de bugs, la couverture de code et la complexité estimée par composant. Nous remarquons que le composant **OldCore** a une couverture de code parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
 
 **D'après ces résultats nous pouvons donc infirmer notre hypothèse**. 
 
@@ -277,9 +277,9 @@ Nous nous attentions initialement à ce que des zones plus sensibles soient plus
 
 Notre première approche était de tenter d'identifier des zones du projet _XWiki_ utilisés par des utilisateurs lambda puis de proposer une méthodologie afin d'automatiser les tests présents dans ces zones. Ayant rencontré des limites à cette approche, nous n'avons pu aller au bout de cette idée.
 
-Nous avons par la suite changé notre objectif ainsi que notre hypothèse en proposant d'établir un lien entre zone sensible et couverture de tests. Le but de cette seconde hypothèse était de proposer aux développeurs de _XWiki_ une manière d'identifier facilement les zones à risque.
+Nous avons par la suite changé notre objectif ainsi que notre hypothèse en proposant d'établir un lien entre zone sensible et couverture de code. Le but de cette seconde hypothèse était de proposer aux développeurs de _XWiki_ une manière d'identifier facilement les zones à risque.
 
-Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé notre hypothèse. En effet, ceux-ci sont en contradiction avec ceux attendus. Nous considérons la couverture de tests du composant de _XWiki_ _Platform_ présentant le plus de bugs comme trop faible pour pouvoir valider notre hypothèse \(expérience 5\).
+Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé notre hypothèse. En effet, ceux-ci sont en contradiction avec ceux attendus. Nous considérons la couverture de code du composant de _XWiki_ _Platform_ présentant le plus de bugs comme trop faible pour pouvoir valider notre hypothèse \(expérience 5\).
 
 Toutefois, cette infirmation présente des limites. Notre étude est fortement restreinte. Tout d'abord nos résultats ne reposent que sur un sous-projet d'un seul projet Open Source. Ensuite les données collectées sur ce sous-projet sont aussi limitées si ce n'est biaisées puisqu'elles sont constituées des vingt derniers builds réalisés à la date de cette étude.
 
