@@ -161,7 +161,7 @@ C'est une métrique calculée de manière arbitraire, par exemple, sur _Clover_ 
 
 * _Sévérité_
 
-Il s'agit de la classification _priorité_ utilisé par Jira.
+Il s'agit de la classification d'issues intitulé "_priorité"_ dans Jira. Par exemple, pour notre étude, un bug majeur sera plus _sévère_ qu'un bug mineur.
 
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
