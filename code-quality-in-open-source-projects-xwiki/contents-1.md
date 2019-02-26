@@ -39,7 +39,7 @@ Même si ce type de solution est très courante sur le net ou dans les intranet 
 
 _XWiki_ apporte une solution générique et configurable au client. Cela permet d'avoir un seul produit initial et de le décliner de diverses façon suivant les besoins du client. Cette solution va permettre aux clients de _XWiki_ \(typiquement une entreprise nécessitant de regrouper des informations\) d'obtenir sa propre base de connaissance structurée. _XWiki_ propose aussi une interface permettant à ses utilisateurs d'avoir en plus la possibilité de personnaliser les barres latérales de leur interface pour améliorer leur appréhension personnelle de l’outil.
 
-Pour mettre en avant l'ampleur du projet, le code source de l'application dépasse aujourd'hui les 100 000 lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
+Pour mettre en avant l'ampleur du projet, le code source de l'application possède plusieurs centaines de milliers de lignes, il existe plus de 750 extensions et son nombre d'installations actives est estimé à 4500.
 
 ## II. Approche initiale
 
