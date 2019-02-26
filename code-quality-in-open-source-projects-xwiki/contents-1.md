@@ -211,11 +211,9 @@ Comme nous pouvons le voir sur la _`Figure 3`_, _XWiki_ _Platform_ semble être 
 
 Vous trouverez ci-dessous sur la _`Figure 4`_  les types de bugs qui composent _XWiki Platform._
 
-![Figure 4 : Comparaison entre les types de bugs de XWiki Platform et ceux d&apos;autres sous-projets](../.gitbook/assets/assets_-lt8wejr-hqa4bzftuer_-lz_9yjtig5hva0zf0pe_-lz_a-_oeftxs878xkdq_image.png)
-
 Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs présents dans _XWiki Platform_ sont majeurs. Des bugs majeurs pouvant donc indiquer l'apparition d’éléments bloquants venant entraver l'expérience utilisateur. Identifier la provenance de ces bugs pourraient donc nous aider à identifier les zones sensibles du sous-projet _XWiki Platform_. 
 
-~~De plus, la répartition du type de bugs des autres repositories étant semblable à celle du sous-projet étudié, on peut envisager que la reproduction de notre démarche puisse amener à des résultats semblables sur d'autres sous-projets.~~  &lt;= NOT SURE ABOUT THAT
+![Figure 4 : Repr&#xE9;sentation des types de bugs pr&#xE9;sents dans XWiki Platform.](../.gitbook/assets/typesbug.png)
 
 * _**Expérience 2**_
 
