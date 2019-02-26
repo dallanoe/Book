@@ -211,9 +211,9 @@ Comme nous pouvons le voir sur la _`Figure 3`_, _XWiki_ _Platform_ semble être 
 
 Vous trouverez ci-dessous sur la _`Figure 4`_  les types de bugs qui composent _XWiki Platform._
 
-Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs présents dans _XWiki Platform_ sont majeurs. Des bugs majeurs pouvant donc indiquer l'apparition d’éléments bloquants venant entraver l'expérience utilisateur. Identifier la provenance de ces bugs pourraient donc nous aider à identifier les zones sensibles du sous-projet _XWiki Platform_. 
-
 ![Figure 4 : Repr&#xE9;sentation des types de bugs pr&#xE9;sents dans XWiki Platform.](../.gitbook/assets/typesbug.png)
+
+Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs présents dans _XWiki Platform_ sont majeurs. Des bugs majeurs pouvant donc indiquer l'apparition d’éléments bloquants venant entraver l'expérience utilisateur. Identifier la provenance de ces bugs pourraient donc nous aider à identifier les zones sensibles du sous-projet _XWiki Platform_. 
 
 * _**Expérience 2**_
 
@@ -235,17 +235,19 @@ La _`Figure 6`_ ci-dessus nous permet de visualiser de façon plus claire les co
 
 * _**Expérience 3**_ 
 
-Cette étape est principalement une étape de collecte de données. Les résultats collectés ici n'avaient pas pour but d'être analysés de façon brute mais d'être utilisés par la suite. Ici nous collectons les données relatives aux 20 derniers builds sur chaque branche de _XWiki_ _Platform_ proposés sur Jenkins.
+Cette étape étant principalement une étape de collecte de données, nous n'avons pas de résultats à présenter ici. En effet, ceux-ci n'avaient pas pour but d'être analysés de façon brute mais d'être utilisés par la suite. 
+
+Dans cette expérience, nous collectons donc les données relatives aux 20 derniers builds sur chaque branche de _XWiki_ _Platform_ proposés sur Jenkins.
 
 ### 5.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-L'objectif principal de cette expérience est de récupérer la complexité ainsi que la couverture de tests des classes de _XWiki_ _Platform_ sous une forme exploitable. Nous n'avons rien à présenter à ce niveau car il s'agit d'une collecte de données.
+L'objectif principal de cette expérience est de récupérer la complexité ainsi que la couverture de tests des classes de _XWiki_ _Platform_ sous une forme exploitable. 
 
-Cependant, avec ces dernières nous tentons de corréler complexité et couverture de test. -- todo ?
+Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de données menant à **l'expérience cinq.** Cependant, avec ces dernières nous avons tout de même tenté d'établir une corrélation entre complexité et couverture de tests.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de tests](../.gitbook/assets/image%20%2810%29.png)
 
-On dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion à cette expérience.
+En étudiant la _`Figure 7`_,  on dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience.
 
 ### 5.3. Expérience 5
 
