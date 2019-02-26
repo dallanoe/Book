@@ -171,9 +171,9 @@ Les trois premières vont consister à de plus en plus réduire le scope de nos 
 
 Pour la première nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
 
-Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ceux-ci et regardons leurs sévérité afin de pouvoir créer nos premières métriques utilisables pour notre hypothèse.
+Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ces composants-ci et regardons leurs sévérité afin de pouvoir créer nos premières métriques utilisables pour notre hypothèse.
 
-Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des détails suplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
+Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des détails supplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
 
 ### 4.2.2. Expériences 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
