@@ -110,7 +110,7 @@ _Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parc
 
 * **Clover**
 
-_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. Il s'agit donc de notre source principale de métriques, notamment au niveau de la complexité et couverture de code. Par ailleurs, _Clover_ stocke les rapports générés. Ceux-ci étant disponibles au public, nous avons pu les utiliser dans nos expériences. 
+_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. Il s'agit donc de notre source principale de métriques, comme par exemple la _complexité_ et _couverture de code_. Par ailleurs, _Clover_ stocke les rapports générés. Ceux-ci étant disponibles au public, nous avons pu les utiliser dans nos expériences. 
 
 * **Jenkins**
 
@@ -157,6 +157,12 @@ C'est une métrique calculée de manière arbitraire, par exemple, sur _Clover_ 
 5. _`Expression Ternaire: 1 point`_
 6. _`Expression Booléenne: (nombre de && ou ||) points`_
 
+#### **Autres métriques**
+
+* _Sévérité_
+
+Il s'agit de la classification _priorité_ utilisé par Jira.
+
 ### 4.2.  Expériences sur XWiki <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 En suivant la méthodologie présentée plus tôt, nous pouvons discerner cinq expérimentations distinctes.
@@ -167,7 +173,7 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 ### 4.2.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Les trois premières expériences vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
+Les trois premières expériences vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants et ainsi de suite. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
 
 Pour **la première de nos expériences**, nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci. Cette expérience va ainsi nous fournir une première piste à exploiter. 
 
@@ -179,9 +185,9 @@ Au terme de ces **trois expériences**, nous nous attendons à ce que la plupart
 
 ### 4.2.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-La **quatrième expérience** va consister à repartir du sous-projet identifié dans la **première expérience**, puis à récupérer la complexité et la couverture de test de chacune des classes dudit sous-projet. Pour cela, on va notamment pouvoir utiliser les données fournies par _Clover_. 
+La **quatrième expérience** va consister à repartir du sous-projet identifié dans la **première expérience**, puis à récupérer la complexité et la couverture de code de chacune des classes dudit sous-projet. Pour cela, on va notamment pouvoir utiliser les données fournies par _Clover_. 
 
-Nous allons récupérer les données de couverture de test afin d'avoir des données aux valeurs plus lisibles, et surtout plus exploitables, que celles présentes sur le site.
+Nous allons récupérer les données de couverture de code afin d'avoir des données aux valeurs plus lisibles, et surtout plus exploitables, que celles présentes sur le site.
 
 ### 4.2.3. Expérience 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
@@ -221,7 +227,7 @@ Suite aux résultats obtenus dans l'**expérience 1**, nous avons analysé les b
 
 ![Figure 5 : R&#xE9;sultats de l&apos;exp&#xE9;rience 2.](../.gitbook/assets/image%20%284%29.png)
 
-Dans une première approche de ces données, nous pourrions identifier les composants **OldCore**, **Web** et **WYSWIG** comme ceux posant le plus de problèmes. En effet, en étudiant la _`Figure 5`_,  nous pouvons constater que ce sont ceux présentant le plus de bugs dans la ligne _"Total"_  \( 803 pour **OldCore**, 948 pour **Web**, etc...\).
+Dans une première approche de ces données, nous pourrions identifier les composants **OldCore**, **Web** et **WYSWIG** comme ceux posant le plus de problèmes. En effet, en étudiant la _`Figure 5`_,  nous pouvons constater que ce sont ceux présentant le plus de bugs dans la ligne _"Total"_  \(803 pour **OldCore**, 948 pour **Web**, etc...\).
 
 Cependant, le nombre de bugs d'un composant n'est ici que le premier critère que nous avons décidé de prendre en compte. En effet, nous avons également fait le choix d'utiliser la sévérité des bugs comme critère. 
 
@@ -247,7 +253,7 @@ Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de d
 
 ![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de code](../.gitbook/assets/codecoverage.png)
 
-En étudiant la _`Figure 7`_,  on dénote une importante couverture de code pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience
+En étudiant la _`Figure 7`_,  on dénote une importante couverture de code pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience.
 
 ### 5.3. Expérience 5
 
@@ -261,9 +267,9 @@ Cette répartition nous permet d'obtenir la _`Figure 8`_ se trouvant ci-dessous.
 
 La _`Figure 8`_ présente la répartition des bugs pour les composants identifiés après que nos différentes classes aient été regroupées. 
 
-Ainsi, en partant d'une approche différente nous obtenons des résultats semblables. Notre approche par composants dans l'expérience 2 nous avait permi d'identifier **OldCore** comme un des composants les plus sensibles de _XWiki Platform_., son indice de sensibilité étant d'environs 20%. 
+Ainsi, en partant d'une approche différente nous obtenons des résultats semblables. Notre approche par composants dans l'expérience 2 nous avait permis d'identifier **OldCore** comme un des composants les plus sensibles de _XWiki Platform_., son indice de sensibilité étant d'environ 20%. 
 
-De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
+De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup plus important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
 
 ![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2811%29.png)
 
@@ -279,7 +285,7 @@ Au terme de cette étude, nous ne pouvons malheureusement pas confirmer ou infir
 
 Notre approche initiale, consistant à identifier les zones "chaudes" du code, a très vite rencontré des limites nous empêchant d'aller au bout de cette idée.
 
-Notre seconde hypothèse, quant à elle, proposait d'établir un lien entre zone sensible et couverture de code. Son but, à terme, étant de proposer aux développeurs de XWiki une manière d'identifier facilement les zones à risque pour éviter les erreurs plus facilement. Notre hypothèse était donc la suivante : dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de code est importante ?
+Notre seconde hypothèse, quant à elle, proposait d'établir un lien entre zone sensible et couverture de code. Son but, à terme, étant de proposer aux développeurs de XWiki une manière d'identifier facilement les zones à risque pour éviter les erreurs plus facilement. Notre hypothèse était donc la suivante : _dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de code est importante_ ?
 
 Suite aux résultats obtenus pour l'expérience finale de cette seconde approche, nous avons invalidé cette hypothèse. En effet, il est apparu que les zones que nous avons identifiées comme "sensibles" peuvent être bien moins couvertes que des zones ne l'étant pas.
 
