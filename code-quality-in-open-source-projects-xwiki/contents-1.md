@@ -199,7 +199,7 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 Les données recueillies lors de cette expérience sont réparties par sous-projet. Elles indiquent le nombre actifs de bugs relevés lors de notre étude. Vous trouverez ci-dessous un  schéma retranscrivant nos résultats. 
 
-![Figure 2 : R&#xE9;sultats de l&apos;exp&#xE9;rience 1 - Nombre de bugs en fonction des sous-projets](../.gitbook/assets/image%20%287%29.png)
+![Figure 2 : R&#xE9;sultats de l&apos;exp&#xE9;rience 1 - Nombre de bugs en fonction des sous-projets](../.gitbook/assets/bugs.png)
 
 On remarque, sur la figure ci-dessus, que la majorité des bugs actifs semble liée au sous-projet _XWiki_ _Platform_. Nous pouvons également noter qu'une proportion non négligeable des bugs n'étant pas situés dans _XWiki_ _Platform_ se trouvent dans les deux sous-projets _XWiki_ _Rendering_ et _XWiki_ _Commons_. Il pourrait donc être intéressant d'analyser chacun de ces sous-projets.
 
@@ -245,7 +245,7 @@ L'objectif principal de cette expérience est de récupérer la complexité ains
 
 Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de données menant à **l'expérience cinq.** Cependant, avec ces dernières nous avons tout de même tenté d'établir une corrélation entre complexité et couverture de tests.
 
-![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de tests](../.gitbook/assets/image%20%2810%29.png)
+![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de tests](../.gitbook/assets/correlation.png)
 
 En étudiant la _`Figure 7`_,  on dénote une importante couverture de tests pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience.
 
