@@ -157,7 +157,7 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 #### Analyse des contributions
 
-Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework (`release/2.x`).
+Lors de l' analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur Github et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework \(`release/2.x`\).
 
 Le second contributeur en nombre de commits, Brice Dutheil, représente 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits trés largement inférieurs à 1%.
 
@@ -165,7 +165,7 @@ Ces proportions sont à nuancer avec la paternité réelle au sens du nombre de 
 
 Cette inversion montre que les commits à eux seuls ne sont pas représentatifs cependant la tendance reste la même : Brice et Szczpan ont le leadership du projet et les 136 autres contributeurs ont une présence plus attenuée.
 
-**Conclusion :** On peut retenir de cette analyse que bien que le projet ne soit pas tenu par un groupe plus grand que ce binome, il est ouvert aux contributeurs externes. Cependant les contributions externes restent ponctuelles et ne constituent pas l'ossature principale du projet. 
+**Conclusion :** On peut retenir de cette analyse que bien que le projet ne soit pas tenu par un groupe plus grand que ce binome, il est ouvert aux contributeurs externes. Cependant les contributions externes restent ponctuelles et ne constituent pas l'ossature principale du projet.
 
 ### Hibernate
 
@@ -214,7 +214,7 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
 * Méthode de contribution :
   * Des sections `Contribute Designs`, `Sponsoring issues`, `Contribute code` permettent d'aiguilleur les contributeurs aussi dans le sens de la production que de la suggestion d'améliorations et fonctionnalités
-  * Un post `Onboarding` est dédié aux nouveaux entrants et propose des `Available Tracks` permettant d'intégrer le projet parmi lesquels (D'autres sont en cours de création) :
+  * Un post `Onboarding` est dédié aux nouveaux entrants et propose des `Available Tracks` permettant d'intégrer le projet parmi lesquels \(D'autres sont en cours de création\) :
     * Report or find an issue
     * Understand XWiki concepts of XClass & XObjects
     * Contribute to the core
@@ -236,7 +236,7 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 #### Analyse des contributions
 
-Parmi les 96 contributeurs du projet, les 20 premiers contributeurs (dont 15 font partie de l'organisation XWiki) sont ceux qui portent vraiment le projet (totalisant 32.398 commits sur 36.461 commits, soit environ 89%). La loi de Pareto est vérifiée.
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation XWiki\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). La loi de Pareto est vérifiée.
 
 **Conclusion :** ce projet possède beaucoup de caractéristiques permettant de facilement l'intégrer \(équipe de développement disponible, documentation à portée de main\). Cependant, peu a été développé par la communauté.
 
@@ -306,19 +306,21 @@ Pour conclure, ce sondage va dans le sens de notre seconde hypothèse, l'attenti
 Au début du projet, nous avons commencé par déterminer des KPIs simples à évaluer, et pouvant être automatisés. Nous avons donc mis au point un script permettant d'automatiser le téléchargement de sources depuis un dépôt Git.
 
 Cependant, nous nous sommes rapidement aperçus que ces KPIs n'étaient pas assez fins pour nous permettre d'étudier le problème convenablement. Les KPIs ont donc été affinés, cependant leur évaluation ne pouvait plus être mécanisée. En effet, l'estimation de la qualité d'un `README.md` ne peut se faire automatiquement. Nous avons donc effectué la majeure partie de cette analyse à la main, en nous aidant de plusieurs outils :
-- [git-fame](https://github.com/casperdcl/git-fame) afin d'avoir un premier aperçu de la répartition de la paternité de code entre les différents contributeurs.
-- [git inspector](https://github.com/ejwa/gitinspector) nous a permis d'établir l'analyse des commits.
-- [Webscraper](https://www.webscraper.io/) afin de récupérer des informations directement depuis l'interface de Github.
-- [L'API GitHub](https://developer.github.com/v3/) dans l'optique d'obtenir des statistiques sur les issues
+
+* [git-fame](https://github.com/casperdcl/git-fame) afin d'avoir un premier aperçu de la répartition de la paternité de code entre les différents contributeurs.
+* [git inspector](https://github.com/ejwa/gitinspector) nous a permis d'établir l'analyse des commits.
+* [Webscraper](https://www.webscraper.io/) afin de récupérer des informations directement depuis l'interface de Github.
+* [L'API GitHub](https://developer.github.com/v3/) dans l'optique d'obtenir des statistiques sur les issues
 
 ## VIII. Références
 
-- https://github.com/xwiki/xwiki-platform
-- https://github.com/junit-team/junit5
-- https://github.com/hibernate/hibernate-orm
-- https://github.com/apache/logging-log4j2
-- https://github.com/mockito/mockito
-- https://promyze.com/themis/
-- https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l
+* [https://github.com/xwiki/xwiki-platform](https://github.com/xwiki/xwiki-platform)
+* [https://github.com/junit-team/junit5](https://github.com/junit-team/junit5)
+* [https://github.com/hibernate/hibernate-orm](https://github.com/hibernate/hibernate-orm)
+* [https://github.com/apache/logging-log4j2](https://github.com/apache/logging-log4j2)
+* [https://github.com/mockito/mockito](https://github.com/mockito/mockito)
+* [https://promyze.com/themis/](https://promyze.com/themis/)
+* [https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l)
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
+

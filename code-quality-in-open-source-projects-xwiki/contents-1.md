@@ -173,7 +173,7 @@ Pour la première nous allons pouvoir récupérer, sur les 1000 derniers bugs re
 
 Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ceux-ci et regardons leurs sévérité afin de pouvoir créer nos premières métriques utilisables pour notre hypothèse.
 
-Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des details suplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
+Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des détails suplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
 
 ### 4.2.2. Expériences 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
@@ -181,7 +181,7 @@ La quatrième expérience va consister à repartir du sous-projet identifié dan
 
 ### 4.2.3. Expériences 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Il s'agit de la mise en relation des résultats des éxperiences 3 et 4. On va prendre les résultats obtenus lors de l'éxperience 3 sur les classes du projet puis on va récupérer les résultats des couvertures de tests sur les classes de l'éxperience 4 pour avoir des données correspondantes au résultat de notre hypothèse. 
+Il s'agit de la mise en relation des résultats des expériences 3 et 4. On va prendre les résultats obtenus lors de l'expérience 3 sur les classes du projet puis on va récupérer les résultats des couvertures de tests sur les classes de l'expérience 4 pour avoir des données correspondantes au résultat de notre hypothèse. 
 
 ## V. Analyse de nos résultats
 
@@ -193,15 +193,19 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 Les données recueillies lors de l’expérience sont compté par sous-projet et priorité de bugs. Nous avons ainsi obtenu les résultats suivant:
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 On remarque qu’une énorme parties des bugs ce retrouvent être le projet XWiki Platform. Parmi les autres données, bien moins représentatives, nous avons XWiki Rendering et XWiki Commons. Cependant XWiki Platform confirme sa place de sous-projet à analyser grâce à la sévérité de ses bugs
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 * _Expérience 2_
 
-\_\_
+Suite aux résultats obtenus dans l’expérience 1, nous avons pu créer ce tableau de valeurs:
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+On remarque un total de bug assez élevé dont les plus nombreux sont présents dans le module _OldCore_ et _Web - Templates & Ressources._ Les parties les moins touchées 
 
 * _Expérience 3_ 
 
