@@ -197,21 +197,29 @@ Nous présentons dans cette partie les résultats de nos différentes expérienc
 
 * _Expérience 1_ 
 
-Les données recueillies lors de l’expérience sont compté par sous-projet et priorité de bugs. Nous avons ainsi obtenu les résultats suivant:
+Les données recueillies lors de cette expérience sont réparties par sous-projet. Elles indiquent le nombre actifs de bugs relevés lors de notre étude.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
-On remarque qu’une énorme parties des bugs ce retrouvent être le projet XWiki Platform. Parmi les autres données, bien moins représentatives, nous avons XWiki Rendering et XWiki Commons. Cependant XWiki Platform confirme sa place de sous-projet à analyser grâce à la sévérité de ses bugs.
+On remarque qu'une grosse proportion des bugs est liée au sous-projet _XWiki_ _Platform_. On note de même qu'une proportion non négligeable des bugs est liée aux deux sous-projets _XWiki_ _Rendering_ et _XWiki_ _Commons_. Cependant comme indiqué plus haut et afin de réduire notre scope nous avons choisi de ne traiter que _XWiki_ _Platform_ pour les expériences suivantes.
 
 ![](../.gitbook/assets/assets_-lt8wejr-hqa4bzftuer_-lz_9yjtig5hva0zf0pe_-lz_a-_oeftxs878xkdq_image.png)
 
+Notons qu'une grande partie des bugs de ces sous-projets est considérée comme problème majeur. De plus, on observe que les diagrammes ci-dessus sont similaires et donc que ces sous-projets partagent une répartition semblable de types de bugs. // TODO
+
 * _Expérience 2_
 
-Suite aux résultats obtenus dans l’expérience 1, nous avons pu créer ce tableau de valeurs:
+Suite aux résultats de l'expérience 1, nous avons analysé les composants du sous-projet _XWiki_ _Platform_. Voici les résultats que nous obtenons.
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
-On remarque un total de bug assez élevé dont les plus nombreux sont présents dans le module _OldCore_ et _Web - Templates & Ressources._ Les parties les moins touchées 
+Si nous approchons naïvement ces données, nous aurions tendance à dire que les composants _OldCore_, _Web_ et _WYSWIG_ posent le plus de problèmes car ce sont ceux qui possèdent le plus de bugs \(premier critère\). Cependant, nous avons aussi décidé de prendre en compte la sévérité de ces bugs \(second critère\) et avons crée une métrique prenons en compte ces deux critères: l'indice de sensibilité.
+
+Pour les expériences suivantes, nous ne prenons pas forcément en compte les composants qui ont le plus de bugs mais ceux qui possèdent un indice de sensibilité important.
+
+![](../.gitbook/assets/image.png)
+
+La visualisation ci-dessus nous permet de mieux appréhender cette métrique indice de sensibilité.
 
 * _Expérience 3_ 
 
