@@ -21,15 +21,15 @@ Ce document va présenter les résultats de nos recherches sur l'identification 
 
 ### 1.1. Pourquoi des projets Open Source ? <a id="docs-internal-guid-e7045e26-7fff-fbe0-966c-c04c74baeec5"></a>
 
-À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise du fait de sa liberté de conception. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse énormément au fil du temps, tant au niveau de son code que de sa communauté.
+À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse énormément au fil du temps, tant au niveau de son code que de sa communauté.
 
-Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, lié aussi bien au code des contributeurs que lié aux technologies utilisés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
+Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, liés aussi bien au code des contributeurs qu'aux technologies utilisés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
 
-Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir et ainsi pouvoir faire avancer un projet plus rapidement ou encore avec une meilleure gestion.
+Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir et peuvent ainsi permettre de faire avancer un projet plus rapidement. 
 
 Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes plus ou moins important.
 
-C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention et donner une piste possible à suivre pour améliorer la qualité des tests.
+C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention. ~~Ces résultats pouvant nous permettre de founir une piste possible afin améliorer la qualité des tests.~~  &lt;=\(On laisse ou pas ? La tournure fait un peu bizarre peut être.\)
 
 ### 1.2. Qu'est-ce que XWiki ?
 
@@ -69,22 +69,22 @@ Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette mé
 
 ![](../.gitbook/assets/responsexwiki.png)
 
-Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de _XWiki_ étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon et en n'utilisant que les données récupérées de nos propre parcours, nous ne serions capable de ne collecter qu’une faible quantité de données et donc avoir des résultats biaisés, ce qui n'est pas notre objectif. De plus, celles-ci ne seraient pas forcément très représentatives car nos utilisations de _XWiki_ ne seraient pas exhaustives.
+Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de _XWiki_ étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon et en utilisant uniquement les données récupérées de nos propre parcours, nous ne serions capable de ne collecter qu’une faible quantité de données. Celles-ci seraient biaisées et peu représentatives car nos utilisations de _XWiki_ ne seraient pas exhaustives.
 
-Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur laquelle nous appuyer, celle-ci n'étant pas adaptée à notre étude et ne fournissant pas des résultats significatifs. 
+Nous avons donc finalement décidé de choisir une nouvelle méthodologie sur laquelle nous appuyer, celle-ci n'étant pas adaptée à notre étude et ne fournissant pas de résultats significatifs. 
 
 En revanche, dans le cas d'une étude sur les extensions additionnelles de _XWiki_, une telle méthodologie pourrait être adaptée. En effet, contrairement au cœur de _XWiki_, il est possible de savoir quelles extensions sont les plus utilisées, en se basant sur leur nombre de téléchargements. Ainsi, se baser sur ces informations et des informations récoltées à la main pourrait être intéressant si nous choisissions d'étendre le sujet de cette étude au delà du cœur de _XWiki_.
 
 ## III. Nouvel objectif 
 
-Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise quels composants sont les plus sollicités par les utilisateurs de _XWiki_. Ainsi, notre première hypothèse reposant sur cette métrique, il a été nécessaire d'en trouver une nouvelle. 
+Comme mentionné plus tôt, il n'est pas possible de savoir de façon précise quels composants sont les plus sollicités par les utilisateurs de _XWiki_. Ainsi, étant donné que notre première hypothèse reposait sur cette métrique, il a été nécessaire d'en trouver une nouvelle. 
 
 Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Open Source, une zone sensible est-elle forcément une zone dont la couverture de tests est importante ?**_
 
 Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
 1. Tout d'abord, partir du projet complet, ici _XWiki_, et déterminer, parmi les plus gros sous-projets, ceux ayant le plus de **bugs** non résolus. _XWiki_ propose de nombreuses extensions, de ce fait, nous ne pouvons malheureusement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre **scope** de recherche sur un ou plusieurs sous-projets.
-2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations dessus ainsi que le nombre de branches actuelle pour localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
+2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations dessus ainsi que le nombre de branches actuelles afin de localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
 3. Une fois le sous-projet choisi, définir la **sévérité** des bugs des composants présentant le plus d'issues.
 4. Parmi ces composants, identifier, cette fois, les **classes** associées à ces issues.   
 5. Indépendamment des points deux, trois et quatre, se baser sur le sous-projet identifié dans le second point. Récupérer la **complexité** ainsi que la **couverture** de tests de chacune des classes de ce sous-projet.
@@ -98,27 +98,27 @@ Cette nouvelle approche va nous permettre de valider ou invalider l'hypothèse p
 
 **Sources**
 
-Afin de collecter des données \(voir expériences, _Livrable L3_\), nous avons utilisé différentes sources.
+Afin de collecter des données nécessaires à la réalisation de notre méthodologie nous avons utilisé différentes sources.
 
 * **Github**
 
-_Github_ est l'hôte des sources de _XWiki_. Il nous a permis d'avoir une meilleur vu de l'architecture global du projet ainsi que de définir le sous-projet \(repository\) sur lequel nous concentrer. Avec plus de temps, nous aurions pu en plus faire une analyse plus en profondeur des parties chaudes, qu'on a découvertes au fil de cette recherche, grâce au code fournis.
+_Github_ est l'hôte des sources de _XWiki_. Il nous a notamment permis d'avoir une meilleure vue de l'architecture globale du projet et d'ainsi définir le sous-projet \(repository\) sur lequel nous concentrer. 
 
 * **Jira**
 
-_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et d'en récupérer les bugs associés. Ces bugs nous on fournit leurs sévérité ainsi que leurs emplacement dans le code.
+_Jira_ est le système de tickets utilisé par _XWiki_. Il nous a permis de parcourir les tickets levés par l'équipe de développement et de récupérer les bugs associés. _Jira_ nous a également permis de récupérer la sévérité de chacun des bugs ainsi que leur emplacement dans le code. 
 
 * **Clover**
 
-_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. C'est notre source principale de métriques \(complexité et couverture de code\). Par ailleurs, il stocke les rapports générés. Étant disponibles au public, nous en avons utilisé dans nos expériences. Ces informations sont la complexité du code ainsi que leurs couvertures. Ces informations nous ont d'ailleurs aussi donné une sorte de carte de chaleur.
+_XWiki_ utilise _Clover_ afin d'obtenir de nombreuses informations quant à la qualité de son code. Il s'agit donc de notre source principale de métriques, notamment au niveau de la complexité et couverture de code. Par ailleurs, _Clover_ stocke les rapports générés. Ceux-ci étant disponibles au public, nous avons pu les utiliser dans nos expériences. 
 
 * **Jenkins**
 
-_Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relevés \(_Jira_\). Cependant il ne stocke seulement que les informations des 20 derniers builds générés. Il nous aura permis de connaitre les tests effectués et d'avoir une idée des problèmes du projet actuel. Cependant il nous aura été que peu utile après la découverte du Clover du projet.
+_Jenkins_ nous permet de relier le code source \(_Github_\) aux problèmes relevés \(_Jira_\). Cependant il ne stocke que les informations des 20 derniers builds générés. 
 
 **Métriques**
 
-Ayant fait évoluer notre direction au cours du projet, nous avons aussi fait évoluer nos métriques. De ce fait, nous les avons choisis en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
+Ayant fait évoluer notre direction au cours du projet, nous avons également fait évoluer nos métriques. De ce fait, nous les avons choisies en fonction à la fois des données initialement collectées, mais aussi, en fonction de celles récupérées lors de l'application de notre nouvelle démarche.
 
 Afin que nos expériences puissent être claires pour les lecteurs, nous définissons ici les métriques utilisées.
 
@@ -140,15 +140,15 @@ La couverture de méthode est une métrique mesurant si une méthode a été acc
 
 #### **Métriques de complexité de code**
 
-Nous introduisons aussi la notion de complexité d'un code.
+Nous utilisons également la notion de complexité d'un code.
 
 * _Complexité_
 
-C'est la métrique globale donnant la complexité cyclomatique d'une entité dans un contexte donné. Les contextes possibles étant une _classe_, un _package_ ou encore un _projet_.
+Il s'agit de la métrique globale donnant la complexité cyclomatique d'une entité dans un contexte donné. Les contextes possibles étant une _classe_, un _package_ ou encore un _projet_.
 
 * _Complexité d'une méthode_
 
-C'est une métrique calculée de manière arbitraire, par exemple, sous _Clover_ le calcul est effectué de la façon suivante:
+C'est une métrique calculée de manière arbitraire, par exemple, sur _Clover_ le calcul est effectué de la façon suivante:
 
 1. _`Méthode vide: 1 point`_
 2. _`Instruction unique: 0 point`_
@@ -167,19 +167,21 @@ Vous trouverez ci-dessous un schéma résumant notre démarche.
 
 ### 4.2.1. Expériences 1-2-3 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
-Les trois premières vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
+Les trois premières expériences vont consister à de plus en plus réduire le scope de nos recherches : nous allons initialement nous baser sur un projet complet, puis sur un sous-projet, puis sur certains de ses composants, et enfin sur des classes présentes dans ces composants. Dans ce cas, il s'agit de récupérer les données sur Jira afin de pouvoir les exploiter.
 
-Pour la première nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci nous donnant ainsi une piste à exploiter. 
+Pour la première de nos expériences, nous allons pouvoir récupérer, sur les 1000 derniers bugs recensés, leurs propriétés allant de leurs emplacements à leurs descriptions ainsi que la priorité de ceux-ci. Cette expérience va ainsi nous fournir une première piste à exploiter. 
 
-Pour la seconde, on va exploiter les résultats de la première pour cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ces composants-ci et regardons leurs sévérité afin de pouvoir créer nos premières métriques utilisables pour notre hypothèse.
+Pour la seconde, nous allons exploiter les résultats obtenus plus tôt afin de cibler les composants les plus touchés par les bugs. On récupère ensuite les bugs de ces composants et regardons leurs différentes sévérités afin de pouvoir créer les premières métriques utilisables pour notre hypothèse.
 
-Pour la troisième, nous zoomons une dernière fois sur les classes pour obtenir leur chemin, et ainsi donc des détails supplémentaires, sur les classes causant des problèmes. On aura ainsi une métrique plus fine et détaillé.
+Enfin, pour la troisième expérience, nous zoomons une dernière fois. Cette fois-ci, nous allons nous pencher sur des classes comportant des bugs référencés sur Jenkins. Cependant, ne pouvant récupérer que les données des vingt derniers builds,  nous avons décidé de ne pas zoomer sur des composants en particulier. En effet, la plage de données récupérée étant déjà faible, nous n'avons pas voulu la réduire plus que nécessaire. 
 
-### 4.2.2. Expériences 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+Au terme de ces trois expériences, nous nous attendons à ce que la plupart des classes obtenues dans l'expérience trois soient présentes dans les composants identifiés dans l'expérience deux. 
+
+### 4.2.2. Expérience 4 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 La quatrième expérience va consister à repartir du sous-projet identifié dans la première expérience, puis à récupérer la complexité et la couverture de test de chacune des classes du dit sous-projet. On va pour cela utiliser les données fournis par Clover. On va récupérer les données de couverture de test afin d'avoir des données avec des valeurs plus lisibles, et surtout exploitables, que ceux présents sur le site.
 
-### 4.2.3. Expériences 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
+### 4.2.3. Expérience 5 <a id="docs-internal-guid-51382e29-7fff-2108-5bbb-1ef6c6d7fddd"></a>
 
 Il s'agit de la mise en relation des résultats des expériences 3 et 4. On va prendre les résultats obtenus lors de l'expérience 3 sur les classes du projet puis on va récupérer les résultats des couvertures de tests sur les classes de l'expérience 4 pour avoir des données correspondantes au résultat de notre hypothèse. 
 
@@ -217,7 +219,7 @@ On remarque un total de bug assez élevé dont les plus nombreux sont présents 
 
 ## VI. Conclusion 
 
-
+Avec plus de temps, nous aurions souhaité effectuer une analyse plus en profondeur des zones sensibles, identifiées lors de cette recherche. 
 
 ## VI. Références
 
