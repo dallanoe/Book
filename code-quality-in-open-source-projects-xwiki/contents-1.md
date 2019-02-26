@@ -13,7 +13,7 @@ Nous sommes quatre étudiants en Master 2 d'Architecture logicielle :
 
 De nouvelles technologies émergent chaque jour. Les organisations, Open Source comme privées, produisent de plus en plus de systèmes qui utilisent une multitude de technologies, concepts et outils. 
 
-Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(par exemple HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ces problèmes émergent. Ainsi, comment pouvons-nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
+Dans un tel contexte, de nouveaux problèmes apparaissent. Certaines de ces technologies \(comme HTML ou CSS\) ne sont pas forcément testables au sens où on l'entend \(tests unitaires, de non-régression...\) mais peuvent tout de même venir entraver l'expérience des utilisateurs du produit. De nombreuses questions sous-jacentes à ces problèmes émergent. Comment pouvons-nous identifier ces technologies, ces zones qui nécessitent plus d'attention afin d'accroître la qualité globale du projet ?
 
 Ce document va présenter les résultats de nos recherches sur l'identification de zones "sensibles" d'un projet Open Source. Nous présenterons donc dans une première partie le contexte de notre recherche puis, dans un second temps, la démarche que nous avons suivie ainsi que les différents résultats obtenus.
 
@@ -23,17 +23,17 @@ Ce document va présenter les résultats de nos recherches sur l'identification 
 
 À l'heure actuelle, les projets Open Source sont de plus en plus nombreux et populaires. De tels projets impliquent généralement des contraintes différentes et souvent plus "légères", que le développement d'un projet en entreprise. Cela n'impacte pas forcément pour autant la taille de ce genre de projets. En effet, il n'est pas rare qu'un projet Open Source grossisse énormément au fil du temps, tant au niveau de son code que de sa communauté.
 
-Avec la croissance du nombre de contributeurs, on voit également apparaitre une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, liés aussi bien au code des contributeurs qu'aux technologies utilisés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
+Avec la croissance du nombre de contributeurs, on voit également apparaître une diversité de styles de développement. Cette croissance s’accompagnant de son lot de problèmes divers et variés, liés aussi bien au code des contributeurs qu'aux technologies utilisés, il est alors nécessaire d'être plus vigilant quant aux zones "sensibles" du code développé.
 
 Dans ce contexte, la quantité et la qualité des tests sont des métriques primordiales. Ces tests sont nécessaires pour corriger ou éviter des erreurs pouvant survenir et peuvent ainsi permettre de faire avancer un projet plus rapidement. 
 
-Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes plus ou moins important.
+Cependant, dans un projet de grande envergure, il peut s’avérer difficile de tout tester. Des parties déjà considérées comme stables par les développeurs ne sont plus forcément mises à jour, or elles peuvent à terme devenir une source de problèmes.
 
 C'est dans ce contexte que se situe notre étude. Nous allons analyser un projet Open Source de grande envergure, ici **XWiki**, et tenter d'identifier ses zones sensibles afin de mieux cibler les zones nécessitant plus d'attention. Ces résultats pourront, par exemple, nous fournir une piste possible afin d'améliorer la qualité des tests.  
 
 ### 1.2. Qu'est-ce que XWiki ?
 
-_**XWiki**_ est un projet **Open Source** mature, démarré en 2003, qui est écrit en très grande partie en **Java,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
+_**XWiki**_ est un projet **Open Source** mature \(écrit majoritairement en ****Java\)**,** démarré en 2003**,** distribué selon les termes de la licence **GNU LGPL** et mettant l'accent sur l'extensibilité. Son objectif est de proposer une plateforme générique offrant des services d'exécution pour les applications construites sur cette plateforme.
 
 Même si ce type de solution est très courante sur le net ou dans les intranet de sociétés, attention à ne pas le confondre avec le premier venu. Il se targue en effet d’être non seulement un “**Wiki d’entreprise**” mais aussi un “**Wiki Applicatif**” ce qui fait de lui bien plus qu’un simple outil de gestion d’articles.
 
@@ -59,7 +59,7 @@ Afin de valider cette hypothèse, nous avons envisagé de mettre en place la mé
 
 Tout d'abord, nous souhaitions identifier quelles parties de _XWiki_ sont les plus utilisées par des utilisateurs lambda, en récupérant par exemple des statistiques sur le nombre d'utilisations de certains composants. Cette première étape nous aurait permis de commencer à discerner des zones chaudes.
 
-Ensuite, chaque membre de notre groupe aurait installé _XWiki_ puis suivi des cas d'utilisation prédéfinis. Par exemple en éditant certaines pages, en commentant des sections, etc...Nous aurions gardé des traces de nos parcours afin de comparer nos différentes utilisations. Ces traces nous auraient permis de distinguer les composants les plus utilisés lors d'une utilisation très basique de _XWiki_.
+Ensuite, chaque membre de notre groupe aurait installé _XWiki_ puis suivi des cas d'utilisation prédéfinis. Par exemple en éditant certaines pages, en commentant des sections, etc...Nous aurions gardé des traces de nos parcours afin de comparer nos différentes utilisations. Ces traces nous auraient permis de distinguer les composants les plus utilisés lors d'une utilisation basique de _XWiki_.
 
 Une fois cette étape complétée, nous aurions comparé les zones chaudes des utilisateurs type de _XWiki_ avec celles identifiées lors de notre propre cartographie. Nos utilisations étant plutôt basiques, il aurait été normal que certains composants n'apparaissent pas dans nos résultats mais soient visibles en récupérant des statistiques globales. En revanche, nous nous attendions à ce que les zones que nous aurions identifiées comme "chaudes" le soient aussi pour des utilisateurs lambdas de _XWiki_.
 
