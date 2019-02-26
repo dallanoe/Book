@@ -245,7 +245,7 @@ L'objectif principal de cette expérience est de récupérer la complexité ains
 
 Tout comme **l'expérience trois**, il s'agit principalement d'une collecte de données menant à **l'expérience cinq.** Cependant, avec ces dernières nous avons tout de même tenté d'établir une corrélation entre complexité et couverture de code.
 
-![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de code](../.gitbook/assets/correlation.png)
+![Figure 7 : Recherche de corr&#xE9;lation entre complexit&#xE9; et couverture de code](../.gitbook/assets/codecoverage.png)
 
 En étudiant la _`Figure 7`_,  on dénote une importante couverture de code pour les méthodes de complexité faible. Cependant, les couvertures étant réparties de manière équivalente pour des méthodes plus complexes, il nous est difficile de tirer une conclusion en nous basant uniquement sur cette expérience
 
