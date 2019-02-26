@@ -215,21 +215,25 @@ Vous trouverez ci-dessous sur la _`Figure 4`_  les types de bugs qui composent _
 
 Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs présents dans _XWiki Platform_ sont majeurs. Des bugs majeurs pouvant donc indiquer l'apparition d’éléments bloquants venant entraver l'expérience utilisateur. Identifier la provenance de ces bugs pourraient donc nous aider à identifier les zones sensibles du sous-projet _XWiki Platform_. 
 
-De plus, la répartition du type de bugs des autres repositories étant semblable à celle du sous-projet étudié, on peut envisager que la reproduction de notre démarche puisse amener à des résultats semblables sur d'autres sous-projets. 
+~~De plus, la répartition du type de bugs des autres repositories étant semblable à celle du sous-projet étudié, on peut envisager que la reproduction de notre démarche puisse amener à des résultats semblables sur d'autres sous-projets.~~  &lt;= NOT SURE ABOUT THAT
 
 * _**Expérience 2**_
 
-Suite aux résultats de l'expérience 1, nous avons analysé les composants du sous-projet _XWiki_ _Platform_. Voici les résultats que nous obtenons.
+Suite aux résultats obtenus dans l'**expérience 1**, nous avons analysé les composants du sous-projet _XWiki_ _Platform_. Voici, ci-dessous, les résultats que nous obtenons
 
-![](../.gitbook/assets/image%20%284%29.png)
+![Figure 5 : R&#xE9;sultats de l&apos;exp&#xE9;rience 2.](../.gitbook/assets/image%20%284%29.png)
 
-Si nous approchons naïvement ces données, nous aurions tendance à dire que les composants **OldCore**, **Web** et **WYSWIG** posent le plus de problèmes car ce sont ceux qui possèdent le plus de bugs \(premier critère\). Cependant, nous avons aussi décidé de prendre en compte la sévérité de ces bugs \(second critère\) et avons crée une métrique prenons en compte ces deux critères: l'indice de sensibilité.
+Dans une première approche de ces données, nous pourrions identifier les composants **OldCore**, **Web** et **WYSWIG** comme ceux posant le plus de problèmes. En effet, en étudiant la _`Figure 5`_,  nous pouvons constater que ce sont ceux présentant le plus de bugs dans la ligne _"Total"_  \( 803 pour **OldCore**, 948 pour **Web**, etc...\).
 
-Pour les expériences suivantes, nous ne prenons pas forcément en compte les composants qui ont le plus de bugs mais ceux qui possèdent un indice de sensibilité important.
+Cependant, le nombre de bugs d'un composant n'est ici que le premier critère que nous avons décidé de prendre en compte. En effet, nous avons également fait le choix d'utiliser la sévérité des bugs comme critère. 
 
-![](../.gitbook/assets/image.png)
+Grâce à ces deux métriques, nous en avons créé une nouvelle : l'indice de sensibilité. Celui-ci a été calculé à partir des critères précédents et permet de prendre en compte plusieurs métriques de façon simultanée. Ainsi grâce à ce nouvel indice, on peut revenir sur nos résultat précédents et constater que les composants posant problème ont changé. On a donc on première position le composant **Wiki** \(en doré sur la _`Figure 5`_\), ensuite le composant **Notifications** \(en argent sur la _`Figure 5`_\) et enfin le composant **OldCore** \(en bronze sur la _`Figure 5`_\).
 
-La visualisation ci-dessus nous permet de mieux appréhender cette métrique indice de sensibilité.
+Ce sont les composants au fort indice de sensibilité que nous avons pris en compte pour la suite de ces expériences.  
+
+![Figure 6 : Indice de sensibilit&#xE9; des diff&#xE9;rents composants de XWiki Platform.](../.gitbook/assets/image.png)
+
+La _`Figure 6`_ ci-dessus nous permet de visualiser de façon plus claire les composants affichés en fonction de leur indice de sensibilité.  
 
 * _**Expérience 3**_ 
 
