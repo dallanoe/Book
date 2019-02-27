@@ -67,7 +67,7 @@ En dernier lieu, nous aurions essayé d'établir une corrélation entre les poin
 
 Malheureusement, plusieurs imprévus ont entravé la mise en œuvre de cette méthodologie.
 
-![](../.gitbook/assets/responsexwiki.png)
+![Figure 0 : R&#xE9;ponse d&apos;un des contributeur de XWiki &#xE0; notre question sur les &quot;zones chaudes&quot; connues.](../.gitbook/assets/responsexwiki.png)
 
 Tout d'abord, nous avons rencontré une impossibilité à identifier les "points chauds" des utilisateurs lambdas. En effet, le cœur de _XWiki_ étant composé d’un bundle d’extension, il n’y a malheureusement aucun moyen de savoir quelles parties sont les plus utilisées par l’utilisateur moyen. Faire une carte de chaleur à la main perd alors de son intérêt : en procédant uniquement de cette façon et en utilisant uniquement les données récupérées de nos propre parcours, nous ne serions capable de ne collecter qu’une faible quantité de données. Celles-ci seraient biaisées et peu représentatives car nos utilisations de _XWiki_ ne seraient pas exhaustives.
 
