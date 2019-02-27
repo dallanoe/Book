@@ -49,9 +49,9 @@ Comme mentionné précédemment, notre objectif principal est ici de trouver une
 
 Ainsi, plusieurs questions se posent. Nous pouvons, par exemple, nous demander où trouver les tests existants dans un tel projet. Si il existe une convention permettant de rapidement les différencier du reste du code. Nous pouvons également nous demander si il est réellement nécessaire de tout tester : certains composants, comme ceux écrit en CSS par exemple, nécessitent-ils autant de tests que d'autres ? Comment pouvons nous alors identifier les zones chaudes d'un code ?
 
-De ces diverses questions découle la problématique à laquelle nous allons essayer d'apporter une réponse dans ce chapitre : _**les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ?**_  Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de _XWiki_.
+De ces diverses questions découle la problématique à laquelle nous souhaitions essayer d'apporter une réponse dans ce chapitre : _**les zones chaudes d'un projet sont-elles celles qui causent le plus de problèmes ?**_  Une zone chaude étant ici un composant fortement sollicité lors d'une utilisation classique de _XWiki_.
 
-En cherchant à valider cette hypothèse, nous pourrons ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que _XWiki_.
+En cherchant à valider cette hypothèse, nous pourrions ainsi tenter d'identifier les zones les plus sensibles d'un projet tel que _XWiki_.
 
 ### 2.2. Première méthodologie 
 
