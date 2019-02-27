@@ -168,7 +168,7 @@ _Pom-Explorer_ permet également de trouver des problèmes de dépendances qui p
 _Pom-Explorer_ ne permet que de voir les dépendances entre projets _Maven._ De plus _Pom-Explorer_ analyse aussi les sous projets ce qui peut donner un trop grand nombre de projets affichés pour être vraiment utile dans la visualisation.   
 Pour voir à plus gros grain des dépendances entre différents projets nous avons créé un script _Python_ _qui_ va analyser les _Dockerfile_ des projets et produit un fichier qui va être analysé par un script _Javascript_ qui va produire une visualisation avec des graphes de ces dépendances. Cela nous permet aussi de voir des liens entre projets que nous n'aurions pas pu détecter autrement.
 
-![Figure n&#xB0;2 : Graphe de ROCKFlows g&#xE9;n&#xE9;r&#xE9; par notre script](../.gitbook/assets/image%20%285%29.png)
+![Figure n&#xB0;2 : Graphe de ROCKFlows g&#xE9;n&#xE9;r&#xE9; par notre script](../.gitbook/assets/image%20%286%29.png)
 
 Comme l'on peut le voir sur la _figure n°2_ les dépendances externes sont en rouge et celles du projet sont en bleu. Ici on a choisi de regrouper les images d'un même dépôt ensemble pour voir les dépendances des dépôts entre eux. Cela nous permet de savoir comment sont organisés les dépôts et avoir une idée générale de l'organisation du projet.
 

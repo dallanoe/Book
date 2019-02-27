@@ -1,15 +1,19 @@
 # Est-il possible de déterminer à l’avance qu’un merge risque de poser problème ?
 
-## Est-il possible de déterminer à l’avance qu’un merge risque de poser problème ?
-
 ### Auteurs
 
 Nous sommes 4 étudiants en dernière année à Polytech' Nice-Sophia en informatique dans la spécialité "Architecture Logicielle":
+
+## Est-il possible de déterminer à l’avance qu’un merge risque de poser problème ?
 
 * Guillaume ANDRE [guillaume.andre@etu.unice.fr](mailto:guillaume.andre@etu.unice.fr)
 * Alexandre HILTCHER [alexandre.hiltcher@etu.unice.fr](mailto:alexandre.hiltcher@etu.unice.fr)
 * David LANG [david.lang@etu.unice.fr](mailto:david.lang@etu.unice.fr)
 * Jean-Adam PUSKARIC [jean-adam.puskaric@etu.unice.fr](mailto:jean-adam.puskaric@etu.unice.fr)
+
+### III. Collecte d'information
+
+![M&#xE9;thodologie d&apos;extraction de la qualit&#xE9; logicielle](../.gitbook/assets/methodologie.svg)
 
 ### Introduction
 
@@ -55,9 +59,11 @@ Pour répondre à cette question, nous avons choisi de répartir notre travail �
 
 Avec ces deux questions, on souhaite voir si la corrélation qu'on cherche à démontrer a plus ou moins d'impact dans un sens ou dans un autre.
 
-### III. Collecte d'information
+![](../.gitbook/assets/logo_uns%20%288%29.png) UCA : University Côte d'Azur \(french Riviera University\)
 
-![M&#xE9;thodologie d&apos;extraction de la qualit&#xE9; logicielle](../.gitbook/assets/methodologie.svg)
+
+
+
 
 #### **Sélection des projets à analyser**
 
@@ -289,10 +295,4 @@ Dans cette partie, nous allons brièvement décrire l'ensemble des scripts que n
 \[7\] Article sur l'utilisation de la commande rebase dans workflow git
 
 * [https://medium.com/singlestone/a-git-workflow-using-rebase-1b1210de83e5](https://medium.com/singlestone/a-git-workflow-using-rebase-1b1210de83e5)
-
-![](../.gitbook/assets/logo_uns%20%288%29.png) UCA : University Côte d'Azur \(french Riviera University\)
-
-
-
-
 
