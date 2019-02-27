@@ -42,7 +42,7 @@ Nous avons découpé ce thème en trois questions :
 
 Pour répondre à ces trois questions, nous avons défini les KPI suivants.
 
-### La localisation des appels aux méthodes interagissant avec les properties
+#### La localisation des appels aux méthodes interagissant avec les properties
 
 Cette KPI consiste à lister la localisation \(chemin complet de la classe et son package\) de l’ensemble de l’appel aux méthodes permettant d’accéder ou de modifier les properties.  
 
@@ -50,7 +50,7 @@ Grâce à la localisation précise que nous fournit ce KPI, nous allons pouvoir 
 
 Nous avons défini que les properties sont utilisées dans une des parties d’un projet \(par exemple la partie test\) si le rapport entre le nombre d’appels aux méthodes trouvées dans la partie courante sur le nombre total d’utilisations des properties doit être supérieur à 0,05 \(5%\) . Nous avons défini cette limite a 5% pour éviter de nous retrouver dans le cas extrême ou un projet qui appellerait 40 000 fois les properties dans le code, mais qui appellerait seulement 4 fois les properties dans ses tests ne soit considéré comme un projet qui utilise les properties dans ses tests. Cependant, nous avons défini ce seuil assez bas, car nous estimons qu’en dessous de ce seuil, il n’y a pas assez d’appels pour considérer la partie comme utilisant réellement les properties. Une fois que nous aurons listé la position de ces appels grâce au nom des classes / package qui les contiennent, nous serons en mesure de répondre à cette première question.
 
-### Utilisation ou non d’un wrapper/library externe pour manipuler les properties
+#### Utilisation ou non d’un wrapper/library externe pour manipuler les properties
 
 Cette KPI consiste à compter le nombre de properties créé dans les fichiers properties et le nombre d’appels à la méthode présente de base dans le JDK de Java qui permet d’accéder aux properties System.getProperty\(\).
 
@@ -58,7 +58,7 @@ En comparant le nombre de properties créé et le nombre d’appels a l’access
 
 Nous allons considérer qu’un projet utilise des librairies / wrapper à partir du moment ou le rapport nombre d’appels au getter trouvé sur le nombre de properties déclaré dans le fichier properties est inférieur à 0,10 \(10%\) et le nombre total d’appels à System.getProperty\(\) est inférieur à 2. Sinon, nous considérons que le projet utilise les méthodes du JDK. Nous avons choisi 10% comme seuil par une première observation rapide de notre dataset. Le seuil de 2 appels à la méthode System.getProperty\(\) vient tout simplement du constat que si un développeur utilise une librairie/ wrapper l’accesseur ne doit apparaître qu’une ou deux fois dans la librairie, mais pas plus, car dans le code nous utiliserons la librairie et non plus System.getProperty\(\).
 
-### Fréquence d’utilisation d’une property donnée
+#### Fréquence d’utilisation d’une property donnée
 
 Cette KPI consiste à lister le nom des properties utilisé dans l’ensemble des projets. En vérifiant si le nom des properties est redondant dans plusieurs projets, nous allons pouvoir répondre à la question : est-ce que les projets utilisent des properties pour répondre souvent au même besoin ou bien est-ce que chaque projet les utilise pour répondre à des besoins qui leur sont propres ?
 
