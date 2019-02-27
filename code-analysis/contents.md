@@ -178,5 +178,3 @@ Cependant nous pouvons dire qu’aucun de nos projets analysés n’utilise de w
 
 Quant à la dernière question de façon générale les projets utilisent les properties afin de répondre à des besoins qui leur sont propres, mais un sous ensemble de properties peut se retrouver dans plusieurs projets et ce sont des properties de configuration comme celles concernant les paramètres d’un logger.
 
-[https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LT8WEJR-hqA4BzFtUER%2F-LZGpvzgjA47g8j-nDbp%2F-LZGq1x0bM7gZe7qXAhr%2FEntete-3.png?alt=media&token=b95b3021-51c3-4c1c-821c-c77264cffb7f](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LT8WEJR-hqA4BzFtUER%2F-LZGpvzgjA47g8j-nDbp%2F-LZGq1x0bM7gZe7qXAhr%2FEntete-3.png?alt=media&token=b95b3021-51c3-4c1c-821c-c77264cffb7f)
-
