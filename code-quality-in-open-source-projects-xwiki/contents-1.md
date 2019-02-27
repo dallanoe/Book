@@ -271,7 +271,7 @@ Ainsi, en partant d'une approche différente nous obtenons des résultats sembla
 
 De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup plus important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
 
-![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2821%29.png)
+![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2822%29.png)
 
 La _`Figure 9`_ se trouvant ci-dessus répertorie le nombre de bugs, la couverture de code et la complexité estimée par composant. Nous remarquons que le composant **OldCore** a une couverture de code parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
 
