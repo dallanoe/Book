@@ -84,7 +84,7 @@ Nous nous sommes donc penchés sur l'hypothèse suivante : _**dans un projet Ope
 Avec cette seconde approche, nous avons mis en place une nouvelle méthodologie expérimentale :
 
 1. Tout d'abord, partir du projet complet, ici _XWiki_, et déterminer, parmi les plus gros sous-projets, ceux ayant le plus de **bugs** non résolus. _XWiki_ propose de nombreuses extensions, de ce fait, nous ne pouvons malheureusement pas toutes les étudier dans le cadre de cette étude. Nous avons donc cherché à restreindre notre **scope** de recherche sur un ou plusieurs sous-projets.
-2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations dessus ainsi que le nombre de branches actuelles afin de localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
+2. Ensuite, afin que l'étude soit la plus représentative possible, identifier le sous-projet le plus populaire grâce au nombre de participations sur celui-ci ainsi que son nombre de branches actuelles afin de localiser les bugs ayant le plus de chance d'entraver l’expérience utilisateur. 
 3. Une fois le sous-projet choisi, définir la **sévérité** des bugs des composants présentant le plus d'issues.
 4. Parmi ces composants, identifier, cette fois, les **classes** associées à ces issues.   
 5. Indépendamment des points deux, trois et quatre, se baser sur le sous-projet identifié dans le second point. Récupérer la **complexité** ainsi que la **couverture** de code de chacune des classes de ce sous-projet.
