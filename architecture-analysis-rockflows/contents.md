@@ -178,5 +178,7 @@ Pour conclure, nous pouvons observer que les résultats obtenus par l'analyse de
 
 Cependant, ce résultat se base sur un projet précis \(ROCKFlows\). Il est donc à mettre en perspective. Il est difficile de tirer des conclusions générales sur les résultats d'un simple projet. Il aurait donc été intéressant d'appliquer notre analyse à d'autres projets de grande envergure pour obtenir plus de résultats.
 
+Nos différents outils nous permettent d'avoir une vision sous différents angles d'un projet aussi imposant que ROCKFlows. Ces derniers sont un atout majeur pour un nouvel arrivant sur un projet. Il aura alors la possibilité de comprendre les connexions entre les différents composants et donc mieux se situer dans le projet. 
+
  
 
