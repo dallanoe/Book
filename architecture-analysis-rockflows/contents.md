@@ -114,7 +114,7 @@ Notre démarche a pour objectif d'aider l'utilisateur à se faire une idée glob
 * respect des **règles de programmation**
 * détection des **bugs potentiels**
 * évaluation de la **couverture de code** par les tests unitaires
-* Implémentation de SQALE pour évaluer la **dette technique**
+* Implémentation de _SQALE_ pour évaluer la **dette technique**
 
 Cette première partie va nous permettre d'exposer les parties critiques du projet suivant les critères listés ci-dessus. Ainsi, le nouvel utilisateur ou développeur peut rapidement avoir un premier aperçu du projet.
 
