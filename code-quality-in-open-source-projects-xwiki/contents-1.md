@@ -225,7 +225,7 @@ Grâce à la _`Figure 4`_, nous pouvons noter qu'une grande partie des bugs pré
 
 Suite aux résultats obtenus dans l'**expérience 1**, nous avons analysé les bugs des composants du sous-projet _XWiki_ _Platform_. Voici, ci-dessous, les résultats que nous obtenons
 
-![Figure 5 : R&#xE9;sultats de l&apos;exp&#xE9;rience 2.](../.gitbook/assets/image%20%284%29.png)
+![Figure 5 : R&#xE9;sultats de l&apos;exp&#xE9;rience 2.](../.gitbook/assets/image%20%286%29.png)
 
 Dans une première approche de ces données, nous pourrions identifier les composants **OldCore**, **Web** et **WYSWIG** comme ceux posant le plus de problèmes. En effet, en étudiant la _`Figure 5`_,  nous pouvons constater que ce sont ceux présentant le plus de bugs dans la ligne _"Total"_  \(803 pour **OldCore**, 948 pour **Web**, etc...\).
 
@@ -263,7 +263,7 @@ Les données récoltées grâce à l'**expérience 3** nous ont permis de récup
 
 Cette répartition nous permet d'obtenir la _`Figure 8`_ se trouvant ci-dessous.
 
-![Figure 8 : R&#xE9;sultats de l&#x2019;exp&#xE9;rience 5 - R&#xE9;partition des bugs par composants de XWiki Platform.](../.gitbook/assets/image%20%288%29.png)
+![Figure 8 : R&#xE9;sultats de l&#x2019;exp&#xE9;rience 5 - R&#xE9;partition des bugs par composants de XWiki Platform.](../.gitbook/assets/image%20%2812%29.png)
 
 La _`Figure 8`_ présente la répartition des bugs pour les composants identifiés après que nos différentes classes aient été regroupées. 
 
@@ -271,7 +271,7 @@ Ainsi, en partant d'une approche différente nous obtenons des résultats sembla
 
 De la même façon, nous distinguons sur la _`Figure 8`_ qu'il s'agit d'un composant dont le nombre de bugs est beaucoup plus important que la moyenne. Nos données venant cette fois d'une approche différente \(en se basant sur des classes\), nous pouvons confirmer que notre indice de sensibilité est une métrique fiable pour les expériences effectuées.
 
-![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2811%29.png)
+![Figure 9 : Nombre de bugs, complexit&#xE9; et couverture de code des composants de la Figure 8](../.gitbook/assets/image%20%2817%29.png)
 
 La _`Figure 9`_ se trouvant ci-dessus répertorie le nombre de bugs, la couverture de code et la complexité estimée par composant. Nous remarquons que le composant **OldCore** a une couverture de code parmi les plus **faibles** \(~60%, la moyenne étant de 77.6%\).
 
