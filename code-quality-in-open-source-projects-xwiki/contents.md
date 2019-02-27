@@ -35,19 +35,19 @@ Nous avons ciblé 4 projets de taille comparable à XWiki afin d'en étudier les
 
 Afin de cadrer notre recherche nous avons dû définir la notion de **contributeur**. Nous avons donc restreint la définition de contributeur à toute personne ayant proposé un _commit_ accepté sur la branche principale \(`master`\) du projet.
 
-Un entretien avec Vincent Massol nous a permis d'ajouter une nuance dans notre analyse puisque XWiki est maintenu par la société XWiki SAS. Il ne faut donc pas nous attendre à avoir une forte participation de la communauté comparé aux membres de la société. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets.
+Un entretien avec Vincent Massol (CTO de XWiki SAS) nous a permis d'ajouter une nuance dans notre analyse puisque XWiki est maintenu par la société XWiki SAS. Il ne faut donc pas nous attendre à avoir une forte participation de la communauté comparé aux membres de la société. Ce point est néanmoins nuancé par l'implication d'industriels dans l'ensemble de ces projets.
 
 ### Articles de recherche
 
 Nous avons cherché des articles de recherche traitant de l'open source et des dynamiques de contributions. Nous avons traité à la fois des papiers de recherche, mais aussi des articles rédigés sur des blogs. Nous allons exposer ici une synthèse des points qui ont retenu notre attention, ainsi que les idées d'indicateurs qui en ont découlé.
 
-Ces différents articles ont permis de guider nos recherches. Les points d'intérêts ont été relevés et intégrés dans les analyses. Enfin, le questionnaire que nous avons mené a grandement été construit autour des remarques et idées retenues de ces articles.
+Ces différents articles ont permis de guider nos recherches. Les points d'intérêts ont été relevés et intégrés dans les analyses. Enfin, le questionnaire que nous avons mené a grandement été construit autour des remarques et idées retenues dans l'ensemble de ces articles.
 
 #### How to discourage open source contributions
 
 > [danluu.com - Discourage-OSS](https://danluu.com/discourage-oss/)
 
-L’auteur de cet article évoque les problèmes d’intégration des pull requests \(c'est à dire des contributions entrantes\) sur les projets open source.
+L’auteur de cet article évoque les problèmes d’intégration des pull requests (c'est à dire des contributions entrantes) sur les projets open source.
 
 En outre, il évoque le volume des `pull requests` pour les projets open source et comment elles sont traitées par les mainteneurs des projets. Il semble raisonnable d’extrapoler que les projets avec un grand volume de pull requests restant en “attente” de validation, ou d’intégration dans les branches de développement, sont des projets qui ne portent pas attention à ses contributeurs.
 
@@ -65,8 +65,8 @@ Il peut donc être intéressant de voir l’impact de ce taux sur l'enrôlement 
 
 Cet article discute du facteur psychologique d’une personne à contribuer à un projet. L'article reprend plusieurs points :
 
-* le fait qu’un ticket \(`issue`\) reçoive une réponse dans un temps raisonnable \(de même pour une `pull request`\)
-* la manière dont les mainteneurs perçoivent la question \(ou la contribution\) et comment ils y répondent.
+* le fait qu’un ticket (`issue`) reçoive une réponse dans un temps raisonnable (de même pour une `pull request`)
+* la manière dont les mainteneurs perçoivent la question (ou la contribution) et comment ils y répondent.
 
 On peut se poser alors les questions :
 
@@ -78,7 +78,8 @@ Le niveau des contributeurs est hétérogène, mais ce n’est pas une raison po
 
 > “I can’t think of a better way to get people to stop contributing to open source projects. Seriously… there is nothing more demotivating and demoralizing than this kind of high-school-bully response. It needs to stop.”
 
-Pour tenter de mesurer ce comportement, on peut tenter d’analyser le champ lexical des réponses aux `issues` et `pull requests`. Est-ce que des mots comme “lol” “wtf” etc. apparaissent ? Est-ce que le mainteneur prend une position agressive ? En soit, une sorte d'appréciation morale de la réponse. On peut tenter d’extraire depuis les issues les réponses “officielles” faites par les mainteneurs et les analyser. On peut en déduire un score de “Karma” de bienveillance subjectif.
+Pour tenter de mesurer ce comportement, on peut tenter d’analyser le champ lexical des réponses aux `issues` et `pull requests`.
+Est-ce que des mots comme “lol” “wtf” etc. apparaissent ? Est-ce que le mainteneur prend une position agressive ? En soit, une sorte d'appréciation morale de la réponse. On peut tenter d’extraire depuis les issues les réponses “officielles” faites par les mainteneurs et les analyser. On peut en déduire un score de “Karma” de bienveillance subjectif.
 
 #### The Economics of Technology Sharing: Open Source and Beyond
 
@@ -98,7 +99,8 @@ Ces incitations sont les points clés pour faire évoluer la performance de grou
 
 Ces incitations sont cependant difficilement évaluables dans le cadre de notre étude.
 
-Les auteurs continuent et évoquent le rôle moteur d'un chef de projet. Un projet mené par un "leader" efficace sera plus fort. Les contributeurs seront incités à suivre son exemple et à rendre le projet meilleur. Le respect et l'autorité naturelle des mainteneurs proviennent de leur manière de gérer le projet, mais aussi de la manière dont ils interagissent avec les membres de la communauté.
+Les auteurs continuent et évoquent le rôle moteur d'un chef de projet.
+Un projet mené par un "leader" efficace sera plus fort. Les contributeurs seront incités à suivre son exemple et à rendre le projet meilleur. Le respect et l'autorité naturelle des mainteneurs proviennent de leur manière de gérer le projet, mais aussi de la manière dont ils interagissent avec les membres de la communauté.  
 
 Les auteurs poursuivent en ouvrant une discussion sur les intérêts économiques personnels.
 
@@ -112,17 +114,21 @@ Enfin, la curiosité intellectuelle fait consensus comme étant le facteur pouss
 
 > Ce papier traite plutôt de l'aspect psychologique des personnes contribuant à l'OSS.
 
-Dans une première partie, les auteurs du papier discutent du concept de motivation, qu'est-ce que c'est et qu'est-ce que ça signifie. Dans un second temps, l'article propose une étude des facteurs motivationnels du développement open-source. Le papier poursuit et effectue une analyse des motivations intrinsèques \(émanant de l'individu\) et extrinsèques \(hors de l'individu, provenant de son environnement social\). Les auteurs concluent sur les limitations et ouvrent sur les poursuites de recherches.
+Dans une première partie, les auteurs du papier discutent du concept de motivation, qu'est-ce que c'est et qu'est-ce que ça signifie. Dans un second temps, l'article propose une étude des facteurs motivationnels du développement open-source.
+Le papier poursuit et effectue une analyse des motivations intrinsèques (émanant de l'individu) et extrinsèques (hors de l'individu, provenant de son environnement social). Les auteurs concluent sur les limitations et ouvrent sur les poursuites de recherches.
 
 L'étude ouvre sur le fait que l'apprentissage dans les projets open source offre une satisfaction "intrinsèque" et "extrinsèque" au développeur.
 
-L'apprentissage est mis en avant : c'est le principal facteur de participation des personnes dans le monde OSS. C'est une motivation intrinsèque. C'est l'apprentissage par le _savoir-faire_ : moins théorique avec une approche pragmatique. Les idées de projet proviennent d'une volonté de créer des solutions _différentes_ de ce qui existe. Ces projets permettent d'étendre les connaissances sur les disciplines connexes au projet. Les auteurs insistent sur le fait que les mainteneurs du projet doivent construire un environnement permettant l'épanouissement des participants au projet dans leur acquisition de connaissances.
+L'apprentissage est mis en avant : c'est le principal facteur de participation des personnes dans le monde OSS. C'est une motivation intrinsèque. C'est l'apprentissage par le *savoir-faire* : moins théorique avec une approche pragmatique.
+Les idées de projet proviennent d'une volonté de créer des solutions *différentes* de ce qui existe. Ces projets permettent d'étendre les connaissances sur les disciplines connexes au projet.
+Les auteurs insistent sur le fait que les mainteneurs du projet doivent construire un environnement permettant l'épanouissement des participants au projet dans leur acquisition de connaissances.
 
-Le papier stipule que la contribution à l'OSS permet au développeur de "satisfaire son ego". Cela veut dire que même s'il n'est pas rémunéré, le développeur a un "bon" sentiment lorsqu'il contribue au projet quand il est reconnu et apprécié pour son travail par les autres membres de la communauté. L'estime des autres est un facteur psychologique important. De manière analogue, le souhait de gagner le respect d'une institution ou d'un groupe d'individus peut être un moteur de motivation pour contribuer \(accomplissement de soi\). Souvent, ils ne sont pas attirés par l'aspect financier, mais plutôt dirigés par des facteurs compétitifs de statut \(le gain en renommée et en réputation\). De manière liée, certains développeurs peuvent contribuer à l'open source dans un combat ouvert contre les solutions propriétaires et fermées \(idéologie\).
+Le papier stipule que la contribution à l'OSS permet au développeur de "satisfaire son ego". Cela veut dire que même s'il n'est pas rémunéré, le développeur a un "bon" sentiment lorsqu'il contribue au projet quand il est reconnu et apprécié pour son travail par les autres membres de la communauté. L'estime des autres est un facteur psychologique important. De manière analogue, le souhait de gagner le respect d'une institution ou d'un groupe d'individus peut être un moteur de motivation pour contribuer (accomplissement de soi).
+Souvent, ils ne sont pas attirés par l'aspect financier, mais plutôt dirigés par des facteurs compétitifs de statut (le gain en renommée et en réputation). De manière liée, certains développeurs peuvent contribuer à l'open source dans un combat ouvert contre les solutions propriétaires et fermées (idéologie).
 
 La motivation à contribuer en équipe est plus élevée si la personne sent que son travail compte, mais aussi si l'objectif de l'équipe à laquelle il est attaché a de la valeur pour lui.
 
-**Résumé des motivations intrinsèques :**
+##### Résumé des motivations intrinsèques :
 
 * plaisir de coder.
 * augmenter l'expertise et les connaissances techniques
@@ -130,12 +136,12 @@ La motivation à contribuer en équipe est plus élevée si la personne sent que
 * volonté de garder un produit libre
 * contribuer est pour certaines personnes un échange équivalent pour leur usage de solutions OSS
 
-**Résumé des motivations extrinsèques \(sociales\) :**
+##### Résumé des motivations extrinsèques (sociales) :
 
 * corriger un bug ou implémenter une nouvelle fonctionnalité pour répondre à leurs besoins dans le cadre d'un logiciel OSS qu'ils utilisent
 * rémunération financière
 
-**A propos des rémunérations financières :**
+##### A propos des rémunérations financières :
 
 Celles-ci peuvent être vues comme une manière de contrôler la contribution au lieu de laisser au libre arbitre de chacun le choix de participer ou non dans les projets. Pour beaucoup de développeur, avoir le choix de pourvoir moduler le temps et l'effort à consacrer pour les projets open-sources est important. L'argent peut influencer ces décisions organisationnelles.
 
@@ -172,14 +178,14 @@ JUnit5 est un _framework_ de test unitaire, un des plus utilisés pour le langag
 
 * Présence d'un README.md :
   * Présent et est assez complet, contient les parties \(_Contributing, Getting Help, Continuous Integration Builds, Code Coverage_ et _Building from Source_\).
-  * Il est possible de discuter avec la team de développement sur Gitter ou de manière indirecte via StackOverflow.
+  * Il est possible de discuter en ligne avec l'équipe de développement sur Gitter ou de manière indirecte via StackOverflow.
 * Méthode de contribution :
   * Chercher les issues taguées avec "_up-for-grabs_" \(qui sont très peu nombreuses, 10 seulement au moment de la vérification\)
 * Badges :
   * Travis.CI et Appveyor, tous les deux au vert au moment de la vérification avec le label "_Build passing_"
 * Présence d'une intégration continue sur Travis.CI et Appveyor.
 * Présence d'un CONTRIBUTING.md
-  * Présent et détaille très bien les conventions de nommage et formatage du code.
+  * Présent et détaille très bien les conventions de nommage et de formatage du code.
 * Exemples de code :
   * Présent sur un autre _repository_, lien référencé dans le README.md
 * Présence de Javadoc, à jour et mise à jour automatiquement à chaque _commit_
@@ -204,7 +210,7 @@ Parmi ces contributeurs :
   * Top 7: un contributeur lambda qui ne contribute plus depuis 2 ans \(dernier _commit_ octobre 2017\)
   * Top 6 : un autre contributeur lambda qui ne contribue plus depuis janvier 2017
   * Top 5 : un contributeur lambda encore très actif \(dernier _commit_ 24 janvier 2019 au moment de la vérification\)
-  * Top 4 : un membre de JUnit, son premier commit a été plus tardif que les autres membres, aussi très actif \(dernier _commit_ 14 janvier 2019\)
+  * Top 4 : un membre de JUnit, son premier commit a été plus tardif que les autres membres mais, il est plus actif \(dernier _commit_ 14 janvier 2019\)
   * Top 3: un contributeur lambda, grosse contribution entre fin 2015 et 2016, depuis plus rien.
   * Top 1 et 2: deux membres de JUnit qui ont contribué au projet depuis le début et qui continuent.
 
@@ -213,7 +219,7 @@ Le projet est donc porté par les membres de l'équipe JUnit en très grande maj
 
 Une KPI qui n'a pas vraiment été prise en compte est la complexité du projet, en effet, le projet JUnit5 est composé d'une vingtaine de modules Java et le coût d'entrée dans le projet semble être assez conséquent, même les issues "_up-for-grabs_" sont parfois incompréhensibles pour un néophyte.
 
-A l'instar du comportement des mainteneurs relevées dans le papier "Dear Open Source Project Leader: Quit Being A Jerk", Nous avons décidé d'étudier certains commentaires de certains membres de JUnit à l'égard de nouveaux contributeurs. Les réponses données à certains contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageantes. Ce qui a pour effet de créer une sorte de "syndrome de la tour d'ivoire", ou en tout cas on relève un certain manque de tact.
+A l'instar du comportement des mainteneurs relevées dans le papier "Dear Open Source Project Leader: Quit Being A Jerk", Nous avons décidé d'étudier quelques commentaires de certains membres de l'équipe JUnit à l'égard de nouveaux contributeurs. Les réponses données à certains contributeurs qui demandent s'il peuvent essayer d'implémenter une fonctionnalité ne sont pas très encourageantes. Ce qui a pour effet de créer une sorte de "syndrome de la tour d'ivoire", ou en tout cas on relève un certain manque de tact.
 
 ![Pas de r&#xE9;ponse pour les questions de ce pauvre contributeur](../.gitbook/assets/no-answer-to-question-issue.png)
 
@@ -225,7 +231,7 @@ Pour confirmer mes propos je me suis rendu sur le **Gitter** de l'équipe JUnit,
 
 ![Capture d&apos;&#xE9;cran de la discussion sur Gitter](../.gitbook/assets/snobe.png)
 
-Avec tous ces exemples, on en déduit que les contributions externes ne semble pas être une priorité pour l'équipe.
+Avec tous ces exemples, on peut en déduire que les contributions externes ne semble pas être une priorité pour l'équipe.
 
 ### Mockito
 
@@ -251,15 +257,15 @@ Avec tous ces exemples, on en déduit que les contributions externes ne semble p
 
 #### Analyse des contributions
 
-Lors de l'analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur GitHub et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework \(`release/2.x`\).
+Lors de l'analyse des contributions sur le projet Mockito, on se rend assez rapidement compte de l'importance du fondateur. Szczpan Faber qui se fait appeler "Mockito Guy" sur GitHub et Twitter représente à lui seul 75% des commits sur la branche principale de la nouvelle version du framework (`release/2.x`).
 
 Le second contributeur en nombre de commits, Brice Dutheil, représente 11% des commits, et les contributeurs placés de la 3ème à la 7ème place représentent chacun entre 1 et 2.5 % des commits disponibles sur la branche principale. Les 131 autres contributeurs ont tous un nombre de commits très largement inférieurs à 1%.
 
-Ces proportions sont à nuancer avec la paternité réelle au sens du nombre de lignes de code. On retrouve deux contributeurs de tête qui représente à eux seuls 70% du code : Brice Dutheil et Szczpan Faber. Le point intéressant qu'en nombre de lignes de code Brice prend 45% contre 25% pour Szczpan.
+Ces proportions sont à nuancer avec la paternité réelle au sens du nombre de lignes de code. On retrouve deux contributeurs de tête qui représente à eux seuls 70% du code : Brice Dutheil et Szczpan Faber. Le point intéressant concerne le nombre de lignes de code où Brice prend 45% contre 25% pour Szczpan.
 
-Cette inversion montre que les commits à eux seuls ne sont pas représentatifs cependant la tendance reste la même : Brice et Szczpan ont le leadership du projet et les 136 autres contributeurs ont une présence plus atténuée.
+Cette inversion montre que les commits à eux seuls ne sont pas représentatifs cependant, la tendance reste la même : Brice et Szczpan ont le leadership du projet et les 136 autres contributeurs ont une présence plus atténuée.
 
-**Conclusion :** On peut retenir de cette analyse que bien que le projet ne soit pas tenu par un groupe plus grand que ce binôme, il est ouvert aux contributeurs externes. Cependant les contributions externes restent ponctuelles et ne constituent pas l'ossature principale du projet.
+**Conclusion :** On peut retenir de cette analyse que bien que le projet ne soit pas tenu par un groupe plus grand que ce binôme, il est ouvert aux contributeurs externes. Cependant les contributions externes restent ponctuelles et ne constituent pas l'ossature principale du projet. 
 
 ### Hibernate
 
@@ -302,66 +308,69 @@ De par la quantité de contributions produite par les développeurs de l'organis
 
 Log4j2 est un utilitaire de journalisation pour Java. Il est distribué par la fondation Apache. Log4j2 est une mise à jour majeure du projet "Log4j", apportant de nouvelles fonctionnalités ainsi que des corrections sur l'architecture du projet mère. Le dépôt de code contient tous les sous-projets en lien avec l'utilitaire. C'est une réécriture de zéro de Log4j.
 
-#### Analyse des KPI \(Mise à jour 25 Février 2019\)
+#### Analyse des KPI (Mise à jour 25 Février 2019)
 
-* **README.md** :
-  * La première section décrit la manière dont on doit collaborer avec le projet. En outre, il explicite clairement que les soumissions \(a.k.a `pull requests`\) doivent suivre la licence `Apache license`.
+* __README.md__ :
+  * La première section décrit la manière dont on doit collaborer avec le projet. En outre, elle explicite clairement que les soumissions (a.k.a `pull requests`) doivent suivre la licence `Apache license`.
   * Contient une section d'usage de l'utilitaire
     * C'est un exemple de code simple avec la procédure pour intégrer l'outil à un projet
   * Contient une consigne permettant de construire le projet
-    * Une documentation plus complète est disponible sur le site de la documentation de _Log4j_.
+    * Une documentation plus complète est disponible sur le site de la documentation de *Log4j*.
   * Redirection vers le `CONTRIBUTING.md` du projet
     * Il apporte une procédure complète à suivre pour les personnes souhaitant contribuer en relevant un bug ou en ayant une idée de fonctionnalité.
-    * Le fichier expose aussi les règles à suivre pour contribuer au projet. On remarque qu'il y a une procédure pour les modifications triviales \(ceux concernant la documentation ou les commentaires du code\), ainsi qu'une procédure pour les changements.
+    * Le fichier expose aussi les règles à suivre pour contribuer au projet. On remarque qu'il y a une procédure pour les modifications triviales (ceux concernant la documentation ou les commentaires du code), ainsi qu'une procédure pour les changements.
     * Il peut être nécessaire de signer un `Contributor License Agreement` pour les changements considérés comme non-triviaux
     * Une directive sur le style de programmation est aussi disponible sur le site de la documentation principale.
   * Lien vers la documentation détaillée du projet
     * Celle-ci est fournie, mais ne dispose pas de section `Getting Started` permettant à l'utilisateur d'appréhender le projet de manière dirigée et structurée.
-  * Lien vers l' `issue tracker`. C'est une plateforme _JIRA_ externe. Les réponses sur celle-ci sont de l'ordre de quelques heures ou quelques jours dans le pire des cas.
-  * **Badges** :
+  * Lien vers l' `issue tracker`. C'est une plateforme *JIRA* externe. Les réponses sur celle-ci sont de l'ordre de quelques heures ou quelques jours dans le pire des cas.
+  * __Badges__ :
     * Travis-CI : build passing
-    * Maven-central : numéro de version courant sur la branche stable
-* **Integration Continue** :
-  * La plateforme d'intégration continue principale est hébergée sur _Travis_. Elle effectue une intégration de l'ensemble du projet _Log4j_, incluant ses sous projets.
-* **Documentation** :
+    * Maven-central : numéro de version courante sur la branche stable
+* __Integration Continue__ :
+  * La plateforme d'intégration continue principale est hébergée sur *Travis*. Elle effectue une intégration de l'ensemble du projet *Log4j*, incluant ses sous projets.
+* __Documentation__ :
   * Complète, avec des cas d'usage et des exemples concrets
   * Elle est consultable sous forme de fichier PDF
-  * Elle est maintenue à jour \(Dernière mise à jour : 03/02/2019\)
+  * Elle est maintenue à jour (Dernière mise à jour : 03/02/2019)
   * Une version `asciidoc` est disponible
-* **Exemples** :
+* __Exemples__ :
   * Le dépôt propose plusieurs `samples` illustrant l'usage de l'utilitaire
-* **Quelques chiffres** :
+* __Quelques chiffres__ :
   * Le projet compte à ce jour `10 550 commits`
   * Le projet dénombre `59 contributeurs` et plus de `660 stars` sur GitHub
   * Il y a `31 pulls requests` en attente, contre `217` fermées
   * Le dernier commit est âgé de 19 jours.
-  * Il y a des contributions régulières tout au long des mois \(au moins un par jour\)
-  * Le projet possède un code stable depuis 2015 \(pas de pics d'ajout/suppression de code\)
+  * Il y a des contributions régulières tout au long des mois (au moins un par jour)
+  * Le projet possède un code stable depuis 2015 (pas de pics d'ajout/suppression de code)
 
 #### Analyse des contributions
 
-Après une analyse des contributions sur la branche `master` du projet, ainsi que l'uniformisation des identités \(commits sous le nom de différents pseudonymes\) on peut dresser deux profils de contributeurs.
+Après une analyse des contributions sur la branche `master` du projet, ainsi que l'uniformisation des identités (commits sous le nom de différents pseudonymes) on peut dresser deux profils de contributeurs.
 
 Un premier groupe leader actif composé de quatre personnes:
 
-* `Gary Gregory` est le mainteneur le plus actif du projet, avec le plus de paternité \(`4610 commits`, soit 43% de tous les commits réalisés\).
-* Il y a trois autres contributeurs importants `Ralph Goers` \(le fondateur du projet\), `Remko Popma` et `Matt Sicker`. Ils ont chacun entre `1500` et `1000` commits, soit 34% de tous les commits réalisés \(3588\).
+* `Gary Gregory` est le mainteneur le plus actif du projet, avec le plus de paternité (`4610 commits`, soit 43% de tous les commits réalisés).
+* Il y a trois autres contributeurs importants `Ralph Goers` (le fondateur du projet), `Remko Popma` et `Matt Sicker`. Ils ont chacun entre `1500` et `1000` commits, soit 34% de tous les commits réalisés (3588).
 
-Ces quatre personnes détiennent ~80% de parenté sur le code. Ils continuent de contribuer et d'aider à l'intégration des nouvelles fonctionnalités. Ils s'assurent aussi de l'entretien du backlog et de la gestion des tickets sur le Jira. \(Voir : [https://logging.apache.org/log4j/2.0/jira-report.html](https://logging.apache.org/log4j/2.0/jira-report.html)\).
+Ces quatre personnes détiennent environ 80% de la paternité du code. Ils continuent de contribuer et d'aider à l'intégration des nouvelles fonctionnalités. Ils s'assurent aussi de l'entretien du backlog et de la gestion des tickets sur le Jira. (Voir : https://logging.apache.org/log4j/2.0/jira-report.html). 
 
-`Gary Gregory` et `Ralph Goers` sont membres de la fondation Apache, mais ils sont aussi attachés à une entreprise, respectivement `Rocket Software` et `Nextiva`. Ce sont les fondateurs du projet. `Remko Popma` est un contributeurs open-source engagés dans le projet, alors que `Matt Sicker` travaille pour CloudBees.
+`Gary Gregory` et `Ralph Goers` sont membres de la fondation Apache, mais ils sont aussi attachés à une entreprise, respectivement `Rocket Software` et `Nextiva` et sont les fondateurs du projet. `Remko Popma` est un contributeurs open-source engagés dans le projet, alors que `Matt Sicker` travaille pour CloudBees.
 
-Ils ont tous le profil de professionnels ayant eu besoin du produit pour leur entreprise. Ils sont aujourd'hui senior manager ou expert technique dans leurs entreprises respectives.
+Tous ont un profil de professionnels ayant eu besoin du produit pour leur entreprise. Ils sont aujourd'hui senior manager ou expert technique dans leurs entreprises respectives.
 
 L'évolution de Log4j depuis 2010 démontre plusieurs points :
 
-* Le projet a commencé avec `Ralph Goers`. Il a travaillé sur le produit durant deux années sans aides extérieures.
+* Le projet a commencé avec `Ralph Goers`. Il travailla sur le produit durant deux années sans aides extérieures.
 * `Gary Gregory` a rejoint le développement en octobre 2012
 * Depuis octobre 2012, les différents contributeurs sur le projet sont d'environ 5 à 6 par an.
 
-On remarque dès lors un motif de contribution où les nouveaux développeurs ne contribuent pas plus de quelques semaines \(ou un mois au mieux\).
+On remarque dès lors un motif de contribution où les nouveaux développeurs ne contribuent pas plus de quelques semaines (ou un mois au mieux).
 
-**Conclusion** C'est le noyau "dur" qui fait vivre le projet. Les contributions \(hors mainteneurs clés\) proviennent pour la grande majorité d'ajout de fonctionnalité pour des besoins spécifiques. Les utilisateurs implémentent leur besoin et le font partager à la communauté. Il y a cependant un manque cruel de fidélisation. Cela doit provenir de la nature intrinsèque du projet qui ne reste qu'un "outil" de gestion des logs. Les contributions à ce projet restent donc assez limitées et le motif observé est normal. Le facteur limitant est ici probablement un code hérité assez vieux \(9 ans\), avec un engouement assez limité pour motiver les nouveaux développeurs. Il est probable que Log4j convienne à presque tous les cas d'usage du logging après 9 ans de travail.
+__Conclusion__
+C'est le noyau "dur" qui fait vivre le projet. Les contributions (hors mainteneurs clés) proviennent pour la grande majorité d'ajout de fonctionnalité pour des besoins spécifiques.
+Les utilisateurs implémentent leurs besoins et les font partager à la communauté.
+Il y a cependant un manque cruel de fidélisation. Cela doit provenir de la nature intrinsèque du projet qui ne reste qu'un "outil" de gestion des logs. Les contributions à ce projet restent donc assez limitées et le motif observé est normal. Le facteur limitant est ici probablement un code hérité assez vieux (9 ans), avec un engouement assez limité pour motiver les nouveaux développeurs. Il est probable que Log4j convienne à presque tous les cas d'usage du logging après 9 ans de travail.
 
 ### XWiki
 
@@ -372,8 +381,8 @@ Le projet XWiki est composé de 8 dépôts. Nous avons choisi de concentrer notr
 * Présence d'un `README.md` :
   * Redirige vers la documentation ainsi que des pages de guide à destination des développeurs, des utilisateurs et des administrateurs. Le `README.md` comporte également une redirection vers le _Getting started_ pour les contributeurs.
 * Méthode de contribution :
-  * Des sections `Contribute Designs`, `Sponsoring issues`, `Contribute code` permettent d'aiguiller les contributeurs aussi dans le sens de la production que de la suggestion d'améliorations et fonctionnalités
-  * Un post `Onboarding` est dédié aux nouveaux entrants et propose des `Available Tracks` permettant d'intégrer le projet parmi lesquels \(d'autres sont en cours de création\) :
+  * Des sections `Contribute Designs`, `Sponsoring issues`, `Contribute code` permettent d'aiguiller les contributeurs aussi bien dans le sens de la production que de la suggestion d'améliorations et de fonctionnalités
+  * Un post `Onboarding` est dédié aux nouveaux entrants et propose des `Available Tracks` permettant d'intégrer le projet parmi lesquels (d'autres sont en cours de création) :
     * Report or find an issue
     * Understand XWiki concepts of XClass & XObjects
     * Contribute to the core
@@ -395,9 +404,9 @@ Le dépôt de XWiki Platform comporte un community profile qui permet de mesurer
 
 #### Analyse des contributions
 
-Parmi les 96 contributeurs du projet, les 20 premiers contributeurs \(dont 15 font partie de l'organisation XWiki\) sont ceux qui portent vraiment le projet \(totalisant 32.398 commits sur 36.461 commits, soit environ 89%\). La loi de Pareto est vérifiée.
+Parmi les 96 contributeurs du projet, les 20 premiers contributeurs (dont 15 font partie de l'organisation XWiki) sont ceux qui portent vraiment le projet (totalisant 32.398 commits sur 36.461 commits, soit environ 89%). La loi de Pareto est vérifiée.
 
-**Conclusion :** XWiki possède beaucoup des caractéristiques permettant de facilement rejoindre le projet \(équipe de développement disponible, documentation à portée de main\). La communauté a même participé au Google Code-in. Ce concours vise à intégrer dans un projet des jeunes entre 13 et 17 ans et leur confier des tâches bien définies. Cette activité démontre une réelle prise en considération de la démarche d'intégration des contributeurs. Lors de notre entretien Vincent Massol, ce dernier nous a confié que la grande difficulté réside dans la constitution d'une communauté de développeurs et non dans la constitution d'une communauté d'utilisateurs.
+**Conclusion :** XWiki possède beaucoup des caractéristiques permettant de facilement rejoindre le projet \(équipe de développement disponible, documentation à portée de main\). La communauté a même participé au Google Code-in, ce concours vise à intégrer dans un projet des jeunes entre 13 et 17 ans et leur confier des tâches bien définies. Cette activité démontre une réelle prise en considération de la démarche d'intégration des contributeurs. Lors de notre entretien Vincent Massol, ce dernier nous a confié que la grande difficulté réside dans la constitution d'une communauté de développeurs et non dans la constitution d'une communauté d'utilisateurs.
 
 ## V. Sondage
 
@@ -410,9 +419,9 @@ Nous avions quelques intuitions quant aux facteurs qui contredisaient notre hypo
 Nous avons donc décidé de mettre en place un sondage afin de vérifier nos soupçons, il est composé de 3 parties :
 
 * Des questions sur la personne interrogée \(sa situation professionnelle et si elle est développeur\)
-* Des questions sur son expérience de développeur \(ancienneté et si elle a déjà contribué à un projet open source\)
+* Des questions sur son expérience de développeur \(ancienneté et si cette personne a déjà contribué à un projet open source\)
 * Enfin, des questions sur son expérience de contribution:
-  * Est-ce qu'elle est ou a déjà été payée pour contribuer sur un projet open source ?
+  * Est-ce que cette personne est ou a déjà été payée pour contribuer sur un projet open source ?
   * A quelle fréquence contribue-t'elle ?
   * Selon elle, est-ce que la personnalité du mainteneur du projet est importante ? \(gentillesse, attitude, charisme\)
   * Est-ce qu'elle contribue individuellement ou en entreprise ?
@@ -445,7 +454,7 @@ La seconde partie contient une question sur le niveau d'expérience en développ
 
 ![Seconde question de ciblage](../.gitbook/assets/4%20%281%29.png)
 
-Nous avons utilisé cette seconde question pour filtrer notre panel de personnes interrogées et ainsi n'avoir que l'avis des personnes ayant déjà contribué, au moins une fois, à un projet open source. Notre échantillon passe ainsi à 139 personnes.
+Nous avons utilisé cette seconde question pour filtrer notre panel de personnes interrogées et ainsi n'avoir que l'avis des personnes ayant déjà contribué, au moins une fois, à un projet open source. Notre échantillon passe alors à 139 personnes.
 
 ### Comportements autour de la contribution open source
 
@@ -459,7 +468,7 @@ Nous exposons uniquement ici les résultats permettant de confimer ou infirmer n
 
 ## VI. Conclusion
 
-Pour conclure, ce sondage va dans le sens de notre seconde hypothèse, l'attention portée à la communauté par les mainteneurs de projet et la complexité de leur projet semblent être les principaux facteurs influençant l'attractivité pour les contributeurs. Avec du recul ceci semble assez évident, corriger la complexité des projets semble néanmoins une tâche difficile mais améliorer la communication avec sa communauté semble moins ardu. Une autre idée de notre part serait de gamifier ces projets dans le but d'attirer et motiver les contributeurs, une solution encore en beta test mais pouvant être envisagée est ProMyze Themis. Cette conclusion tend à démontrer l'intérêt des évènements physiques telles que les conférences. Les évènements comme les conférences Devoxx ou encore le SpringOne Platform offre l'occasion de tisser des liens au sein d'une communauté. Ce sentiment d'appartenance à une communauté semble être un grand facteur de motivation. Ce sentiment constitue le 3ème étage de la Pyramide de Maslow et les résultats obtenus nous dirigent vers l'ensemble de ces derniers trois niveaux à savoir : le besoin d'appartenance, l'estime de soi et le besoin d'accomplissement personnel. L'ensemble de ces résultats se retrouve étroitement lié avec l'étude de Dan Pink intitulée [The Puzzle Of The Motivation](https://www.ted.com/talks/dan_pink_on_motivation/up-next).
+Pour conclure, ce sondage va dans le sens de notre seconde hypothèse, l'attention portée à la communauté par les mainteneurs de projet et la complexité de leur projet semblent être les principaux facteurs influençant l'attractivité pour les contributeurs. Avec du recul ceci semble assez évident, corriger la complexité des projets semble néanmoins une tâche difficile mais améliorer la communication avec sa communauté semble moins ardu. Une autre idée de notre part serait de gamifier ces projets dans le but d'attirer et motiver les contributeurs, une solution encore en beta test mais pouvant être envisagée est ProMyze Themis. Cette conclusion tend à démontrer l'intérêt des évènements physiques telles que les conférences. Les évènements comme les conférences Devoxx ou encore le SpringOne Platform offre l'occasion de tisser des liens au sein d'une communauté. Ce sentiment d'appartenance à une communauté semble être un grand facteur de motivation. Ce sentiment constitue le 3ème étage de la Pyramide de Maslow et les résultats obtenus nous dirigent vers l'ensemble de ces derniers trois niveaux à savoir : le besoin d'appartenance, l'estime de soi et le besoin d'accomplissement personnel. L'ensemble de ces résultats se retrouve étroitement lié avec l'étude de Dan Pink intitulée [The Puzzle Of The Motivation](https://www.ted.com/talks/dan_pink_on_motivation/up-next). 
 
 ## VII. Outils utilisés
 
@@ -467,20 +476,19 @@ Au début du projet, nous avons commencé par déterminer des KPIs simples à é
 
 Cependant, nous nous sommes rapidement aperçus que ces KPIs n'étaient pas assez fins pour nous permettre d'étudier le problème convenablement. Les KPIs ont donc été affinés, cependant leur évaluation ne pouvait plus être automatisée. En effet, l'estimation de la qualité d'un `README.md` ne peut se faire automatiquement. Nous avons donc effectué la majeure partie de cette analyse à la main, en nous aidant de plusieurs outils :
 
-* [git-fame](https://github.com/casperdcl/git-fame) afin d'avoir un premier aperçu de la répartition de la paternité de code entre les différents contributeurs.
-* [git inspector](https://github.com/ejwa/gitinspector) nous a permis d'établir l'analyse des commits.
-* [Webscraper](https://www.webscraper.io/) afin de récupérer des informations directement depuis l'interface de GitHub.
-* [L'API GitHub](https://developer.github.com/v3/) dans l'optique d'obtenir des statistiques sur les issues
+- [git-fame](https://github.com/casperdcl/git-fame) afin d'avoir un premier aperçu de la répartition de la paternité de code entre les différents contributeurs.
+- [git inspector](https://github.com/ejwa/gitinspector) nous a permis d'établir l'analyse des commits.
+- [Webscraper](https://www.webscraper.io/) afin de récupérer des informations directement depuis l'interface de GitHub.
+- [L'API GitHub](https://developer.github.com/v3/) dans l'optique d'obtenir des statistiques sur les issues
 
 ## VIII. Références
 
-* [https://github.com/xwiki/xwiki-platform](https://github.com/xwiki/xwiki-platform)
-* [https://github.com/junit-team/junit5](https://github.com/junit-team/junit5)
-* [https://github.com/hibernate/hibernate-orm](https://github.com/hibernate/hibernate-orm)
-* [https://github.com/apache/logging-log4j2](https://github.com/apache/logging-log4j2)
-* [https://github.com/mockito/mockito](https://github.com/mockito/mockito)
-* [https://promyze.com/themis/](https://promyze.com/themis/)
-* [https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l](https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l)
+- https://github.com/xwiki/xwiki-platform
+- https://github.com/junit-team/junit5
+- https://github.com/hibernate/hibernate-orm
+- https://github.com/apache/logging-log4j2
+- https://github.com/mockito/mockito
+- https://promyze.com/themis/
+- https://dev.to/nirousseau/poll--open-source-contributions-and-motivation-factors-3o4l
 
 ![UCA : University C&#xF4;te d&apos;Azur \(french Riviera University\)](../.gitbook/assets/entete-3.png)
-
